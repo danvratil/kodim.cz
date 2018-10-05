@@ -1,4 +1,4 @@
 #!/bin/sh
 
 echo "Running app in production mode!"
-nginx && uwsgi --ini /uwsgi.ini
+exec /bin/sh -c 'nginx && uwsgi --ini /uwsgi.ini'

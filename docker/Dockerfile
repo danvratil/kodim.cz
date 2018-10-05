@@ -29,4 +29,3 @@ COPY entrypoint.sh /entrypoint.sh
 
 # execute start up script
 ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
-CMD ["uwsgi", "--ini", "/uwsgi.ini"]
