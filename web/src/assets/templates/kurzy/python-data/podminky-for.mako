@@ -132,7 +132,7 @@ for cislo in cisla:
 
     <ol>
       <li>
-<pre>for cislo in cisla:
+<pre>for x in cisla:
   if x % 2 == 0:
     print(x)</pre>
       </li>
