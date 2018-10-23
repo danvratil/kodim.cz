@@ -131,6 +131,22 @@
           },
           "exkey": "OGjE30J3",
           "hwkey": "iAngJILv"
+        }, 
+        {
+          "link": {
+            "cz": "webscraping"
+          },
+          "title": {
+            "cz": "Bonus: web scraping"
+          },
+          "desc": {
+            "cz": "Naučíte se jak ve vašich Python programech vytáhnout data z webových stránek."
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
         }
       ]
     },
@@ -144,22 +160,6 @@
         "en": true
       },
       "chapters": [
-        {
-          "link": {
-            "cz": "regex-scraping"
-          },
-          "title": {
-            "cz": "Regulární výrazy, webscraping"
-          },
-          "desc": {
-            "cz": "Lekce se připravuje"
-          },
-          "ready": {
-            "cz": true
-          },
-          "exkey": "",
-          "hwkey": ""
-        },
         {
           "link": {
             "cz": "pandas-zaklady"
@@ -182,6 +182,22 @@
           },
           "title": {
             "cz": "Pandas pokračování"
+          },
+          "desc": {
+            "cz": "Lekce se připravuje"
+          },
+          "ready": {
+            "cz": true
+          },
+          "exkey": "",
+          "hwkey": ""
+        },
+        {
+          "link": {
+            "cz": "pandas-zaver"
+          },
+          "title": {
+            "cz": "Pandas závěr"
           },
           "desc": {
             "cz": "Lekce se připravuje"

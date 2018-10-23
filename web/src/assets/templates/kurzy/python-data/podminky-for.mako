@@ -60,11 +60,11 @@ else:
 
   <h2>Bonusy</h2>
   <%self:exrc title="Maximum ze dvou čísel">
-    <p>Napište program <code>max2.py</code>, který dostane na vstupu dvě celá čísla a vrátí větší z nich.</p>
+    <p>Napište program <code>max2.py</code>, který dostane na vstupu dvě celá čísla a vrátí větší z nich. Vyhněte se použití funkce <code>max()</code>.</p>
   </%self:exrc>
 
   <%self:exrc title="Maximum ze tří čísel">
-    <p>Napište program <code>max3.py</code>, který dostane na vstupu tři celá čísla a vrátí největší z nich.</p>
+    <p>Opět bez použití funkce <code>max()</code> napište program <code>max3.py</code>, který dostane na vstupu tři celá čísla a vrátí největší z nich.</p>
   </%self:exrc>
 </%self:exercises>
 
