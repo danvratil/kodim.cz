@@ -4,9 +4,9 @@
   <p>Zatím všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým. Pro komplikovanější programy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých <em>podmínek</em>, nebo se vykonávaly opakovaně v <em>cyklu</em>.</p>
 
   <h2>Podmínky pro řízení běhu</h2>
-  <p>V minulých kapitolách už jsme viděli podmínky při chroustání seznamů. Ty v podstatě řídily, které hodnoty se dostanou do našeho výsledného seznmu. Mnohem mocnější nástrojem jsem ovšem podmínky, které dokáží ovlivnit běh samotného programu. </p>
+  <p>V minulých kapitolách už jsme viděli podmínky při chroustání seznamů. Ty v podstatě řídily, které hodnoty se dostanou do našeho výsledného seznamu. Mnohem mocnější nástrojem jsem ovšem podmínky, které dokáží ovlivnit běh samotného programu. </p>
 
-  <p>Představte si, že chceme napsat program, který uřčí, zda je hrací kostka férová či falešná. Program načte experimentální data se souboru do proměnné <var>hody.</var>. Ovšem k tomu, aby náš program fungoval potřebujeme hodů dostatek. Ze tří hodů kostkou těžko určíme, jestli je nebo není fér. Dejme tomu, že pro spolehlivý výsledek požadujeme alespoň tisíc hodů kostkou. Pokud je hodů málo, můžeme uživateli oznámit, že výsledek není spolehlivý.</p>
+  <p>Představte si, že chceme napsat program, který určí, zda je hrací kostka férová či falešná. Program načte experimentální data se souboru do proměnné <var>hody.</var>. Ovšem k tomu, aby náš program fungoval, potřebujeme hodů dostatek. Ze tří hodů kostkou těžko určíme, jestli je nebo není fér. Dejme tomu, že pro spolehlivý výsledek požadujeme alespoň tisíc hodů kostkou. Pokud je hodů málo, můžeme uživateli oznámit, že výsledek není spolehlivý.</p>
 
 <pre>import statistics
 
@@ -26,15 +26,15 @@ print(statistics.mean(hody))</pre>
   exit()</pre>
 
   <h2>Bloky</h2>
-  <p>Všimněte si, že všechny příkazy, které jsou součístí naší podmínky jsou odsazené kousek doprava. Tímto poprvé narážíme na takzvané bloky kódu. Blok je způsob jak seskupit posloupnost příkazů do jednoho celku. Takový celek pak může být součástí podmínky nebo, jak později uvidíme, například cyklu. Blok vždy začiná dvojtečkou na konci předchozího řádku. Tím říkáme k jaké kunstrukci (v našem případě <code>if</code>) náš blok příkazů patří.</p>
+  <p>Všimněte si, že všechny příkazy, které jsou součástí naší podmínky, jsou odsazené kousek doprava. Tímto poprvé narážíme na takzvané bloky kódu. Blok je způsob jak seskupit posloupnost příkazů do jednoho celku. Takový celek pak může být součástí podmínky nebo, jak později uvidíme, například cyklu. Blok vždy začíná dvojtečkou na konci předchozího řádku. Tím říkáme k jaké konstrukci (v našem případě <code>if</code>) náš blok příkazů patří.</p>
 
-  <p>Odsazování bloků se provádí buď pomocí několika mezer nebo pomocí jednoho tabulátoru. Podobně jako v případě jmen proměnných, opět zde přichází do hry různé programovací styly. Někteří programátoři mají rádi mezery, jiní jeden tabulátor. Někdo odsazuje pomocí čtyř mezer, někdo pomocí tří, někdo pomocí dvou. Opět je to na jakémsi vašem estetickém citění. </p>
+  <p>Odsazování bloků se provádí buď pomocí několika mezer nebo pomocí jednoho tabulátoru. Podobně jako v případě jmen proměnných, opět zde přichází do hry různé programovací styly. Někteří programátoři mají rádi mezery, jiní jeden tabulátor. Někdo odsazuje pomocí čtyř mezer, někdo pomocí tří, někdo pomocí dvou. Opět je to na jakémsi vašem estetickém cítění. </p>
 
-  <p>Pokud si zvolíte konkrétní styl, je velice důležíté jej dodržovat. Pokud v rámci jednoho bloku budete míchat mezery a tabulátory, Python vašemu kódu nebude rozumět a bude vyhazovat chyby. Pokud budete jeden blok odsazovat pomocí tabulátorů a jeden pomocí mezer, tak vám to Python odpustí, ale je to strašlivá prasárna, takže to opravdu nedělejte. </p>
+  <p>Pokud si zvolíte konkrétní styl, je velice důležité jej dodržovat. Pokud v rámci jednoho bloku budete míchat mezery a tabulátory, Python vašemu kódu nebude rozumět a bude vyhazovat chyby. Pokud budete jeden blok odsazovat pomocí tabulátorů a jeden pomocí mezer, tak vám to Python odpustí, ale je to strašlivá prasárna, takže to opravdu nedělejte. </p>
 
   <h3>Podmínky se dvěma větvemi</h3>
 
-  <p>Podmínky mohou být mnohem zajímavější a komplexnější než jak jsme viděli přech chvíli. Například mohou mít jak pozitivní tak negativní větev. Negativní větev se spouští pokud výraz v podmínce vrátí <code>False</code>. Můžeme pak například psát:</p>
+  <p>Podmínky mohou být mnohem zajímavější a komplexnější, než jak jsme viděli přech chvíli. Například mohou mít jak pozitivní tak negativní větev. Negativní větev se spouští, pokud výraz v podmínce vrátí <code>False</code>. Můžeme pak například psát:</p>
 
   <div class="verbatim">
 <pre>if len(hody) &lt; 1000:
@@ -53,7 +53,7 @@ else:
   </%self:exrc>
   
   <%self:exrc title="Kontrola věku">
-    <p>Napište program <code>prihlaseni.py</code>, který na příkazové řádce obdrží jméno uživatele a jako věk. Pokud má uživatel alespoň 18 let, program vypíše zprávu že uživatel může vstoupit, v opačném případě, že vstup je zakázán.</p>
+    <p>Napište program <code>prihlaseni.py</code>, který na příkazové řádce obdrží jméno uživatele a jeho věk. Pokud má uživatel alespoň 18 let, program vypíše zprávu, že uživatel může vstoupit, v opačném případě, že vstup je zakázán.</p>
   </%self:exrc>
 
   ${self.alert_done()}
@@ -70,16 +70,16 @@ else:
 
 <%self:lesson>
   <h2>Cyklus FOR</h2>
-  <p>Nyní už jsme připravení na pořádnou jízdu. V předchozí částí jsme si ukázali, jak nějakou část kódu vynechat, pokud není splněna nějaká podmínka. Nyní si ukážeme jak nějakou část kódu opakovat vícekrát po sobě. </p>
+  <p>Nyní už jsme připravení na pořádnou jízdu. V předchozí částí jsme si ukázali, jak nějakou část kódu vynechat, pokud není splněna nějaká podmínka. Nyní si ukážeme, jak nějakou část kódu opakovat vícekrát po sobě. </p>
 
-  <p>Cyklus FOR jste vlastně už ve zjednodušené formě viděli při chroust8n9 seznamů. Vezměme si například takovýto program:</p>
+  <p>Cyklus FOR jste vlastně už ve zjednodušené formě viděli při chroustání seznamů. Vezměme si například takovýto program:</p>
 
 <pre>jmena = ['petr', 'pavel', 'jitka', 'jana']
 delky = [len(jmeno) for jmeno in jmena]</pre>
   
   <p>Se svými zkušenostmi jste jistě schopni popsat, co přesně takový program dělá. Jednoduše chroustání projde jednotlivé prvky seznamu <var>jmena</var> a vyrobí nový seznam, který pro každé jméno obsahuje jeho délku. </p>
 
-  <p>Co kdybychom ale chtěli projít nějaký seznam prvek po prvku, ale nechtěli bychom vyrábět žádný nový seznam. Mohli bychom třeba chtít jen vypsat délky jmen pod sebe na obrazovku. V takovém případě použijeme místo chroustání seznamů skutečný FOR cyklus:</p>
+  <p>Co kdybychom ale chtěli projít nějaký seznam prvek po prvku, ale nechtěli bychom vyrábět žádný nový seznam? Mohli bychom třeba chtít jen vypsat délky jmen pod sebe na obrazovku. V takovém případě použijeme místo chroustání seznamů skutečný FOR cyklus:</p>
 
 <pre>jmena = ['petr', 'pavel', 'jitka', 'jana']
 for jmeno in jmena:
@@ -102,15 +102,15 @@ for jmeno in jmena:
     mail = jmeno + '@gmail.cz'
   print(mail)</pre>
 
-  <p>Tímto jsme vlastně vysvětlili to hlavní a zásadni co o cyklu FOR zatím potřebujeme vědět. Možná se to na první pohled nezdá, ale přidáním cyklu do našeho programátorského arzenálu jsme otevřeli pandořinu skříňku plnou možností, co v našich programech můžeme dělat. Také jsme ovšem otevřeli bránu do samotných pekel, neboť už si díky cyklům můžeme troufnout na mnohem komplikovanější problémy. Na ty bude často potřeba pořádně roztočit mozkové závity. </p>
+  <p>Tímto jsme vlastně vysvětlili to hlavní a zásadní, co o cyklu FOR zatím potřebujeme vědět. Možná se to na první pohled nezdá, ale přidáním cyklu do našeho programátorského arzenálu jsme otevřeli pandořinu skříňku plnou možností, co v našich programech můžeme dělat. Také jsme ovšem otevřeli bránu do samotných pekel, neboť už si díky cyklům můžeme troufnout na mnohem komplikovanější problémy. Na ty bude často potřeba pořádně roztočit mozkové závity. </p>
 
-  <p>Ukažme si například jak se pomocí cyklu spočítá součet všech čísel v seznamu.</p>
+  <p>Ukažme si například, jak se pomocí cyklu spočítá součet všech čísel v seznamu.</p>
   
 <pre>soucet = 0
 for cislo in cisla:
   soucet = soucet + cislo</pre>
         
-  <p>Ne, že bychom zrovna takovýto kus kódu nutně potřebovali, když můžeme použít funkci <code>sum()</code>. Tento příklad ale má ukazuje, že s cykly můžeme dělat spoustu zajímavých věci.</p>
+  <p>Ne, že bychom zrovna takovýto kus kódu nutně potřebovali, když můžeme použít funkci <code>sum()</code>. Tento příklad ale ukazuje, že s cykly můžeme dělat spoustu zajímavých věcí.</p>
 </%self:lesson>
 
 <%self:exercises>
@@ -173,7 +173,7 @@ hod_desetinnou_kostkou = uniform(1, 6)
 </pre>
   
   <h3>Podmínky s více větvemi</h3>
-  <p>Ve lekci jsme si zatím představili pouze podmínky s jednou nebo dvě větvemi. Když chci něco provést jen v případě, že jsem z písemky dostal víc než 90 bodů, napíšu podmínku s jednou větví.</p>
+  <p>Ve lekci jsme si zatím představili pouze podmínky s jednou nebo dvěma větvemi. Když chci něco provést jen v případě, že jsem z písemky dostal více než 90 bodů, napíšu podmínku s jednou větví.</p>
 
 <pre>if bodu > 90:
   print('Dobrá práce')</pre>
@@ -227,16 +227,16 @@ else:
   </%self:exrc>
 
   <%self:exrc title="Banka" type="home" diffi="1">
-    <p>Napište program, který s z textového souboru přečte seznam zůstatků na spořících účtech a vypíše tyto zůstatky navýšené o 2.5% úrok. </p>
+    <p>Napište program, který z textového souboru přečte seznam zůstatků na spořících účtech a vypíše tyto zůstatky navýšené o 2.5% úrok. </p>
     <ol>
       <li>Vypište každý navýšený zůstatek na samostatný řádek.</li>
-      <li>Vypište jen ty zůstatky, které najsou záporné. </li>
+      <li>Vypište jen ty zůstatky, které nejsou záporné. </li>
       <li>Zkuste jednotlivé řádky očíslovat. Každý řádek tedy bude obsahovat číslo řádku a výsledný zůstatek.</li>
     </ol>
   </%self:exrc>
 
   <%self:exrc title="Hádanky" type="home" diffi="1">
-    <p>Projděte si následující program a zkuste předpovědět co nejpřesněji jaký bude jeho výstup. Zkuste co nejvýstižněji (jednou dvěma větama) zformulovat, co program dělá.</p>
+    <p>Projděte si následující program a zkuste předpovědět co nejpřesněji, jaký bude jeho výstup. Zkuste co nejvýstižněji (jednou dvěma větami) zformulovat, co program dělá.</p>
   
     <ol>
       <li>
@@ -281,12 +281,12 @@ for cislo in cisla:
   </%self:exrc>
 
   <%self:exrc title="K-té maximum" type="home" diffi="4">
-    <p>Napište program, který dostana na příkazové řádce posloupnost čísel. První číslo udává, kolikáté největší číslo chceme ve zbytku zadaných čísel najít. Můžeme tak chtít třeba páté největší číslo z 6, 1, 3, 8, 4, 7, 2</p>
+    <p>Napište program, který dostane na příkazové řádce posloupnost čísel. První číslo udává, kolikáté největší číslo chceme ve zbytku zadaných čísel najít. Můžeme tak chtít třeba páté největší číslo z 6, 1, 3, 8, 4, 7, 2</p>
 
 <pre>$ python3 kmax.py 5 6 1 3 8 4 7 2
 3</pre>
 
-    <p>Pokud je nějaké číslo v seznamu dvakrát, bere se jako dvě různá maxima. Pozor, tohle už je hodně těžké. Pokud si na to troufáte, můžete ve svém řešení použít cokoliv co už doteď znáte, klidně si zagooglete. Možností jak to udělat je více. Nebojte se být kreativní.</p>
+    <p>Pokud je nějaké číslo v seznamu dvakrát, bere se jako dvě různá maxima. Pozor, tohle už je hodně těžké. Pokud si na to troufáte, můžete ve svém řešení použít cokoliv co už doteď znáte, klidně si zagooglete. Možností, jak to udělat, je více. Nebojte se být kreativní.</p>
   </%self:exrc>
 
   <%self:exrc title="Ruleta" type="home" diffi="2">
