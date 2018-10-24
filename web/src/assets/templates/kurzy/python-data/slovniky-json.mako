@@ -120,18 +120,18 @@
   'narocnost': 'stredni',
   'doba': 30,
   'ingredience': [
-    ['batát', '1'],
-    ['olivový olej', '2 lžíce'],
-    ['pancetta', '4-6 plátků'],
-    ['přepuštěné máslo', '2 lžíce'],
-    ['mletý černý pepř', '1/2 lžičky'],
-    ['sůl', '1/2 lžičky'],
-    ['muškátový oříšek', 'špetka'],
-    ['česnek', '2 stroužky'],
-    ['šalvějové lístky', '20-25']
+    ['batát', '1', '15 kč'],
+    ['olivový olej', '2 lžíce', '2 kč'],
+    ['pancetta', '4-6 plátků', '21 kč'],
+    ['přepuštěné máslo', '2 lžíce', '5 kč'],
+    ['mletý černý pepř', '1/2 lžičky', '0.5 kč'],
+    ['sůl', '1/2 lžičky', '0.1 kč'],
+    ['muškátový oříšek', 'špetka', '1 kč'],
+    ['česnek', '2 stroužky', '1 kč'],
+    ['šalvějové lístky', '20-25', '12 kč']
   ]
 }</pre>
-		<p>Uložte si tutu strukturu do proměnné <span class="scode">recept</span> na začátek nového programu. Vypište pomocí funkce <span class="scode">print()</span> jaké potřebujeme množství druhé ingredience v receptu. </p>
+		<p>Uložte si tutu strukturu do proměnné <span class="scode">recept</span> na začátek nového programu. Vypište pomocí funkce <span class="scode">print()</span> kolik bude celé jídlo stát korun zaokrouhleně na celé koruny nahoru.</p>
   </%self:exrc>
 </%self:exercises>
 
@@ -139,32 +139,74 @@
   <h2>Formát JSON</h2>
 	<p>JSON je formát pomocí kterého můžeme zapsat strukturovaná data jako čistý text. S jedním takovým datovým formátem jste se již potkali, jmenuje se CSV. </p>
 
-	<p>JSON formát původně pochází z jazyka, který se jmenuje JavaScript. Ten se hodně používá pro tvorbu webových stránek a je starší než Python. Proto se tento formát, podobně jako CSV, všeobecně ujal jako standard pro výměnu dat mezi programy. Výhoda pro nás je, že JSON je vypadá téměř stejně jako Python slovníky. Liší se pouze tím, že vždy používá dvojité uvozovku a hodnoty <code>True</code> a <code>False</code> se píší s malým písmenem, tedy <code>true</code> a <code>false</code>. Náš absolventu kurzu z úvody lekce by tedy ve formátu JSON vypadal takto:</p>
+	<p>JSON formát původně pochází z jazyka, který se jmenuje JavaScript. Ten se hodně používá pro tvorbu webových stránek a jelikož výměna dat nejčastěji probíhá po internetu, ujal se formát JSON všeobecně jako standard pro výměnu dat mezi programy. Výhoda pro nás je, že JSON vypadá téměř stejně jako Python slovníky. Liší se pouze tím, že vždy používá dvojité uvozovku a hodnoty <code>True</code> a <code>False</code> se píší s malým písmenem, tedy <code>true</code> a <code>false</code>. Náš absolvent kurzu z úvody lekce by tedy ve formátu JSON vypadal takto:</p>
   
   <pre>{"jmeno": "Petr", "prijmeni": "Roman", "rok": 2017, "dochazka" 0.95, "vyznamenani": true},</pre>
 
-  <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code></p>
+  <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code>. Vyzkoušíme si to na našem seznamu absolventů. Nejdřív si tato data stáhneme jako soubor <a href="/download/python-data-absolventi.json" download>absolventi.json</a>. Ten pak můžeme v Pythonu otevřít a převést na JSON následujicím programem.</p>
+
+<pre>import json
+file = open('absolventi.json')
+text = file.read()
+absolventi = json.loads(text)
+print(absolventi)</pre>
+
+  <p>V tomto programu používáme metodu <code>read()</code>, která umí celý soubor načíst se vším všudy do jednoho velkého řetězce. Tento řetězec pak můžeme předat funkci <code>loads()</code> z modulu <code>json</code>, která tento řetězec přečtě a pokud jsou v něm data ve formátu JSON, převede je na Python slovníky.</p>
+
+  <h3>Stahování dat z internetu</h3>
+  <p>V předchozím příkladu jsem naše data načetli ze soubrou na disku. Pokud však narazíte na vstřícného poskytovatele dat, je možné si data stáhnout z takzvaného API (Applicattion Programming Interface) přímo z internetu. Zkratka API se používá jako označení nějakého přípojného bodu na internetu, odkud si můžete stáhnout data v nějakém strojově čitelném formátu. Nejčastěji je tímto formátem právě JSON. </p>
+
+  <p>Malá potíž je ovšem v tom, že Python sám o sobě neobsahuje modul pro stahování dat z internetu. Musíme proto do našeho Pythonu doinstalovat takzvaný externí balíček.</p>
 
   <h2>Externí moduly a balíčky</h2>
   <p>Python sám o sobě obsahuje mnoho užitečných modulů pro řešení různých typů úloh. Už jsme viděli modul <code>random</code> pro práci s náhodnými čísly, modul <code>statistics</code> pro základní statistické funkce nebo modul <code>sys</code> pro práci s operačním systémem. Všem modulům, které jsou součástí základní instalace Pythonu, se dohromady říká <em>standardní knihovna</em>. Přehled všech modulů, které standardní knihovna obsahuje můžete najít <a href="https://docs.python.org/3/library/">v Python dokumentaci</a>. </p>
 
-  <p>Čas od času ale v Pythonu potřebujeme vykonat nějakou činnost, pro kterou není ve standardní knihovně dostupný žádný modul. V takovém případě budeme muset z internetu stáhnout a naistalovat takzvaný <em>balíček</em>. Balíčky obsahují moduly, které po instalaci balíčku můžeme importovat v našem programu.</p>
+  <p>Čas od času ale v Pythonu potřebujeme vykonat nějakou činnost, pro kterou není ve standardní knihovně dostupný žádný modul, například stáhnou data z internetu. V takovém případě budeme muset z internetu stáhnout a naistalovat takzvaný <em>balíček</em>. Balíčky obsahují moduly, které po instalaci balíčku můžeme importovat v našem programu.</p>
   
-  <p>Jedna ze základních dovedností při analýze dat je schopnost připojit se k nějakému veřejnému zdroji dat a tato data si stáhnout do svého programu. K tomu potřebujete balíček jménem <code>requests</code>. Nainstalujeme jej příkazem </p>
+  <p>Ke stahování dat z intertnetu potřebujete balíček jménem <code>requests</code>. Nainstalujeme jej příkazem </p>
 
   <div class="verbatim">
-<pre>pip3 install requests</pre>
+<pre>$ pip3 install requests</pre>
   </div>
 
   <p>Pozor, že ve Windows tento příkaz vypadá takto.</p>
 
   <div class="verbatim">
-<pre>pip install requests</pre>
+<pre>$ pip install requests</pre>
   </div>
 
   <p>Může se stát, že výše uvedený příkaz nebude fungovat protože nemáte nainstalovaný správce balíčků <code>pip</code>- V takovém případě bude potřeba znova spustit instalaci Pythonu a během ní zaškrtnout, že chcete nainstalovat také <code>pip</code>.</p>
 
-  <h3>Stahování dat z internetu</h3>
-  <p>Pokud narazíte na vstřícného poskytovatele dat, je možné si data stáhnout z takzvaného API (Applicattion Programming Interface) přímo z internetu. Zkratka API se používá jako označení nějakého přípojného bodu na internetu, odkud si můžete stáhnout data v nějakém strojově čitelném formátu. Nejčastěji je tímto formátem takzvaný JSON. </p>
+  <h2>Stahování dat z API</h2>
+  <p>Jeden ze cvičných zdrojů dat najdeme na adrese <code>http://api.kodim.cz/python-data/people</code>. Naším jediným cílem je data získat jako text. Pak už jej převedeme na Python slovníky jako jsme to dělali kousek výše. </p>
 
+<pre>import requests
+import json
+response = requests.get('http://api.kodim.cz/python-data/people')
+data = json.loads(reponse.text)
+print(data)
+</pre>
 </%self:lesson>
+
+<%self:exercises>
+  <h2>Cvičení</h2>
+  
+  <%self:exrc title="Seznam lidí">
+    <p>Jak už jsme si ověřili v lekci, datové API na adrese <code>http://api.kodim.cz/python-data/people</code> obsahuje seznam lidí. Napište program, který tento seznam z API stáhne a převede z formátu JSON na Python slovníky. Proveďte následující úkoly.</p>
+
+    <ol> 
+      <li>Zjistěte kolik lidí celkem seznam obsahuje.</li>
+      <li>Zjistěte jaké všechny informace máme o jednotlivých osobách.</li>
+      <li>Zjistěte, kolik je v souboru mužů a žen.</li>
+    </ol>
+  </%self:exrc>
+
+  <%self:exrc title="Svátky">
+    <p>Na adrese <code>http://svatky.adresa.info/json</code> najdete API, které vám odpoví, kdo má dneska svátek. </p>
+    
+    <ol>
+      <li>Využijte toto API k tomu, abyste napsali program, který po spuštění vypíše na obrazovku kdo má dneska svátek.</li>
+      <li>Pokud použijete adresu <code>http://svatky.adresa.info/json?date=DDMM</code>, kde místo DDMM doplníte datum, dostanete jméno, které má svátek v zadaný den. Formát DDMM znamená že 6. ledna bude zapsáno jako 0601, 12. září jako 1209 apod. Napište program, který dostane na příkazové řádce číslo dne a číslo měsíce a vypíše na výstup kdo má v daný den svátek. Použijte váš program abyste zjistili, kdo má svátek 29. února.</li>
+    </ol>
+  </%self:exrc>
+</%self:exercises>

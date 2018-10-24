@@ -117,8 +117,16 @@
   <p>Tomuto zápisu se říká <em>volání funkce</em>. Když funkci voláme, předáváme jí takzvaný <em>argument</em>, v našem případě číslo 3.4. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek.</p>
 
   <div class="text-img-right">
-    <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležité pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
-    <img class="pic-left-30" src="/img/python-data/toaster.jpg" alt="Toaster" />
+    <div class="row">
+      <div class="col-md-6">
+        <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležité pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
+      </div>
+      <div class="col-md-6">
+        <img class="img-fluid" src="/img/python-data/toaster.jpg" alt="Toaster" />
+      </div>
+    </div>
+    
+    
   </div>
 
   <h2>Seznamy</h2>

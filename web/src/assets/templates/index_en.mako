@@ -3,7 +3,7 @@
 <%block name="header">
   <%self:pageIntro>
     <%def name="title()">
-      Kódím<span class="display-em">.cz</span>
+      Kódím<wbr><span class="display-em">.cz</span>
     </%def>
     <%def name="logo()">
       <img class="logo" src="/img/notebook.svg" alt="Notebook" />

@@ -40,9 +40,7 @@ pre {
 }
 
 .lesson-section, .exercises-section {
-  padding: 1rem 0rem 0rem 0rem;
-  /* Trick to prevent parent/child margin-bottom collapsing. */
-  border-bottom: 1px solid transparent;
+  padding: 1rem 0rem 4rem 0rem;
 }
 
 .lesson-section, .solution-body {
@@ -81,7 +79,7 @@ pre {
 }
 
 .exercise {
-  margin-bottom: 4rem;
+  margin-bottom: 2rem;
 
   ol {
     list-style-type: lower-alpha;
