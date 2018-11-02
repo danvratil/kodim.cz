@@ -1,0 +1,194 @@
+name,landmass,zone,area,population,language,religion
+Afghanistan,Asia,NE,648,16,Others,Muslim
+Albania,Europe,NE,29,3,Other Indo-European,Marxist
+Algeria,Africa,NE,2388,20,Arabic,Muslim
+American-Samoa,Oceania,SW,0,0,English,Other Christian
+Andorra,Europe,NE,0,0,Other Indo-European,Catholic
+Angola,Africa,SE,1247,7,Others,Ethnic
+Anguilla,N.America,NW,0,0,English,Other Christian
+Antigua-Barbuda,N.America,NW,0,0,English,Other Christian
+Argentine,S.America,SW,2777,28,Spanish,Catholic
+Australia,Oceania,SE,7690,15,English,Other Christian
+Austria,Europe,NE,84,8,German,Catholic
+Bahamas,N.America,NW,19,0,English,Other Christian
+Bahrain,Asia,NE,1,0,Arabic,Muslim
+Bangladesh,Asia,NE,143,90,Other Indo-European,Muslim
+Barbados,N.America,NW,0,0,English,Other Christian
+Belgium,Europe,NE,31,10,Other Indo-European,Catholic
+Belize,N.America,NW,23,0,English,Other Christian
+Benin,Africa,NE,113,3,French,Ethnic
+Bermuda,N.America,NW,0,0,English,Other Christian
+Bhutan,Asia,NE,47,1,Others,Buddhist
+Bolivia,S.America,SW,1099,6,Spanish,Catholic
+Botswana,Africa,SE,600,1,Others,Ethnic
+Brazil,S.America,SW,8512,119,Other Indo-European,Catholic
+British-Virgin-Isles,N.America,NW,0,0,English,Other Christian
+Brunei,Asia,NE,6,0,Others,Muslim
+Bulgaria,Europe,NE,111,9,Slavic,Marxist
+Burkina,Africa,NW,274,7,French,Ethnic
+Burma,Asia,NE,678,35,Others,Buddhist
+Burundi,Africa,SE,28,4,Others,Ethnic
+Cameroon,Africa,NE,474,8,French,Other Christian
+Canada,N.America,NW,9976,24,English,Other Christian
+Cape-Verde-Islands,Africa,NW,4,0,Other Indo-European,Catholic
+Cayman-Islands,N.America,NW,0,0,English,Other Christian
+Central-African-Republic,Africa,NE,623,2,Others,Ethnic
+Chad,Africa,NE,1284,4,French,Ethnic
+Chile,S.America,SW,757,11,Spanish,Catholic
+China,Asia,NE,9561,1008,Chinese,Marxist
+Colombia,S.America,NW,1139,28,Spanish,Catholic
+Comorro-Islands,Africa,SE,2,0,French,Muslim
+Congo,Africa,SE,342,2,Others,Ethnic
+Cook-Islands,Oceania,SW,0,0,English,Other Christian
+Costa-Rica,N.America,NW,51,2,Spanish,Catholic
+Cuba,N.America,NW,115,10,Spanish,Marxist
+Cyprus,Europe,NE,9,1,Other Indo-European,Other Christian
+Czechoslovakia,Europe,NE,128,15,Slavic,Marxist
+Denmark,Europe,NE,43,5,Other Indo-European,Other Christian
+Djibouti,Africa,NE,22,0,French,Muslim
+Dominica,N.America,NW,0,0,English,Other Christian
+Dominican-Republic,N.America,NW,49,6,Spanish,Catholic
+Ecuador,S.America,SW,284,8,Spanish,Catholic
+Egypt,Africa,NE,1001,47,Arabic,Muslim
+El-Salvador,N.America,NW,21,5,Spanish,Catholic
+Equatorial-Guinea,Africa,NE,28,0,Others,Ethnic
+Ethiopia,Africa,NE,1222,31,Others,Other Christian
+Faeroes,Europe,NW,1,0,Other Indo-European,Other Christian
+Falklands-Malvinas,S.America,SW,12,0,English,Other Christian
+Fiji,Oceania,SE,18,1,English,Other Christian
+Finland,Europe,NE,337,5,Japanese/Turkish/Finnish/Magyar,Other Christian
+France,Europe,NE,547,54,French,Catholic
+French-Guiana,S.America,NW,91,0,French,Catholic
+French-Polynesia,Oceania,SW,4,0,French,Catholic
+Gabon,Africa,SE,268,1,Others,Ethnic
+Gambia,Africa,NW,10,1,English,Ethnic
+Germany-DDR,Europe,NE,108,17,German,Marxist
+Germany-FRG,Europe,NE,249,61,German,Other Christian
+Ghana,Africa,NW,239,14,English,Ethnic
+Gibraltar,Europe,NW,0,0,English,Other Christian
+Greece,Europe,NE,132,10,Other Indo-European,Other Christian
+Greenland,N.America,NW,2176,0,Other Indo-European,Other Christian
+Grenada,N.America,NW,0,0,English,Other Christian
+Guam,Oceania,NE,0,0,English,Other Christian
+Guatemala,N.America,NW,109,8,Spanish,Catholic
+Guinea,Africa,NW,246,6,French,Muslim
+Guinea-Bissau,Africa,NW,36,1,Other Indo-European,Ethnic
+Guyana,S.America,NW,215,1,English,Hindu
+Haiti,N.America,NW,28,6,French,Catholic
+Honduras,N.America,NW,112,4,Spanish,Catholic
+Hong-Kong,Asia,NE,1,5,Chinese,Buddhist
+Hungary,Europe,NE,93,11,Japanese/Turkish/Finnish/Magyar,Marxist
+Iceland,Europe,NW,103,0,Other Indo-European,Other Christian
+India,Asia,NE,3268,684,Other Indo-European,Hindu
+Indonesia,Oceania,SE,1904,157,Others,Muslim
+Iran,Asia,NE,1648,39,Other Indo-European,Muslim
+Iraq,Asia,NE,435,14,Arabic,Muslim
+Ireland,Europe,NW,70,3,English,Catholic
+Israel,Asia,NE,21,4,Others,Others
+Italy,Europe,NE,301,57,Other Indo-European,Catholic
+Ivory-Coast,Africa,NW,323,7,French,Ethnic
+Jamaica,N.America,NW,11,2,English,Other Christian
+Japan,Asia,NE,372,118,Japanese/Turkish/Finnish/Magyar,Others
+Jordan,Asia,NE,98,2,Arabic,Muslim
+Kampuchea,Asia,NE,181,6,Others,Buddhist
+Kenya,Africa,NE,583,17,Others,Ethnic
+Kiribati,Oceania,NE,0,0,English,Other Christian
+Kuwait,Asia,NE,18,2,Arabic,Muslim
+Laos,Asia,NE,236,3,Others,Marxist
+Lebanon,Asia,NE,10,3,Arabic,Muslim
+Lesotho,Africa,SE,30,1,Others,Ethnic
+Liberia,Africa,NW,111,1,Others,Ethnic
+Libya,Africa,NE,1760,3,Arabic,Muslim
+Liechtenstein,Europe,NE,0,0,German,Catholic
+Luxembourg,Europe,NE,3,0,German,Catholic
+Malagasy,Africa,SE,587,9,Others,Other Christian
+Malawi,Africa,SE,118,6,Others,Ethnic
+Malaysia,Asia,NE,333,13,Others,Muslim
+Maldive-Islands,Asia,NE,0,0,Others,Muslim
+Mali,Africa,NW,1240,7,French,Muslim
+Malta,Europe,NE,0,0,Others,Catholic
+Marianas,Oceania,NE,0,0,Others,Other Christian
+Mauritania,Africa,NW,1031,2,Arabic,Muslim
+Mauritius,Africa,SE,2,1,English,Hindu
+Mexico,N.America,NW,1973,77,Spanish,Catholic
+Micronesia,Oceania,NE,1,0,Others,Other Christian
+Monaco,Europe,NE,0,0,French,Catholic
+Mongolia,Asia,NE,1566,2,Others,Marxist
+Montserrat,N.America,NW,0,0,English,Other Christian
+Morocco,Africa,NW,447,20,Arabic,Muslim
+Mozambique,Africa,SE,783,12,Others,Ethnic
+Nauru,Oceania,SE,0,0,Others,Other Christian
+Nepal,Asia,NE,140,16,Others,Hindu
+Netherlands,Europe,NE,41,14,Other Indo-European,Other Christian
+Netherlands-Antilles,N.America,NW,0,0,Other Indo-European,Other Christian
+New-Zealand,Oceania,SE,268,2,English,Other Christian
+Nicaragua,N.America,NW,128,3,Spanish,Catholic
+Niger,Africa,NE,1267,5,French,Muslim
+Nigeria,Africa,NE,925,56,Others,Muslim
+Niue,Oceania,SW,0,0,English,Other Christian
+North-Korea,Asia,NE,121,18,Others,Marxist
+North-Yemen,Asia,NE,195,9,Arabic,Muslim
+Norway,Europe,NE,324,4,Other Indo-European,Other Christian
+Oman,Asia,NE,212,1,Arabic,Muslim
+Pakistan,Asia,NE,804,84,Other Indo-European,Muslim
+Panama,S.America,NW,76,2,Spanish,Catholic
+Papua-New-Guinea,Oceania,SE,463,3,English,Ethnic
+Parguay,S.America,SW,407,3,Spanish,Catholic
+Peru,S.America,SW,1285,14,Spanish,Catholic
+Philippines,Oceania,NE,300,48,Others,Catholic
+Poland,Europe,NE,313,36,Slavic,Marxist
+Portugal,Europe,NW,92,10,Other Indo-European,Catholic
+Puerto-Rico,N.America,NW,9,3,Spanish,Catholic
+Qatar,Asia,NE,11,0,Arabic,Muslim
+Romania,Europe,NE,237,22,Other Indo-European,Marxist
+Rwanda,Africa,SE,26,5,Others,Ethnic
+San-Marino,Europe,NE,0,0,Other Indo-European,Catholic
+Sao-Tome,Africa,NE,0,0,Other Indo-European,Catholic
+Saudi-Arabia,Asia,NE,2150,9,Arabic,Muslim
+Senegal,Africa,NW,196,6,French,Muslim
+Seychelles,Africa,SE,0,0,English,Other Christian
+Sierra-Leone,Africa,NW,72,3,English,Ethnic
+Singapore,Asia,NE,1,3,Chinese,Buddhist
+Soloman-Islands,Oceania,SE,30,0,English,Other Christian
+Somalia,Africa,NE,637,5,Others,Muslim
+South-Africa,Africa,SE,1221,29,Other Indo-European,Other Christian
+South-Korea,Asia,NE,99,39,Others,Others
+South-Yemen,Asia,NE,288,2,Arabic,Muslim
+Spain,Europe,NW,505,38,Spanish,Catholic
+Sri-Lanka,Asia,NE,66,15,Others,Buddhist
+St-Helena,Africa,SW,0,0,English,Other Christian
+St-Kitts-Nevis,N.America,NW,0,0,English,Other Christian
+St-Lucia,N.America,NW,0,0,English,Other Christian
+St-Vincent,N.America,NW,0,0,English,Other Christian
+Sudan,Africa,NE,2506,20,Arabic,Muslim
+Surinam,S.America,NW,63,0,Other Indo-European,Other Christian
+Swaziland,Africa,SE,17,1,Others,Other Christian
+Sweden,Europe,NE,450,8,Other Indo-European,Other Christian
+Switzerland,Europe,NE,41,6,German,Other Christian
+Syria,Asia,NE,185,10,Arabic,Muslim
+Taiwan,Asia,NE,36,18,Chinese,Buddhist
+Tanzania,Africa,SE,945,18,Others,Ethnic
+Thailand,Asia,NE,514,49,Others,Buddhist
+Togo,Africa,NE,57,2,French,Others
+Tonga,Oceania,SE,1,0,Others,Other Christian
+Trinidad-Tobago,S.America,NW,5,1,English,Other Christian
+Tunisia,Africa,NE,164,7,Arabic,Muslim
+Turkey,Asia,NE,781,45,Japanese/Turkish/Finnish/Magyar,Muslim
+Turks-Cocos-Islands,N.America,NW,0,0,English,Other Christian
+Tuvalu,Oceania,SE,0,0,English,Other Christian
+UAE,Asia,NE,84,1,Arabic,Muslim
+Uganda,Africa,NE,236,13,Others,Ethnic
+UK,Europe,NW,245,56,English,Other Christian
+Uruguay,S.America,SW,178,3,Spanish,Catholic
+US-Virgin-Isles,N.America,NW,0,0,English,Other Christian
+USA,N.America,NW,9363,231,English,Other Christian
+USSR,Asia,NE,22402,274,Slavic,Marxist
+Vanuatu,Oceania,SE,15,0,Other Indo-European,Other Christian
+Vatican-City,Europe,NE,0,0,Other Indo-European,Catholic
+Venezuela,S.America,NW,912,15,Spanish,Catholic
+Vietnam,Asia,NE,333,60,Others,Marxist
+Western-Samoa,Oceania,SW,3,0,English,Other Christian
+Yugoslavia,Europe,NE,256,22,Other Indo-European,Marxist
+Zaire,Africa,SE,905,28,Others,Ethnic
+Zambia,Africa,SE,753,6,Others,Ethnic
+Zimbabwe,Africa,SE,391,8,Others,Ethnic

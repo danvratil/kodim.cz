@@ -7,7 +7,7 @@
 
 <pre>absolvent = ['Petr', 'Roman', 2017, 0.95, True]</pre>
 
-  <p>Hned ale vidíme, že z takového seznamu není úplně zřejmé, co která hodnota znamená. Musíme si pamatovat, že na indexu 0 je křestní jméno, na indexu 3 docházka známka apod. Mnohem pohodlnější by bylo, kdybychom mohli jednotlivé hodnoty místo indexování přímo pojmenovat. A přesně k tomuto účelu máme v Pythonu takzvané <em>slovníky</em>.</p>
+  <p>Hned ale vidíme, že z takového seznamu není úplně zřejmé, co která hodnota znamená. Musíme si pamatovat, že na indexu 0 je křestní jméno, na indexu 3 docházka apod. Mnohem pohodlnější by bylo, kdybychom mohli jednotlivé hodnoty místo indexování přímo pojmenovat. A přesně k tomuto účelu máme v Pythonu takzvané <em>slovníky</em>.</p>
   
   <h2>Slovníky</h2>
   
@@ -47,42 +47,42 @@
   <p>Nebo bychom mohli projít všechny absolventy a spočítat jejich průměrnou docházku na kurz.</p>
 
 <pre>&gt;&gt;&gt; from statistics import mean
-&gt;&gt;&gt; mean([ab['doochazka'] for ab in absolventi])
-1.425</pre>
+&gt;&gt;&gt; mean([ab['dochazka'] for ab in absolventi])
+0.8765</pre>
 
   <h3>Složitější struktury</h3>
   <p>Stejně jako u proměnných a seznamů můžeme do slovníku uložit jakoukoliv hodnotu. Není tedy problém mít ve slovníku seznam nebo další slovník. Tím se otvírá prostor pro mnohem komplikovanější datové struktury. Takto bychom mohli reprezentovat například kurz Czechitas jménem Úvod do programování.</p>
 
 <pre>kurz = {
-  nazev: 'Úvod do programování',
-  lektor: 'Martin Podloucký',
-  konani: [
+  'nazev': 'Úvod do programování',
+  'lektor': 'Martin Podloucký',
+  'konani': [
     {
-      misto: 'T-Mobile', 
-      koucove: [
+      'misto': 'T-Mobile', 
+      'koucove': [
         'Dan Vrátil', 
         'Filip Kopecký', 
         'Martina Nemčoková'
       ], 
-      ucastnic: 30
+      'ucastnic': 30
     },
     {
-      misto: 'MSD IT', 
-      koucove: [
+      'misto': 'MSD IT', 
+      'koucove': [
         'Dan Vrátil', 
         'Zuzana Tučková', 
         'Martina Nemčoková'
       ], 
-      ucastnic: 25
+      'ucastnic': 25
     },
     {
-      misto: 'Škoda DigiLab', 
-      koucove: [
+      'misto': 'Škoda DigiLab', 
+      'koucove': [
         'Dan Vrátil', 
         'Filip Kopecký', 
         'Kateřina Kalášková'
       ], 
-      ucastnic: 41
+      'ucastnic': 41
     }
   ]
 }</pre>
@@ -143,7 +143,7 @@
   
   <pre>{"jmeno": "Petr", "prijmeni": "Roman", "rok": 2017, "dochazka" 0.95, "vyznamenani": true},</pre>
 
-  <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code>. Vyzkoušíme si to na našem seznamu absolventů. Nejdřív si tato data stáhneme jako soubor <a href="/download/python-data-absolventi.json" download>absolventi.json</a>. Ten pak můžeme v Pythonu otevřít a převést na JSON následujicím programem.</p>
+  <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code>. Vyzkoušíme si to na našem seznamu absolventů. Nejdřív si tato data stáhneme jako soubor <a href="/download/python-data/absolventi.json" download>absolventi.json</a>. Ten pak můžeme v Pythonu otevřít a převést na JSON následujicím programem.</p>
 
 <pre>import json
 file = open('absolventi.json')
