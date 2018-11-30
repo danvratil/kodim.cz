@@ -162,13 +162,13 @@
       "chapters": [
         {
           "link": {
-            "cz": "pandas-zaklady"
+            "cz": "pandas-dotazy"
           },
           "title": {
-            "cz": "Základy Pandas"
+            "cz": "Pandas: základní dotazy"
           },
           "desc": {
-            "cz": "Lekce se připravuje"
+            "cz": "Představíme si Python modul pro práci s daty jménem Pandas a ukážeme si jak se v něm provedou základní dotazy nad tabulkami."
           },
           "ready": {
             "cz": true
@@ -178,13 +178,13 @@
         },
         {
           "link": {
-            "cz": "pandas-pokracovani"
+            "cz": "pandas-agregace"
           },
           "title": {
-            "cz": "Pandas pokračování"
+            "cz": "Pandas: agregace"
           },
           "desc": {
-            "cz": "Lekce se připravuje"
+            "cz": "Ukážeme si jak v Pandasu spojovat více tabulek dohromady, třídit tabulky a pracovat s hodnotami ve sloupcích."
           },
           "ready": {
             "cz": true
@@ -194,13 +194,13 @@
         },
         {
           "link": {
-            "cz": "pandas-zaver"
+            "cz": "pandas-transformace"
           },
           "title": {
-            "cz": "Pandas závěr"
+            "cz": "Pandas: transformace"
           },
           "desc": {
-            "cz": "Lekce se připravuje"
+            "cz": "Naučíme se, jak v Pythonu psát vlastní funkce a ukážeme si, jak pomocí nich transformovat data uvnitř tabulek."
           },
           "ready": {
             "cz": true
@@ -216,7 +216,7 @@
             "cz": "Vizualizace dat"
           },
           "desc": {
-            "cz": "Lekce se připravuje"
+            "cz": "Naučíme se pracovat s novým module pro Python, který umí zobrazovat různé druhy grafů."
           },
           "ready": {
             "cz": true

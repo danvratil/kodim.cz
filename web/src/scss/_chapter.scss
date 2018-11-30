@@ -34,6 +34,14 @@ pre {
   font-size: 110%;
 }
 
+table {
+  margin: 2rem auto 3rem auto;
+  
+  th, td {
+    padding: 0.5rem 1rem;
+  }
+}
+
 .wrong {
   color: red;
   text-decoration: line-through;
@@ -50,6 +58,17 @@ pre {
     background-color: #eee !important;
     color: $text-primary !important;
   } 
+
+  thead {
+    background-color: white;
+    font-weight: bold;
+    border-bottom: 3px solid black;
+  }
+
+  tr:nth-child(even) {
+    background-color: #ffffb9;
+  }
+  
 }
 
 .exercises-section {
@@ -83,18 +102,6 @@ pre {
 
   ol {
     list-style-type: lower-alpha;
-  }
-}
-
-table {
-  margin-bottom: 1rem;
-
-  thead {
-    background-color: #555;
-  }
-
-  th, td {
-    padding: 0.5rem 1rem;
   }
 }
 
