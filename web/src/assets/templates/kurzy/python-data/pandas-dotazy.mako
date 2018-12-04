@@ -298,45 +298,43 @@ most          5   86.94</pre>
     </thead>
     <tbody>
       <tr>
-        <td><strong>1</strong></td><td>brno</td><td>JHM</td><td>379 527</td><td>22</td><td>230.22</td>
+        <td><strong>0</strong></td><td>brno</td><td>JHM</td><td>379 527</td><td>22</td><td>230.22</td>
       </tr>
       <tr>
-        <td><strong>2</strong></td><td>liberec</td><td>LBK</td><td>103 979</td><td>6</td><td>106.09</td>
+        <td><strong>1</strong></td><td>liberec</td><td>LBK</td><td>103 979</td><td>6</td><td>106.09</td>
       </tr>
       <tr>
-        <td><strong>3</strong></td><td>litvinov</td><td>ULK</td><td>24 143</td><td>5</td><td>40.70</td>
+        <td><strong>2</strong></td><td>litvinov</td><td>ULK</td><td>24 143</td><td>5</td><td>40.70</td>
       </tr>
       <tr>
-        <td><strong>4</strong></td><td>most</td><td>ULK</td><td>66 644</td><td>5</td><td>86.94</td>
+        <td><strong>3</strong></td><td>most</td><td>ULK</td><td>66 644</td><td>5</td><td>86.94</td>
       </tr>
       <tr>
-        <td><strong>5</strong></td><td>olomouc</td><td>OLK</td><td>100 494</td><td>7</td><td>103.36</td>
+        <td><strong>4</strong></td><td>olomouc</td><td>OLK</td><td>100 494</td><td>7</td><td>103.36</td>
       </tr>
       <tr>
-        <td><strong>6</strong></td><td>ostrava</td><td>MSK</td><td>290 450</td><td>15</td><td>214.23</td>
+        <td><strong>5</strong></td><td>ostrava</td><td>MSK</td><td>290 450</td><td>15</td><td>214.23</td>
       </tr>
       <tr>
-        <td><strong>7</strong></td><td>plzen</td><td>PLK</td><td>170 936</td><td>3</td><td>137.65</td>
+        <td><strong>6</strong></td><td>plzen</td><td>PLK</td><td>170 936</td><td>3</td><td>137.65</td>
       </tr>
       <tr>
-        <td><strong>8</strong></td><td>praha</td><td>PHA</td><td>1 294 513</td><td>24</td><td>496.00</td>
+        <td><strong>7</strong></td><td>praha</td><td>PHA</td><td>1 294 513</td><td>24</td><td>496.00</td>
       </tr>
     </tbody>
   </table>
 
-  <p>Všimněte si nového prvního sloupečku, který obsahuje index vytvořený Pandasem. Vzhledem k tomu, že index je nyní číselný, může být trochu matoucí rozdíl mezi použitím metod <code>loc[]</code> a <code>iloc[]</code>. Metoda <code>loc[]</code> vždycky vždycky vždycky používá pro výběr dat <strong>jména</strong> řádků (tedy index). V předchozích příkladech byly jména řádků názvy měst, nyní jsou jména řádků obyčejná čísla. Dejme tomu, že chceme získat všechna města od začátku tabulky po město Most. V předchozím příkladu, kde indexem byly názvy měst, bychom psali </p>
+  <p>Všimněte si nového prvního sloupečku, který obsahuje index vytvořený Pandasem. Vzhledem k tomu, že index je nyní číselný, může být trochu matoucí rozdíl mezi použitím metod <code>loc[]</code> a <code>iloc[]</code>. Metoda <code>loc[]</code> vždycky vždycky vždycky používá pro výběr dat <strong>jména</strong> řádků (tedy index). V předchozích příkladech byly jména řádků názvy měst, nyní jsou jména řádků obyčejná čísla. Index je v tedy v tomto případě stejný, jako pozice řádků. Dejme tomu, že chceme získat všechna města od začátku tabulky po město Most. V předchozím příkladu, kde indexem byly názvy měst, bychom psali </p>
 
 <pre>&gt;&gt;&gt; mesta.loc[:'most']</pre>
 
   <p>Nyní, když máme index číselný píšeme</p>
 
-<pre>&gt;&gt;&gt; mesta.loc[:4]</pre>
+<pre>&gt;&gt;&gt; mesta.loc[:3]</pre>
 
-  <p>Všimněte si, že index je číslovaný od jedničky, kdežto pozice řádků se počítají od nuly! Navíc, rozsahy v indexu (<code>loc[]</code>) vždy počítají horní mez <strong>včetně</strong>, kdežto rozsahy v pozicích (<code>iloc[]</code>) počítají horní mez <strong>vyjma</strong>. Příkaz výše tedy vrátí řádky s čísly 1, 2, 3 a 4. Kdybychom ale stejná data chtěli pomocí metody <code>iloc[]</code>, psali bychom</p>
+  <p>V tomto případě tedy volání <code>loc[]</code> vypadá stejně jako <code>iloc[]</code>. Rodíl je však v tom, že rozsahy v indexu vždy počítají horní mez <strong>včetně</strong>, kdežto rozsahy v pozicích počítají horní mez <strong>vyjma</strong>. Kdybychom tedy chtěli stejná data pomocí metody <code>iloc[]</code>, psali bychom</p>
 
 <pre>&gt;&gt;&gt; mesta.iloc[:4]</pre>
-
-  <p>Což vypadá podezřele podobně, avšak tímto příkazem jsme získali řádky na <strong>pozicích</strong> 0, 1, 2 a 3. K dokončení všeho zmatení, to jsou mimochodem tytéž řádky jako řádky s čísly 1, 2, 3 a 4.</p>
 
   <h2>Dotazy jako v SQL</h2>
   <p>Kromě metod <code>loc[]</code> a <code>iloc[]</code> umožňuje Python DataFrame psát dotazy nad tabulkami podobným způsobem, jako se píší dotazy v jazyce SQL. Stačí použít obyčejné hranaté závorky jako je známe z práce se seznamy.</p>
@@ -435,7 +433,50 @@ plzen    PLK  137.65</pre>
   <p>Všmněte si, že výsledkem každého dotazu je opět DataFrame, který jsme si takto uložili do proměnné <var>vyber</var>. Nad touto proměnnou pak můžeme vesele spouštět jakékoliv další dotazy.</p>
 
   <h3>Logické operátory v podmínkách</h3>
+  <p>Před chvílí jsme viděli použití operátoru <code>&amp;</code>, který v dotazech slouží jako logická spojka AND. Můžeme však také použít operátor <code>|</code>, který představuje logické OR. Chtějme například počty linek všech měst z Jihomomoravského nebo Olomoucéko kraje</p>
 
-<p>Pro první pokusy s DataFramy si stáhněte <a href="/download/python-data/countries.csv"> tabulku ve formátu CSV</a>, která obsahuje informace o zemích a státech po celé planetě. Jsou to data z roku 1986, takže se nedivte, že obsahují země jako Czechoslovakia. Ta této tabulce si můžeme vyzkoušíme základni metody pro práci s Pandasem. Nejdříve data načteme.</p>
+<pre>&gt;&gt;&gt; mesta[(mesta['kraj'] == 'JHM') | (mesta['kraj'] == 'OLK')][['linky']]
+         linky
+mesto         
+brno        22
+olomouc      7</pre>
+
+  <p>Snadno se však může stát, že budeme chtít krajů více, například Jihomoravský, Olomoucký a Ústecký. Takový zápis by byl pomocí operátoru OR nepraktický. Zde můžeme použít metodu <code>isin()</code>, která vrací <code>True</code>, pokud se hodnota nechází v zadaném seznamu.</p>
+
+<pre>&gt;&gt;&gt; mesta[mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
+          linky
+mesto          
+brno         22
+litvinov      5
+most          5
+olomouc       7</pre>
+
+  <p>Poslední operátor, který můžeme v podmínkách dotazů použít vypadá takto <code>~</code> a představuje negaci. Můžeme tak vypsat linky všech měst, které se nenacházeji v jednom ze zadaných krajů:</p>
+
+<pre>&gt;&gt;&gt; mesta[~mesta['kraj'].isin(['JHM', 'ULK', 'OLK'])][['linky']]
+         linky
+mesto         
+liberec      6
+ostrava     15
+plzen        3
+praha       24</pre>
+  
+  <p>Kombinací výše uvedených operátorů můžeme snadno vytvořit velmi komplikované dotazy. Vzhledem k tomu, že výsledky všech dotazů jsou opet DataFramy, můžeme si výsledky dotazů ukládat do proměnných a pouštět na nich další dotazy až se dostaneme ke kýženému výsledku.</p>
+
+  <h2>Převod mezi DataFrame a seznamy</h2>
+
+  <p>Python DataFrame je obsáhlý a komplikovaný objekt. Pokud s ním chceme pracovat, musíme znát spoustu triků a metod, které nám Pandas poskytuje. Občas se nám tak může hodit převést DataFrame na prachobyčejný Pythonovský seznam seznamů, což je teritorium, ve kterém jsme si po mnoha lekcích Pythonu zatím mnohem jistější než v Pandasu. K tomu nám poslouží jednoduchý příkaz</p>
+
+<pre>&gt;&gt;&gt; data = mesta.values.tolist()
+&gt;&gt;&gt; data
+[['JHM', '379 527', 22, 230.22], ['LBK', '103 979', 6, 106.09], ['ULK', '24 143', 5, 40.7], ['ULK', '66 644', 5, 86.94], ['OLK', '100 494', 7, 103.36], ['MSK', '290 450', 15, 214.23], ['PLK', '170 936', 3, 137.65], ['PHA', '1 294 513', 24, 496.0]]</pre>
+
+  <p>Ve výsledných seznamech nám ovšem chybí názvy měst. Potíž je v tom, že index se v Pandasu nebere jako součást dat. Pokud chceme index vrátit do původního stavu a mít ho jako automaicky generovaná čísla řádků, můžeme použít metodu <code>reset_index()</code>. S její pomocí pak už dokážeme dostat z DataFramu čistá data takto</p>
+
+  <pre>&gt;&gt;&gt; data = mesta.reset_index().values.tolist()</pre>
+
+  <p>Můžeme však postupovat i obráceně a vyrobit DataFrame ze seznamu seznamů. Pokud však necheme názvy sloupců jako čísla, je třeba názvy dodat.</p>
+
+  <pre>&gt;&gt;&gt; mesta2 = pandas.DataFrame(data, columns=['mesto', 'kraj', 'obyvatel', 'linky', 'vymera'])</pre>
 
 </%self:lesson>

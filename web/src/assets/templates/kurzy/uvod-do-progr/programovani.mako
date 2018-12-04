@@ -1,6 +1,6 @@
 <%inherit file="/course-chapter.mako"/>
 
-<section class="container chapter-section">
+<%self:lesson>
   <p>Tento kurz vás provede úplnými základy programování. Do začátku nebudete potřebovat žádné jiné znalosti než úplně základní počítačovou gramotnost. Budeme společně postupovat pomalu krok po kroku a každou jednotlivou věc se budu snažit vysvětlit tak, abyste jí opravdu dokázali porozumět.</p>
 
   <h2>Počítače</h2>
@@ -35,4 +35,4 @@
   </div>
 
   <p>Pro řešení některých složitějších problémů v praxi nebo například pro psaní her je znalost matematiky nebo nějaké hlubší technické vzdělání skoro nutností. Ale k takovým věcem můžete dojít postupně a zcela vlastním tempem, pokud vás budou lákat a bavit.</p>
-</section>
+</%self:lesson>
