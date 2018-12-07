@@ -65,6 +65,21 @@
     <li>Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var class="wrong">pcthd</var> aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavout do stolu cože proboha znamená zkratka <code>pcthdn</code>.</li>
     <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.</li>
   </ul>
+
+  <h2>Nástrahy</h2>
+  <p>Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výpočet. Pokud tedy napíšeme například</p>
+
+<pre>&gt;&gt;&gt; sazba = 350
+&gt;&gt;&gt; vyplata = 8 * sazba</pre>
+
+  <p>bude v proměnné <var>vyplata</var> uložena hodnota 2800. Jestliže potom změníme hodnotu v proměnné <var>sazba</var> na něco jiného, například</p>
+
+<pre>&gt;&gt;&gt; sazba = 420</pre>
+
+  <p>v proměnné <var>vyplata</var> bude nadále uložena hodnota 2800. Pokud chceme výsledek výpočtu aktualizovat, musíme jej spustit znova.</p>
+
+  <pre>&gt;&gt;&gt; vyplata = 8 * sazba</pre>
+  
 </%self:lesson>
 
 <%self:exercises>

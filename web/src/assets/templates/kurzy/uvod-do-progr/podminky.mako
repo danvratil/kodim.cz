@@ -75,20 +75,23 @@ else:
     </ol>
   </%self:exrc>
 
-  <%self:exrc title="Složitější podmínky">
-    <p>Založte si program <code>tyden.py</code>. V tomto nechte uživatele zadat pořadové číslo dne v týdnu. Na výstup vypište jméno dne s tímto číslem. Například</p>
-    <pre>3 - středa</pre>
-    <p>Pokud uživatel zadá číslo, které není mezi 1 a 7, vypište</p>
-    <pre>Neplatný vstup</pre>
-    <p>Dejte dobrý pozor na konverzi hodnot, abyste měli číslo tam, kde chcete číslo a řetězec tam, kde chcete mít řetězec.</p>
-  </%self:exrc>
-
   <%self:exrc title="Cena vstupenky">
     <p>A nyní opět pokračujeme v našem rezervačním systému.</p>
     <ol>
       <li>Program <code>vstupenky01.py</code>, který jste napsali v předchozí fázi, si uložte jako <code>vstupenky02.py</code>, abychom ho mohli dále rozšířit o výpočet ceny vstupenky.</li>
       <li>Jakmile máte v programu načtený věk uživatele, vytvořte si proměnnou <var>plnaCena</var>, do které uložte hodnotu 12.</li>
-      <li>Vytvořte podmínku, která do proměnné <var>cena</var> uloží cenu spočítanou podle věku uživatele, viz zadání. Nezapomeňte na zaokrouhlování, ať nám cena vyjde v celých centech.</li>
+      <li>
+        <p>Vytvořte podmínku, která do proměnné <var>cena</var> uloží cenu spočítanou podle věku uživatele dle následujících pravidel</p>
+        
+        <ul>
+          <li>0 euro pro návštěvníky mladší 6 let,</li>
+          <li>65% ze základní ceny pro návštěvníky 6 až 26 let (žák, student),</li>
+          <li>100% ze základní ceny pro návštěvníky 27 až 64 let (dospělý),</li>
+          <li>50% ze základní ceny pro ostatní (senior).</li>
+        </ul>
+        
+        <p>Nezapomeňte na zaokrouhlování, ať nám cena vyjde v celých centech.</p>
+      </li>
       <li>Nakonec spočtenou cenu vypište s nějakou hezkou zprávou na výstup.</li>
     </ol>
   </%self:exrc>

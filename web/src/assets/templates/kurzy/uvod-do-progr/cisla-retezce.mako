@@ -108,7 +108,7 @@ martin podloucký
       <li>Vytvořte řetězec obsahující jméno divadla.</li>
       <li>Vytvořte řetězec obsahující jméno divadla tak, že sečtete dohromady jednoltivá slova toho jména.</li>
       <li>Zkuste vynásobit řetězec celým číslem. Jaký jste dostali výsledek?</li>
-      <li>Vytvořte řetězec, který obsahuje stokrát znak 1 a po něm hned stokrát znak 0.</li>
+      <li>Vytvořte řetězec který vypadá takto: '111111000000', ale místo šesti jedniček a šesti nul obashuje 256 jedniček a 256 nul.</li>
     </ol>
     <%def name="solution()"></%def>
   </%self:exrc>

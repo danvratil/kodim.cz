@@ -14,34 +14,16 @@
   },
   "sections": [
     {
-      "name": "basics",
+      "name": "preparation",
       "title": {
-        "cz": "Základy",
-        "en": "Basics"
+        "cz": "Než začneme programovat",
+        "en": "Before ve start"
       },
       "ready": {
         "cz": true,
         "en": true
       },
       "chapters": [
-        {
-          "link": {
-            "cz": "programovani",
-            "en": "programming"
-          },
-          "title": {
-            "cz": "Co je to programování",
-            "en": "What is Programming?"
-          },
-          "desc": {
-            "cz": "Povíme si co je to programování, jak funguje počítač a vyzkoušíme si jaké problémy se v programování řeší.",
-            "en": "We will talk about what programming is, how computers works and we will also experience some real-life programming problems."
-          },
-          "ready": {
-            "cz": true,
-            "en": true
-          }
-        },
         {
           "link": {
             "cz": "jazyky-nastroje",
@@ -59,14 +41,32 @@
             "cz": true,
             "en": true
           }
+        },
+        {
+          "link": {
+            "cz": "programovani",
+            "en": "programming"
+          },
+          "title": {
+            "cz": "Co je to programování",
+            "en": "What is Programming?"
+          },
+          "desc": {
+            "cz": "Povíme si co je to programování, jak funguje počítač a vyzkoušíme si jaké problémy se v programování řeší.",
+            "en": "We will talk about what programming is, how computers works and we will also experience some real-life programming problems."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
         }
       ]
     },
     {
-      "name": "lets-start",
+      "name": "first-steps",
       "title": {
-        "cz": "Začínáme programovat",
-        "en": "Starting to Code"
+        "cz": "První krůčky",
+        "en": "First baby steps"
       },
       "ready": {
         "cz": true,
@@ -193,6 +193,24 @@
           "desc": {
             "cz": "Naučíme naše programy provádět opakovaně nějakou činnost.",
             "en": "We will teach our programs to do some work repeatedly."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "zaverem",
+            "en": "conclusion"
+          },
+          "title": {
+            "cz": "Závěrem",
+            "en": "Conclusion"
+          },
+          "desc": {
+            "cz": "Co si počít s tím, co jste se zde naučili, a kam se vydat dál.",
+            "en": "What to do with the stuff you learned and where to go next."
           },
           "ready": {
             "cz": true,

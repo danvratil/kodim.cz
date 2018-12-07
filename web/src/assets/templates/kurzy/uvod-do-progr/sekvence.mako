@@ -10,7 +10,6 @@
   <%self:exrc title="Řetězce jako sekvence">
     <ol>
       <li>Uložte si v Python konzoli do proměnné <var>jmeno</var> svoje celé jméno a nechte vypsat jeho třetí, pátý a sedmý znak. Vyzkoušejte, co se stane, když budete chtít znak na pozici, která překračuje délku řetězce. </li>
-      <li>Ověřování hesla se někdy dělá tak, že se vás systém ptá pouze na některé jeho znaky. Napište program, který má uloženo heslo, které musí uživatel zadat. Pak se jej postupně zeptejte například na druhý, pátý a sedmý znak hesla. Propusťte uživatele pouze tehdy, zadá-li všechny tyto znaky správně. </li>
       <li>Upravte program <code>registrace.py</code> tak, že bude kromě uživatelského jména chtít také e-mailovou adresu. Ověřte, že adresa je v platném formátu, tedy že obsahuje zavináč, tečku a má alespoň pět znaků.</li>
     </ol>
   </%self:exrc>
@@ -29,4 +28,9 @@
   ${self.alert_done()}
 
   <h2>Bonusy</h2>
+  
+  <%self:exrc title="Ověřování hesla">
+    <p>Ověřování hesla se někdy dělá tak, že se vás systém ptá pouze na některé jeho znaky. Napište program, který má uloženo heslo, které musí uživatel zadat. Pak se jej postupně zeptejte například na druhý, pátý a sedmý znak hesla. Propusťte uživatele pouze tehdy, zadá-li všechny tyto znaky správně. </p>
+  </%self:exrc>
+
 </%self:exercises>

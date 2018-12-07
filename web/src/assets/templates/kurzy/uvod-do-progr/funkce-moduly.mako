@@ -66,11 +66,11 @@
   <h2>Cvičení</h2>
 
   <%self:exrc title="Délka názvu">
-    <p>Uložte si do proměnné <var>nazev</var> řetezec s názvem "Divadlo Pěst na oko". Pokud použijeme designové písmo nad hlavní vchod bodovy, jeden znak (i mezera) bude široký 30 cm. Použijte funkci <var>len()</var> abyste zjistili počet znaků v názvu divadla a spočíteje délku nápisu v centimetrech.</p>
+    <p>Uložte si do proměnné <var>nazev</var> řetezec s názvem "Divadlo Pěst na oko". Pokud použijeme designové písmo nad hlavní vchod bodovy, jeden znak (i mezera) bude široký 30 cm. Použijte funkci <code>len()</code> abyste zjistili počet znaků v názvu divadla a spočíteje délku nápisu v centimetrech.</p>
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování">
-    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použíje funkci <var>round()</var> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</p>
+    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použíje funkci <code>round()</code> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</p>
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování nahoru">

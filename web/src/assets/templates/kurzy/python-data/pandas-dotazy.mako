@@ -88,7 +88,9 @@
     </tbody>
   </table>
 
-  <p>Tabulku si můžete stáhnout ve <a href="/download/python-data/mesta.csv">formátu CSV</a>. Abychm si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
+  <h3>Načítání dat</h3>
+
+  <p>Tabulku výše si můžete stáhnout ve <a href="/download/python-data/mesta.csv">formátu CSV</a>. Abychm si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
   
 <pre>&gt;&gt;&gt; import pandas
 &gt;&gt;&gt; mesta = pandas.read_csv('mesta.csv', index_col='mesto', encoding='utf-8')</pre>
@@ -106,6 +108,8 @@ olomouc   OLK    100 494      7  103.36
 ostrava   MSK    290 450     15  214.23
 plzen     PLK    170 936      3  137.65
 praha     PHA  1 294 513     24  496.00</pre>
+
+  <p>Pandas nabízí kromě funkce <code>read_csv()</code> také funkci pro čtení formátu JSON <code>read_json()</code> nebo dokonce funkci pro čtení přímo Excelovových tabulek <code>read_excel()</code>.</p>
 
   <h3>Základní informace o tabulce</h3>
 
@@ -242,6 +246,12 @@ litvinov      5   40.70
 most          5   86.94</pre>
 
   <p>Metoda <code>iloc[]</code> je tedy velmi podobá metodě <code>loc[]</code>. Je zde však jeden významný rozdíl. Pokud používáme uvnitř <code>iloc[]</code> rozsahy (například <code>2:5</code>), horní hranice je <strong>vždy vyjma</strong>, tedy řádek 5 nebude do výberu zahrnut. Pokud však použjeme rozsah v metodě <code>loc[]</code>, bude horní mez <strong>vždy včetně</strong>. Takže rozsah <code>'liberec':'most'</code> bude obsahovat i řádek se jménem most.</p>
+
+  <h2>Ukládání dat</h2>
+  
+  <p>Podobně jako jsme měli funkce <code>read_csv()</code>, <code>read_json()</code> a <code>read_excel()</code> pro čtení dat, máme také funkce pro zápis dat. Pomocí funkcí <code>to_csv()</code> a <code>to_json()</code> můžeme data zapsat do CSV nebo JSONu.</p>
+
+
 </%self:lesson>
 
 <%self:exercises>

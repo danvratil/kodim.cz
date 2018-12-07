@@ -49,10 +49,21 @@ for cislo in cisla:
 <%self:exercises>
   <h2>Cvičení</h2>
   
-  <%self:exrc title="Procházení řetězce">
+  <%self:exrc title="Seznam hodnocení">
+    <p>Mějme seznam hodnocení divadelní hry <em>Plyšáci na útěku</em>, který vypadá takto:</em></p>
+
+    <pre>hodnoceni = [7, 9, 6, 7, 9, 8]</pre>
     <ol>
-      <li>Vytvořte program, ve kterém uložíte do proměnné <var>jmeno</var> svoje celé jméno. Pomocí cyklu <var>for</var> vypište na nový řádek každé písmeno vašeho jméno.</li>
-      <li>Vytvořte program, který projde seznam hodnocení divadelní hry Plyšáci na utěku a vypíše každé hodnocení na nový řádek.</li>
+      <li>Vytvořte program, který projde tento seznam a vypíše každé hodnocení na nový řádek.</li>
+      <li><p>Upravte program tak, aby vypisoval výstup v tomto formátu</p>
+<pre>
+7/10
+9/10
+6/10
+7/10
+9/10
+8/10</pre>
+      </li>
     </ol>
   </%self:exrc>
 
@@ -105,6 +116,10 @@ mesice = [
     </ol>
   </%self:exrc>
 
+  ${self.alert_done()}
+
+  <h2>Bonusy</h2>
+
   <%self:exrc title="Hry">
     <p>Následující seznam obsahuje seznam všech divadelních her, které se hrají v divadle Pěst na oko. Každá hra má svůj název a trvání v minutách.</p>
 <pre>hry = [
@@ -134,25 +149,7 @@ mesice = [
     <p>Napište cyklus, který projde zadaný seznam desetinných čísel a spočítá jejich průměr. Seznam čísel si vytvořte na začátku programu. </p>
   </%self:exrc>
 
-  ${self.alert_done()}
-
-  <h2>Bonusy</h2>
-  
   <%self:exrc title="Největší prvek">
     <p>Napište cyklus, který projde zadaný seznam celých čísel a najde v něm největší hodnotu.</p>
   </%self:exrc>
 </%self:exercises>
-
-<%doc>
-<div class="exercise">Test prvočíselnosti</div>		
-<p>Napište program, který dostane na vstupu celé číslo a ověří, jestli jde o prvočíslo. Prvočíslo je číslo větší než jedna, které je dělitelné jen jedničkou a samo sebou (např. čísla 5, 7, 11, 17 jsou prvočísla).</p>
-
-<div class="exercise">Seznam prvočísel</div>		
-<ol>
-  <li>Upravte předchozí program tak, že vypíše na výstup prvních 20 prvočísel.</li>
-  <li>Upravte program dále tak, že počet vypsaných prvočísel zadá uživatel na vstupu.</li>
-</ol>
-
-<div class="exercise">Králičí farma</div>		
-<p>Pomocí cyklu <var>while</var> vyřešte následující zakázku. Startup <em>Králičí sen</em> začíná se dvěma králíky. O králících se ví, že necháme-li je zcela volně množit, jejich počet se každým rokem zdvojnásobí. Kolik let bude trvat, než bude mít farma alespoň tisíc králíků?</p>
-</%doc>

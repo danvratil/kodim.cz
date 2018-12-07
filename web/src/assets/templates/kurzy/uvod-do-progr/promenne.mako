@@ -21,6 +21,20 @@
     <li>Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var class="wrong">pcthd</var> aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavout do stolu cože proboha znamená zkratka <code>pcthdn</code>.</li>
     <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>numberOfHours</var>.</li>
   </ul>
+
+  <h2>Nástrahy</h2>
+  <p>Dejte pozor na to, že do proměnné se jako do šuplíku ukládá pouze hodnota a nikoliv celý výpočet. Pokud tedy napíšeme například</p>
+
+<pre>&gt;&gt;&gt; sazba = 350
+&gt;&gt;&gt; vyplata = 8 * sazba</pre>
+
+  <p>bude v proměnné <var>vyplata</var> uložena hodnota 2800. Jestliže potom změníme hodnotu v proměnné <var>sazba</var> na něco jiného, například</p>
+
+<pre>&gt;&gt;&gt; sazba = 420</pre>
+
+  <p>v proměnné <var>vyplata</var> bude nadále uložena hodnota 2800. Pokud chceme výsledek výpočtu aktualizovat, musíme jej spustit znova.</p>
+
+  <pre>&gt;&gt;&gt; vyplata = 8 * sazba</pre>
 </%self:lesson>
 
 <%self:exercises>
@@ -29,8 +43,9 @@
   <%self:exrc title="Hrátky s proměnnými">
     <p>Dbejte na to, aby proměnné měly vhodný název dobře naznačující, co je v které z nich uloženo.</p>
     <ol>
-      <li>Uložte do proměnné <var>herci</var> nějakou celočíselnou hodnotu, např. počet herců,kteří v divadle hrají. Do jiné proměnné s vhodným názvem uložte nějaké desetinné číslo, například velikost slevy na studentské vstupné. Do třetí proměnné uložte nějaký řetězec, například název nějakého představení.</li>
-      <li>Zatímco jste dělali předchozí cvičení, do divadla přibyli dva noví herci. Aktualizujte tedy obsah proměnné <var>herci</var>. Zamyslete se nad tím co se stalo s hodnotou, která byla v proměnné uložena před tím.</li>
+      <li>Uložte do proměnné <var>herci</var> celočíselnou hodnotu udávající počet herců, kteří hrají v divadle. Do proměnné <var>platy</var> spočítejte celkové náklady divadla na platy herců, víme-li, že průměrný plat herce je 22 392 kč. </li>
+      <li>Do jiné proměnné s vhodným názvem uložte nějaké desetinné číslo, například velikost slevy na studentské vstupné. Do další proměnné uložte nějaký řetězec, například název nějakého představení.</li>
+      <li>Zatímco jste dělali předchozí cvičení, do divadla přibyli dva noví herci. Aktualizujte tedy obsah proměnné <var>herci</var> a zařiďte, aby v proměnné <var>platy</var> byla správná hodnota nákladů. Zamyslete se nad tím co se stalo s hodnotou, která byla v proměnné <var>herci</var> uložena před tím.</li>
     </ol>
   </%self:exrc>
 
@@ -46,10 +61,6 @@
   ${self.alert_done()}
 
   <h2>Bonusy</h2>
-
-  <%self:exrc title="Příjem">
-    <p>Do proměnné <var>prijem1</var> spočítejte příjem divadla ze vstupného na jedno představneí dle cvičení 1.a), do proměnné <var>prijem2</var> spočítejte příjem ze vstupného dle cvičení 1.b). Do proměnné <var>rozdil</var> uložte rozdíl těchto dvou hodnot.</p>
-  </%self:exrc>
 
   <%self:exrc title="Sedačky v sále">
     <p>Hlavní sál divadla má k dispozici 350 sedaček. Lze je poskládat do řad po 32 sedadlech tak, aby všechny řady byly úplné? Pokud ne, kolik sedaček musíme přikoupit, aby to šlo? Kolik nám takto vznikne celkem řad?</p>
