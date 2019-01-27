@@ -1,0 +1,2 @@
+# Flask configuration
+DEVELOP = True

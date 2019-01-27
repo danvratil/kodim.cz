@@ -285,6 +285,37 @@
           }
         }
       ]
+    },
+    {
+      "name": "home-study",
+      "title": {
+        "cz": "Samostudium",
+        "en": "Home study"
+      },
+      "ready": {
+        "cz": true,
+        "en": false
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "textove-soubory",
+            "en": "text-files"
+          },
+          "title": {
+            "cz": "Textové soubory",
+            "en": "Text files"
+          },
+          "desc": {
+            "cz": "Díky textovým souborům dokážeme v našich programech pracovat s většími objemy dat.",
+            "en": "Small but useful bits from the Python language that did no fit elsewhere."
+          },
+          "ready": {
+            "cz": false,
+            "en": false
+          }
+        }
+      ]
     }
   ]
 }

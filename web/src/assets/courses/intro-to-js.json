@@ -1,0 +1,64 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Úvod do JavaScriptu"
+  },
+  "subtitle": {
+    "cz": "Úvod do jazyka JavaScript pro všechny, kteří už znají základy programování."
+  },
+  "link": {
+    "cz": "intro-to-js"
+  },
+  "sections": [
+    {
+      "name": "priprava",
+      "title": {
+        "cz": "Příprava před kurzem"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "opacko"
+          },
+          "title": {
+            "cz": "Programátorské opáčko"
+          },
+          "desc": {
+            "cz": "Vyzkoušejte si, že rozumíte všem věcem, které jsou k tomuto kurzu potřeba."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "vzhuru",
+      "title": {
+        "cz": "Vzhůru do JavaScriptu"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "html"
+          },
+          "title": {
+            "cz": "Jazyk HTML"
+          },
+          "desc": {
+            "cz": "Jazyk HTML použíjeme k vytvoření grafického rozhraní pro naše JavaScriptové programy."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}

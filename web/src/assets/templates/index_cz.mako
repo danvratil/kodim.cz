@@ -19,21 +19,29 @@
   <%self:section title="Czechitas">
     <%def name="lead()">
       <p>Kurzy pořádané ve spolupráci s <a href="https://www.czechitas.cz">Czechitas</a>, kteří pomáhají holkám, ženám i dětem poznat svět informačních technologií.</p>
+
+      <p>Materiály v této části patří ke kurzům pořádaným naživo se mnou jako lektorem, podporou koučů a zázemím od některého z partnerů Czechitas. Nejsou tedy přímo určené k samostatnému studiu online. Pokud vás tyto kurzy zajímají, zamiřte na <a href="https://www.czechitas.cz/cs/kalendar-akci">kalendář akcí Czechitas</a> a přihlašte se na některý z termínů Úvodu do programování v Praze nebo na <a href="https://www.czechitas.cz/cs/co-delame/digitalni-akademie">Digitální akademii</a>.</p>
     </%def>
     <div class="row my-5">
       ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-progr'))}
       ${self.courseTile('kurzy', courses.get('cz', 'python-data'))}
     </div>
+    %if config['DEVELOP']:
+      <div class="row my-5">
+        ${self.courseTile('kurzy', courses.get('cz', 'intro-to-js'))}
+      </div>
+    %endif
   </%self:section>
 
-  <%doc>
-    <section class="container">
-      <h2>Pro zvídavé</h2>
-      <p>Pro všechny, kteří se chtějí dozvědět víc a opravdu rozumět tomu, jak věci kolem počítačů fungují.</p>
-      
-      <div class="courses">
-        ${index.courseTile(courses.get('cz', 'jak-to-funguje']))}
+  %if config['DEVELOP']:
+    <%self:section title="Online kurzy">
+      <%def name="lead()">
+        <p>Kurzy v této sekci jsou určené k samostudiu online. Nepatří k žádným živým kurzům a jsou zde zdarma pro všechny, kteří se chtějí něco dozvědět o technologiích a programování.</p>
+      </%def>
+      <div class="row my-5">
+        ${self.courseTile('kurzy', courses.get('cz', 'stat-pro-progr'))}
       </div>
-    </section>
-  </%doc>
+    </%self:section>
+  %endif
+  
 </%block>

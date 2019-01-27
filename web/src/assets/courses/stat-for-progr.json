@@ -1,0 +1,67 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Statistika pro programátory"
+  },
+  "subtitle": {
+    "cz": "Základy statistiky vysvětlené jazykem pro programátory."
+  },
+  "link": {
+    "cz": "stat-pro-progr"
+  },
+  "sections": [
+    {
+      "name": "pojmy",
+      "title": {
+        "cz": "Základní pojmy"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "uvod"
+          },
+          "title": {
+            "cz": "Co se naučíte"
+          },
+          "desc": {
+            "cz": "Povíme si, co se v tomto kurzu naučíte a jak to zařídíme, abyste nepotkali příliš tvrdé matematiky."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "popisne-charakteristiky"
+          },
+          "title": {
+            "cz": "Popisné charakteristiky"
+          },
+          "desc": {
+            "cz": "Ukážeme si základní popisné charakteristiky jako průměr, rozptyl, medián, modus a percentily."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "velicina-rozdeleni"
+          },
+          "title": {
+            "cz": "Náhodná veličina, rozdělení"
+          },
+          "desc": {
+            "cz": "Vysvětlíme si, co je to náhodná veličina, rozdělení a co znamenají pojmy jako střední hodnota."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}

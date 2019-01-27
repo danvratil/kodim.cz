@@ -2,14 +2,16 @@ from flask import Flask, redirect, request
 from flask_mako import MakoTemplates, render_template
 import json
 from collections import OrderedDict
+import appconfig
 
 app = Flask(__name__)
 app.config.from_object(__name__)
+app.config.from_object(appconfig)
 app.config.from_envvar('FLASKR_SETTINGS', silent=True)
 mako = MakoTemplates(app)
 
 def diclist_find(diclist, link):
-  for item in diclost:
+  for item in diclist:
     if item['link'] == link:
       return item
 
@@ -102,11 +104,17 @@ class Courses:
       "courses": "en"
     }
 
-    introToProgr = Course('intro-to-progr')
-    self.courses_dict['cz:uvod-do-progr'] = introToProgr
-    self.courses_dict['en:intro-to-progr'] = introToProgr
+    with open('courses/index.json') as file:
+      courses_json = json.load(file)
 
-    self.courses_dict['cz:python-data'] = Course('python-data')
+    for id, course_json in courses_json.items():
+      print(course_json)
+      langs = course_json['langs']
+      course = Course(id)
+
+      for lang in langs:
+        print(f'{lang}:{course.link[lang]}')
+        self.courses_dict[f'{lang}:{course.link[lang]}'] = course
 
   def get(self, lang, link):
     key = f'{lang}:{link}'

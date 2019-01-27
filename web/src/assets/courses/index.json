@@ -1,0 +1,14 @@
+{
+  "intro-to-js": {
+    "langs": ["cz"]
+  },
+  "intro-to-progr": {
+    "langs": ["cz", "en"]
+  },
+  "python-data": {
+    "langs": ["cz"]
+  },
+  "stat-for-progr": {
+    "langs": ["cz"]
+  }
+}
