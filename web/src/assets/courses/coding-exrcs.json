@@ -1,0 +1,39 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Programátorské uložky"
+  },
+  "subtitle": {
+    "cz": "Úložky na procvičování vašich programátorských dovedností."
+  },
+  "link": {
+    "cz": "progr-ulozky"
+  },
+  "sections": [
+    {
+      "name": "nováček",
+      "title": {
+        "cz": "Úroveň: nováček"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "aritmetika-promenne"
+          },
+          "title": {
+            "cz": "Aritmetika a proměnné"
+          },
+          "desc": {
+            "cz": "Základ veškerého programování je umět něco spočítat a umět pracovat s proměnnými."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}

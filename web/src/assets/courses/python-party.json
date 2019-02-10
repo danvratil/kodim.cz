@@ -1,0 +1,92 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Python Coding Party"
+  },
+  "subtitle": {
+    "cz": "Zatím nevím"
+  },
+  "link": {
+    "cz": "python-party"
+  },
+  "sections": [
+    {
+      "name": "opacko",
+      "title": {
+        "cz": "Procvičování základů základů"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "opacko"
+          },
+          "title": {
+            "cz": "Programátorské opáčko"
+          },
+          "desc": {
+            "cz": "Zde si zopakujete základní programátorské pojmy aby jste se dostali do formy pro navazující lekce."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "for-cykly"
+          },
+          "title": {
+            "cz": "Tréning FOR cyklů"
+          },
+          "desc": {
+            "cz": "FOR cykly jsou brána do říše mírně pokročilého programování a proto je potřeba je pořádně procvičit."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    },
+    {
+      "name": "kapitoly",
+      "title": {
+        "cz": "Kapitoly"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "textove-soubory"
+          },
+          "title": {
+            "cz": "Textové soubory"
+          },
+          "desc": {
+            "cz": "Textové soubory."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "ciselne-soustavy"
+          },
+          "title": {
+            "cz": "Číselné soustavy"
+          },
+          "desc": {
+            "cz": "Číselné soustavy "
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}

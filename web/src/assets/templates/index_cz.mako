@@ -39,6 +39,7 @@
         <p>Kurzy v této sekci jsou určené k samostudiu online. Nepatří k žádným živým kurzům a jsou zde zdarma pro všechny, kteří se chtějí něco dozvědět o technologiích a programování.</p>
       </%def>
       <div class="row my-5">
+        ${self.courseTile('kurzy', courses.get('cz', 'python-party'))}
         ${self.courseTile('kurzy', courses.get('cz', 'stat-pro-progr'))}
       </div>
     </%self:section>

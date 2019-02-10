@@ -24,6 +24,7 @@ em {
 
 code {
   font-size: 110%;
+  white-space: nowrap;
 }
 
 var {
@@ -48,6 +49,10 @@ table {
   th, td {
     padding: 0.5rem 1rem;
   }
+}
+
+.no-wrap {
+  white-space: nowrap;
 }
 
 .wrong {
@@ -188,4 +193,14 @@ table {
   color: white;
   background-color: $bg-caution;
   margin-top: 3rem;
+}
+
+.figure {
+  text-align: center;
+  margin-bottom: 1rem;
+  
+  &__img-600 {
+    width: 100%;
+    max-width: 600px;
+  }
 }

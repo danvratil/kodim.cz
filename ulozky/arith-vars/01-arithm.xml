@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section cz-title="Aritmetika zatím bez proměnných">
+  <ex id="cups" cz-title="Hrnečky">
+    <assign lang="cz">
+      <ol>
+        <li>
+          <p><a href="https://cs.wikipedia.org/wiki/Chr%C3%A1n%C4%9Bn%C3%A1_d%C3%ADlna" target="_blank">Chráněná dílna</a> má za jeden měsíc (30 dní) vyrobit 400 malovaných hrnečků. Za prvních šest dní se jim podařilo vyrobit 14 hrnečků denně. Kolik hrnečků jím ještě zbývá vyrobit?</p>
+        </li>
+        <li>
+          <p>Pokud bude dílna pokračovat tímto tempem celý měsíc, má naději na to zakázku stihnout?</p>
+        </li>
+      </ol>
+    </assign>
+  </ex>
+
+  <ex id="gas-air" cz-title="Svítiplyn versus vzduch">
+    <assign lang="cz">
+      <ol>
+        <li>
+          <p>Jeden m<sup>3</sup> vzduchu váží 1.3 kg, stejný objem <a href="https://cs.wikipedia.org/wiki/Sv%C3%ADtiplyn" target="_blank">svítiplynu</a> váží 0.8 kg. Kolikrát je svítiplyn lehčí než vzduch?</p>
+        </li>
+      </ol>
+    </assign>
+  </ex>
+
+  <ex id="linoleum" cz-title="Linoleum">
+    <assign lang="cz">
+      <ol>
+        <li>
+          <p>Za linoleum do obdélníkové chodby délky 15 m jsme zaplatili 2 592 Kč. Příští měsíc byla v obchodě vypsána akce, kdy každý metr linolea nad 10 m je o 25% levnější. Kolik korun jsme mohli ušetřit, kdybychom provedli nákup o měsíc později?</p>
+        </li>
+      </ol>
+    </assign>
+
+  <ex id="interest" cz-title="Úroky">
+    <assign lang="cz">
+      <p>Fíha banka a.s. nabízí na svých stránkách spořící účet s úrokem 2.4%. Když si na takový účet uložíte 1&nbsp;000&nbsp;000 kč, kolik peněz nastřádáte za 10 let?</p>
+    </assign>
+  </ex>
+
+  <ex id="carpet" cz-title="Koberec">
+    <assign lang="cz">
+      <p>Do pokoje tvaru čtverce o rozloze 30m<sup>2</sup> potřebujeme koupit nový koberec. Jakou délku má mít strana koberce? Vejde se nám srolovaný do dodávky s nákladovým prostorem dlouhým 5m?</p>
+    </assign>
+  </ex>
+</section>

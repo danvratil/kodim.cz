@@ -10,5 +10,11 @@
   },
   "stat-for-progr": {
     "langs": ["cz"]
+  },
+  "python-party": {
+    "langs": ["cz"]
+  },
+  "coding-exrcs": {
+    "langs": ["cz"]
   }
 }
