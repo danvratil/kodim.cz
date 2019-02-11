@@ -1,0 +1,16 @@
+{
+  "spellright.language": [
+    "Czech"
+  ],
+  "spellright.documentTypes": [
+    "markdown",
+    "latex",
+    "plaintext",
+    "mako"
+  ],
+  "spellright.parserByClass": {
+    "mako": {
+      "parser": "xml"
+    }
+  }
+}

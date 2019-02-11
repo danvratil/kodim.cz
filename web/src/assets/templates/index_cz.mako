@@ -28,21 +28,20 @@
     </div>
     %if config['DEVELOP']:
       <div class="row my-5">
-        ${self.courseTile('kurzy', courses.get('cz', 'intro-to-js'))}
+        ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-js'))}
       </div>
     %endif
   </%self:section>
 
-  %if config['DEVELOP']:
-    <%self:section title="Online kurzy">
-      <%def name="lead()">
-        <p>Kurzy v této sekci jsou určené k samostudiu online. Nepatří k žádným živým kurzům a jsou zde zdarma pro všechny, kteří se chtějí něco dozvědět o technologiích a programování.</p>
-      </%def>
-      <div class="row my-5">
-        ${self.courseTile('kurzy', courses.get('cz', 'python-party'))}
+  <%self:section title="Online kurzy">
+    <%def name="lead()">
+      <p>Kurzy v této sekci jsou určené k samostudiu online. Nepatří k žádným živým kurzům a jsou zde zdarma pro všechny, kteří se chtějí něco dozvědět o technologiích a programování.</p>
+    </%def>
+    <div class="row my-5">
+      ${self.courseTile('kurzy', courses.get('cz', 'python-party'))}
+      %if config['DEVELOP']:
         ${self.courseTile('kurzy', courses.get('cz', 'stat-pro-progr'))}
-      </div>
-    </%self:section>
-  %endif
-  
+      %endif
+    </div>
+  </%self:section>
 </%block>

@@ -4,7 +4,7 @@
     "cz": "Python Coding Party"
   },
   "subtitle": {
-    "cz": "Zatím nevím"
+    "cz": "Online kurz pro všechny, kteří se chtějí zdokonalovat v programování v jazyce Python."
   },
   "link": {
     "cz": "python-party"
@@ -13,7 +13,7 @@
     {
       "name": "opacko",
       "title": {
-        "cz": "Procvičování základů základů"
+        "cz": "Procvičování základů"
       },
       "ready": {
         "cz": true
@@ -27,7 +27,7 @@
             "cz": "Programátorské opáčko"
           },
           "desc": {
-            "cz": "Zde si zopakujete základní programátorské pojmy aby jste se dostali do formy pro navazující lekce."
+            "cz": "Zde si zopakujete základní programátorské pojmy abyste se dostali do formy pro navazující lekce."
           },
           "ready": {
             "cz": true
@@ -44,7 +44,7 @@
             "cz": "FOR cykly jsou brána do říše mírně pokročilého programování a proto je potřeba je pořádně procvičit."
           },
           "ready": {
-            "cz": true
+            "cz": false
           }
         }
       ]
@@ -55,7 +55,7 @@
         "cz": "Kapitoly"
       },
       "ready": {
-        "cz": true
+        "cz": false
       },
       "chapters": [
         {
