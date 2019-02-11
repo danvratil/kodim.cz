@@ -6,7 +6,7 @@
   <p>Základem všech základů je vědět, co jsou to hodnoty (čísla, řetězce, seznamy, ...) a jak se s nimi pracuje pomocí operátorů. Měli byste rozumět tomu, co jsou a jak se používají proměnné, co jsou to funkce a jak se volají a také byste měli znát základní příkazy pro řízení běhu programu jako jsou podmínky nebo cykly. Pokud si v něčem z toho nejste jistí, tato kapitola je právě pro vás.</p>
 
   <h2>Hodnoty, operátory a proměnné</h2>
-  <p>Základní stavební bloky veškerého programování jsou <em>hodnoty</em>, <em>operátory</em> a <em>proměnné</em>. S hodnotami provádíme výpočty pomocí různých operátorů a výsledky si pak uládáme do proměnných pro pozdější použití.</p>
+  <p>Základní stavební bloky veškerého programování jsou <em>hodnoty</em>, <em>operátory</em> a <em>proměnné</em>. S hodnotami provádíme výpočty pomocí různých operátorů a výsledky si pak ukládáme do proměnných pro pozdější použití.</p>
   
   <h3>Hodnoty</h3>
   <p>V Pythonu jsme jako základní hodnoty viděli <em>celá čísla</em>, <em>desetinná čísla</em>, <em>řetězce</em> a <em>pravdivostní hodnoty</em>. Kategoriím, do kterých se hodnoty řadí jsme říkali <em>datové typy</em>.</p>
@@ -34,7 +34,7 @@
         <td><code>'jaro'</code>, <code>"duben"</code>, <code>"37"</code>,...</td>
       </tr>
       <tr>
-        <td>pradivostní hodnoty</td>
+        <td>pravdivostní hodnoty</td>
         <td>bool</td>
         <td><code>True</code>, <code>False</code></td>
       </tr>
