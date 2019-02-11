@@ -11,7 +11,7 @@
 
   <pre>$ python</pre>
 
-  <p>Pozor, že znak dolaru není součástí příkazu. Používáme ho pouze k tomu, abychom naznažili, že je třeba tento příkaz napsat do terminálu vašeho operačního systému. Pokud pracujete na Macu nebo Linuxu, správný příkaz je </p>
+  <p>Pozor, že znak dolaru není součástí příkazu. Používáme ho pouze k tomu, abychom naznačili, že je třeba tento příkaz napsat do terminálu vašeho operačního systému. Pokud pracujete na Macu nebo Linuxu, správný příkaz je </p>
 
   <pre>$ python3</pre>
 
@@ -36,7 +36,7 @@
 3.141592</pre>
 
   <h2>Aritmetické operátory</h2>
-  <p>Nyní už máme prostředky k tomu, abycho mohli pomocí Pythonu něco spočítat. V Python máme k dispozici běžné aritmetické operátory:</p>
+  <p>Nyní už máme prostředky k tomu, abychom mohli pomocí Pythonu něco spočítat. V Python máme k dispozici běžné aritmetické operátory:</p>
 
   <ul>
     <li>sčítání: <strong>+</strong></li>
@@ -68,7 +68,7 @@
   <pre>&gt;&gt;&gt; 14 // 4
 3</pre>
 
-  <p>Pokud by nás zajímal zbytek po celočíselném dělení, můžene použít opetáror pro zbytek po dělení</p>
+  <p>Pokud by nás zajímal zbytek po celočíselném dělení, můžeme použít operátor pro zbytek po dělení</p>
 
   <pre>&gt;&gt;&gt; 14 % 4
 2</pre>
@@ -98,7 +98,7 @@ martin podloucký
     <p>Použijte Python konzoli jako kalkulačku:</p>
     <ol>
       <li>Jeden lístek do divadla <em>Pěst na oko</em> stojí 12 euro. Spočítejte měsíční příjem divadla ze vstupného přichází-li průměrně 174 návštěvníků na jedno představení a divadlo hraje 15 představení měsíčně.</li>
-      <li>Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní příjem divadla za jedno představení pokud víme, že třicet procent návštěvníků jsou studenti?</li>
+      <li>Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní měsíční příjem divadla za jedno představení pokud víme, že třicet procent návštěvníků jsou studenti?</li>
     </ol>
     <%def name="solution()"></%def>
   </%self:exrc>
@@ -106,9 +106,9 @@ martin podloucký
   <%self:exrc title="Hrátky s řetězci">
     <ol>
       <li>Vytvořte řetězec obsahující jméno divadla.</li>
-      <li>Vytvořte řetězec obsahující jméno divadla tak, že sečtete dohromady jednoltivá slova toho jména.</li>
+      <li>Vytvořte řetězec obsahující jméno divadla tak, že sečtete dohromady jednotlivá slova toho jména.</li>
       <li>Zkuste vynásobit řetězec celým číslem. Jaký jste dostali výsledek?</li>
-      <li>Vytvořte řetězec který vypadá takto: '111111000000', ale místo šesti jedniček a šesti nul obashuje 256 jedniček a 256 nul.</li>
+      <li>Vytvořte řetězec který vypadá takto: '111111000000', ale místo šesti jedniček a šesti nul obsahuje 256 jedniček a 256 nul.</li>
     </ol>
     <%def name="solution()"></%def>
   </%self:exrc>

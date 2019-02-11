@@ -1,7 +1,7 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>Počítače a programování byly vymyšleny především proto, aby ušetřili lidem nudnou a repetitivní práci. Proto cheme umět počítači říct, že má nějakou činnost opakovat mnohokrát po sobě. K tomu nám v programování slouží takzvané cykly. </p>
+  <p>Počítače a programování byly vymyšleny především proto, aby ušetřili lidem nudnou a repetitivní práci. Proto chceme umět počítači říct, že má nějakou činnost opakovat mnohokrát po sobě. K tomu nám v programování slouží takzvané cykly. </p>
 
   <h2>Cyklus FOR</h2>
   <p>Jeden z nejpoužívanějších cyklů v téměř všech programovacích jazycích ja takzvaný cyklus FOR. Tento cyklus umí projít jakýkoliv zadaný seznam prvek po prvku a pro každý prvek vykonat určitý blok kódu. Představme si například, že máme seznam známek z písemek nějakého studenta a chceme tyto známky vypsat na obrazovku, každou na nový řádek. K tomu nám stačí takovýto kousek kódu.</p>
@@ -35,7 +35,7 @@ for jmeno in jmena:
     mail = jmeno + '@seznam.cz'
   print(mail)</pre>
 
-  <p>Tímto jsme vlastně vysvětlili to hlavní a zásadni co o cyklu FOR zatím potřebujeme vědět. Možná se to na první pohled nezdá, ale přidáním cyklu do našeho programátorského arzenálu jsme otevřeli pandořinu skříňku plnou možností, co v našich programech můžeme dělat. Taky jsme ale otevřeli bránu do samotného pekla, neboť už díky cyklům dokážeme řešit mnohem složitější a komplikovanější problémy, na které ale bude často potřeba pořádně roztočit mozkové závity. </p>
+  <p>Tímto jsme vlastně vysvětlili to hlavní a zásadní co o cyklu FOR zatím potřebujeme vědět. Možná se to na první pohled nezdá, ale přidáním cyklu do našeho programátorského arzenálu jsme otevřeli pandořinu skříňku plnou možností, co v našich programech můžeme dělat. Taky jsme ale otevřeli bránu do samotného pekla, neboť už díky cyklům dokážeme řešit mnohem složitější a komplikovanější problémy, na které ale bude často potřeba pořádně roztočit mozkové závity. </p>
 
   <p>Ukažme si například jak se pomocí cyklu spočítá součet všech čísel v seznamu.</p>
 
@@ -112,7 +112,7 @@ mesice = [
 
     <ol>
       <li>Pomocí cyklu projděte tento seznam a vypište na výstup názvy jednotlivých měsíců.</li>
-      <li>Pomocí dalšího cyklu vypište na výstup počty dní v jednotlivých měsicích. </li>
+      <li>Pomocí dalšího cyklu vypište na výstup počty dní v jednotlivých měsících. </li>
     </ol>
   </%self:exrc>
 

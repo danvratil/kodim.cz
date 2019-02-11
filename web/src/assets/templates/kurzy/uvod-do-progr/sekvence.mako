@@ -2,6 +2,32 @@
 
 <%self:lesson>
   <p>Do této chvíle jsme uměli do nějaké proměnné uložit pouze jednu hodnotu, například číslo nebo řetězec. Počítače ale často potřebují pracovat v mnohem větším objemem dat, než je několik čísel nebo řetězců. </p>
+
+  <p>Sekvence nám umožňují do jedné proměnné uložit více hodnot. Hodnoty uvnitř sekvencí sídlí na takzvaných <em>indexech</em>, které se vždy počítají od nuly. To je takový zvláštní programátorský úzus, že se většinou začíná počítat od nuly a ne od jedničky. Má to svoje důvody, které tady ovšem nebudeme rozvádět. Raději si rovnou ukážeme jedna z nejjednodušší sekvencí, a to je řetězec. Díky tomu, že řetězec je sekvence, je možné přistupovat k jednotlivým jeho prvkům, v tomto případě písmenům.</p>
+
+<pre>&gt;&gt;&gt; jmeno = 'hubert'
+&gt;&gt;&gt; jmeno[0]
+'h'
+&gt;&gt;&gt; jmeno[4]
+'r'</pre>
+
+  <p>Ty vůbec nejpoužívanější sekvence jsou ovšem seznamy. Do nich lze uložit jakékoliv množství hodnot jakéhokoliv typu. Dokonce můžeme mít seznamy seznamů.</p>
+
+<pre>&gt;&gt;&gt; znamky = [2, 3, 4, 1, 1]
+&gt;&gt;&gt; teploty = [13.4, 13.5, 12.8, 11.9]
+&gt;&gt;&gt; uzivatele = ['mark', 'carl', 'eve', 'ellen']
+&gt;&gt;&gt; platby = ['Jan Novák', 12000, true]
+&gt;&gt;&gt; body = [[140, 120], [60, 92], [34, 68]]</pre>
+
+  <p>Přístupy k indexům sekvencí se dají skládat za sebe. Můžeme tak získat například čtvrté písmenko druhého jména v seznamu <code>uzivatele</code></p>
+
+<pre>&gt;&gt;&gt; users[1][3]
+'l'</pre>
+
+  <p>nebo první číslo třetího seznamu v proměnné <code>body</code></p>
+
+<pre>&gt;&gt;&gt; points[2][0]
+'l'</pre>
 </%self:lesson>
 
 <%self:exercises>

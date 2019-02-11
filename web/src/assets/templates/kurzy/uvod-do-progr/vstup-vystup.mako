@@ -7,7 +7,7 @@
   <p>Program je v podstatě textový soubor, který obsahuje více příkazů najednou a Python tyto příkazy postupně vykonává. Nemusíme už tedy nic psát na konzoli, všechny příkazy budeme psát dovnitř programu.</p>
 
   <h2>Výstup do terminálu</h2>
-  <p>Máme tu ale jeden problém. Když jsme zadávali příkazy na konzoli, Python nám vždy rovnou vrátil výsledek. Když ale spustíme program, Python nám automaticky žádné výsledky nevrací. Programy totiž často obsahují tisíce příkazů a my nechceme vidět výsledek každého z nich, to bychom se v tom množství výsledků nevyznali. Pokud tedy nějaký výsledeke chceme vidět, musíme Pythonu přímo říct, aby ho vypsal do terminálu, ve kterém program spouštíme. K tomu slouží funkce <code>print()</code>. Vybavení touto funkcí už můžeme napsat náš první program. </p>
+  <p>Máme tu ale jeden problém. Když jsme zadávali příkazy na konzoli, Python nám vždy rovnou vrátil výsledek. Když ale spustíme program, Python nám automaticky žádné výsledky nevrací. Programy totiž často obsahují tisíce příkazů a my nechceme vidět výsledek každého z nich, to bychom se v tom množství výsledků nevyznali. Pokud tedy nějaký výsledek chceme vidět, musíme Pythonu přímo říct, aby ho vypsal do terminálu, ve kterém program spouštíme. K tomu slouží funkce <code>print()</code>. Vybavení touto funkcí už můžeme napsat náš první program. </p>
 
   <h2>První program</h2>
 
@@ -23,7 +23,7 @@ print(cena)
 <pre>$ python program.py</pre>
 
   <%self:alert_warning>
-    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak napíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do termínálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.</p>
+    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak napíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do terminálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.</p>
   </%self:alert_warning>
 
 </%self:lesson>
@@ -42,7 +42,7 @@ print(cena)
         <p>Program spusťte na konzoli a vyzkoušejte, že dělá co má.</p>
       </li>
       <li>
-        <p>Upravte tento program tak, že do proměnné <var>nazev</var> uložíte název nějakého divadelního představení a do proměnné <var>cas</var> uložte čas konání totoho představení. Nyní pomocí funkce <code>print()</code> nechte program vypsat na obrazovku na jeden řádek název představení a čas konání, např.</p>
+        <p>Upravte tento program tak, že do proměnné <var>nazev</var> uložíte název nějakého divadelního představení a do proměnné <var>cas</var> uložte čas konání tohoto představení. Nyní pomocí funkce <code>print()</code> nechte program vypsat na obrazovku na jeden řádek název představení a čas konání, např.</p>
         
         <pre>Zkrocení zlé ženy - 19:30</pre>
       </li>
@@ -60,7 +60,7 @@ print(cena)
     <p>Teď už budeme chtít, aby náš program dokázal získat vstup od uživatele.</p>
     <ol>
       <li>Napište program <code>jmeno.py</code>, který získá jméno a příjmení od uživatele voláním funkce <code>input()</code>. Vypište je na obrazovku podobně jako v předchozím cvičení.</li>
-      <li>Nechte uživatele zadat také věk. Pozor na to, že funkce <code>input()</code> vždy vrací řetězec, ale my chceme v proměnné <var>vek</var> mít číslo. Použíjte tedy funkci <code>int()</code>, abyste převedli uživatelem zadaný řetězec na číslo. Opět vypište na obrazovku jméno příjmení a věk tak jako v předchozí verzi.</li>
+      <li>Nechte uživatele zadat také věk. Pozor na to, že funkce <code>input()</code> vždy vrací řetězec, ale my chceme v proměnné <var>vek</var> mít číslo. Použijte tedy funkci <code>int()</code>, abyste převedli uživatelem zadaný řetězec na číslo. Opět vypište na obrazovku jméno příjmení a věk tak jako v předchozí verzi.</li>
     </ol>
   </%self:exrc>
 
