@@ -1,0 +1,39 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Programování v JavaScriptu"
+  },
+  "subtitle": {
+    "cz": "Základy progamování v JavaScriptu"
+  },
+  "link": {
+    "cz": "rebeljs"
+  },
+  "sections": [
+    {
+      "name": "zaciname",
+      "title": {
+        "cz": "Začínáme"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "hodnoty-promenne"
+          },
+          "title": {
+            "cz": "Hodnoty, proměnné"
+          },
+          "desc": {
+            "cz": "Základ veškerého programování je umět něco málo spočítat a umět pracovat s proměnnými."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}

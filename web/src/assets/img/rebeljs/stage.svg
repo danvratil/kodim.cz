@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1600" height="900" version="1.1" viewBox="0 0 1600 900" xmlns="http://www.w3.org/2000/svg">
+ <defs>
+  <marker id="marker2690" overflow="visible" orient="auto">
+   <path transform="scale(.4) rotate(180) translate(10)" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+  <marker id="Arrow1Mend" overflow="visible" orient="auto">
+   <path transform="scale(.4) rotate(180) translate(10)" d="m0 0 5-5-17.5 5 17.5 5-5-5z" fill-rule="evenodd" stroke="#000" stroke-width="1pt"/>
+  </marker>
+ </defs>
+ <g transform="translate(0 14.67)">
+  <g fill="#dedede">
+   <rect x="380" y="145.3" width="120" height="120"/>
+   <rect x="520" y="145.3" width="120" height="120"/>
+   <rect x="660" y="145.3" width="120" height="120"/>
+   <rect x="800" y="145.3" width="120" height="120"/>
+   <rect x="940" y="145.3" width="120" height="120"/>
+   <rect x="1080" y="145.3" width="120" height="120"/>
+   <rect x="1220" y="145.3" width="120" height="120"/>
+   <rect x="380" y="285.3" width="120" height="120"/>
+   <rect x="520" y="285.3" width="120" height="120"/>
+   <rect x="660" y="285.3" width="120" height="120"/>
+   <rect x="800" y="285.3" width="120" height="120"/>
+   <rect x="940" y="285.3" width="120" height="120"/>
+   <rect x="1080" y="285.3" width="120" height="120"/>
+   <rect x="1220" y="285.3" width="120" height="120"/>
+   <rect x="380" y="425.3" width="120" height="120"/>
+   <rect x="520" y="425.3" width="120" height="120"/>
+   <rect x="660" y="425.3" width="120" height="120"/>
+   <rect x="800" y="425.3" width="120" height="120"/>
+   <rect x="940" y="425.3" width="120" height="120"/>
+   <rect x="1080" y="425.3" width="120" height="120"/>
+   <rect x="1220" y="425.3" width="120" height="120"/>
+   <rect x="380" y="565.3" width="120" height="120"/>
+   <rect x="520" y="565.3" width="120" height="120"/>
+   <rect x="660" y="565.3" width="120" height="120"/>
+   <rect x="800" y="565.3" width="120" height="120"/>
+   <rect x="940" y="565.3" width="120" height="120"/>
+   <rect x="1080" y="565.3" width="120" height="120"/>
+   <rect x="1220" y="565.3" width="120" height="120"/>
+   <rect x="380" y="705.3" width="120" height="120"/>
+   <rect x="520" y="705.3" width="120" height="120"/>
+   <rect x="660" y="705.3" width="120" height="120"/>
+   <rect x="800" y="705.3" width="120" height="120"/>
+   <rect x="940" y="705.3" width="120" height="120"/>
+   <rect x="1080" y="705.3" width="120" height="120"/>
+   <rect x="1220" y="705.3" width="120" height="120"/>
+  </g>
+  <path d="m380 85.33h960" fill="none" marker-end="url(#Arrow1Mend)" stroke="#000" stroke-width="4"/>
+  <text x="380" y="65.333313" fill="#000000" font-family="Lato" font-size="40px" letter-spacing="0px" text-align="center" text-anchor="middle" word-spacing="0px" style="line-height:1.25" xml:space="preserve"><tspan x="380" y="65.333313" text-align="start" text-anchor="start">osa x</tspan></text>
+  <path d="m320 145.3v680" fill="none" marker-end="url(#marker2690)" stroke="#000" stroke-width="4"/>
+  <g fill="#000000" font-family="Lato" letter-spacing="0px" text-anchor="middle" word-spacing="0px">
+   <text transform="rotate(-90)" x="-245.33331" y="300" font-size="40px" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="-245.33331" y="300" text-align="start" text-anchor="start">osa y</tspan></text>
+   <g font-size="32px">
+    <text x="440" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="440" y="125.33331">0</tspan></text>
+    <text x="580" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="580" y="125.33331">1</tspan></text>
+    <text x="720" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="720" y="125.33331">2</tspan></text>
+    <text x="860" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="860" y="125.33331">3</tspan></text>
+    <text x="1000" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="1000" y="125.33331">4</tspan></text>
+    <text x="1140" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="1140" y="125.33331">5</tspan></text>
+    <text x="1280" y="125.33331" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="1280" y="125.33331">6</tspan></text>
+    <text x="352" y="216.80531" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="352" y="216.80531">0</tspan></text>
+    <text x="352" y="356.82132" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="352" y="356.82132">1</tspan></text>
+    <text x="352" y="496.92532" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="352" y="496.92532">2</tspan></text>
+    <text x="352" y="636.7973" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="352" y="636.7973">3</tspan></text>
+    <text x="352" y="776.7973" text-align="center" style="line-height:1.25" xml:space="preserve"><tspan x="352" y="776.7973">4</tspan></text>
+   </g>
+  </g>
+ </g>
+</svg>

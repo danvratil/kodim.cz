@@ -3,6 +3,42 @@
 <%self:lesson>
   <p>Seznamy a FOR cykly jsou v programování něco jako hrnec a vařečka při vaření. Bez nich toho moc neuvaříme a bez FOR cyklů a seznamů si taky moc nezaprogramujeme. Možnosti jak využít FOR cyklus jsou nepřeberné a proto je potřeba s nimi umět pořádně zacházet dřív, než se vydáme kamkoliv dál. </p>
 
+  <h2>FOR cyklus pod drobnohledem</h2>
+
+  <p>Cyklus FOR už jste potkali v minulé lekci, kde ovšem rozhodně nedostal tolik pozornosti, kolik si zaslouží. Vytvořme si proto modelový příklad, na kterém si ukážeme různá další zákoutí. Začneme se seznamem pohybů na nějakém bankovním účtu.</p>
+  
+  <pre>transactions = [2000, 8500, -3000, 2000, -6200, -5000, 4100, 5800]</pre>
+  
+  <p>Věřím, že cyklus, který prostě jen projde tento seznam a vypíše pohyby jeden po druhém na obrazovku, je pro váš již brnkačka. </p>
+  
+<pre>for trans in transactions:
+  print(trans)
+</pre>
+
+  <p>Odsud je již krůček k cyklu, který vypíše jen mínusové pohyby, tedy úbytky na účtu.</p>
+
+<pre>for trans in transactions:
+  if trans < 0:
+    print(trans)
+</pre>
+
+  <p>Všimněte si, že tyto cykly jsou tak trošku izolované od okolí. Pracují pouze s proměnnou <var>trans</var>, která je vytvořena uvnitř cyklu. Pokud však začneme pracovat i s proměnnými mimo cyklus, můžeme si pomocí nich udržovat různé průběžné informace. Například můžeme spočítat, kolikrát došlo k výběru z účtu. Na to si založíme proměnnou <var>count</var>, která začne s hodnotou nula a pokaždé, když v zůstatcích narazíme na částku menší než nula, navýšíme tuto proměnnou o jedničku. </p>
+
+<pre>count = 0
+for trans in transactions:
+  if trans < 0:
+    count += 1
+print(count)
+</pre>
+
+  <p>Velmi podobně můžeme například spočítat konečný zůstatek na účtu. Vzhledem k tomu, že úbytky máme jako minusové hodnoty a přírůstky jako plusové, stačí všechny hodnoty v seznamu prostě posčítat. Na to si podobně jako v předchozím příkladu založíme proměnnou vně cyklu, tentokrát pojmenovanou <var>sum</var>, do které budeme postupně přičítat jednotlivé položky seznamu. </p>
+
+<pre>sum = 0
+for trans in transactions:
+  sum += trans
+print(sum)
+</pre>
+
   <p>Následující příklady postupují od jednoduchých až po docela náročné, aby vás pomalu krok po kroku provedli krajinou různých programátorských problémů a jejich řešení. Při psaní vašich řešení nepoužívejte žádné vestavěné ani importované Python funkce, pokud nebude v úloze vysloveně uvedeno jinak.</p>
 
 </%self:lesson>

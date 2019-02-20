@@ -60,6 +60,18 @@
   />
 
   <title>Kódím.cz</title>
+
+  %if not config['DEVELOP']:
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-134495569-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-134495569-1');
+    </script>
+  %endif
+
 </head>
 <body>
   <header>

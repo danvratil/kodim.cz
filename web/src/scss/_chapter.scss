@@ -88,7 +88,7 @@ table {
   color: $white;
   background-color: $bg-secondary;
 
-  h2 {
+  h2, h3 {
     color: white;
   }
 
@@ -126,7 +126,6 @@ table {
   border-bottom: 2px solid white;
 
   h3 {
-    color: white;
     margin: 1rem 0rem;
   }
 }
