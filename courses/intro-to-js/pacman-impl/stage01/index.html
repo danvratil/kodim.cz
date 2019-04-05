@@ -1,0 +1,42 @@
+<html>
+
+<head>
+  <meta charset="UTF-8" />
+  <title>Pacman</title>
+</head>
+
+<body>
+  <div id="stage">
+    <div id="pacman"></div>
+  </div>
+</body>
+
+<script>
+  const TILE_SIZE = 85;
+  
+  document.body.style.margin = '0';
+
+  const pacmanElm = document.querySelector('#pacman');
+  pacmanElm.style.width = TILE_SIZE;
+  pacmanElm.style.height = TILE_SIZE;
+  pacmanElm.style.backgroundImage = 'url(img/pacboy-active-light.png)';
+  pacmanElm.style.position = 'absolute';
+  
+  let pacX = 0;
+  let pacY = 0;
+
+  const pacmanUpdate = () => {
+    
+  }
+
+  const handleKeyDown = (event) => {
+    if(event.keyCode === 39) {
+      pacX += TILE_SIZE;
+      console.log(pacX);
+    }
+  };
+
+  document.body.addEventListener('keydown', handleKeyDown);
+</script>
+
+</html>

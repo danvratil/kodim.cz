@@ -13,10 +13,12 @@
 
   <pre>$ python3</pre>
 
+  <p><strong>POZOR!</strong> Symbol dolaru na začátku příkazu se do terminálu napíše. Slouží pouze k tomu, abychom odlišili, že příkaz se píše do terminálu a ne někam jinam.</p>
+
   <p><strong>POZOR!</strong> Pokud v Linuxu nebo na Macu spustíte příkaz jako ve Windows, pravděpodobně se vám spustí jiná verze Pythonu, se kterou vám následující lekce nebudou fungovat.</p>
 
   <h2>Hodnoty</h2>
-  <p><em>Hodnoty</em> představují všechny možné druhy dat, se kterými můžou naše programy pracovat. Hodnoty se dle způsobu použití dělí do různých kategoríí zvaných <em>datové typy</em>. Datových typů existuje velké množství. V tuto chvíli si představíme ty nejzákladnější - celá čísla a destinná čísla.</p>
+  <p><em>Hodnoty</em> představují všechny možné druhy dat, se kterými můžou naše programy pracovat. Hodnoty se dle způsobu použití dělí do různých kategorií zvaných <em>datové typy</em>. Datových typů existuje velké množství. V tuto chvíli si představíme ty nejzákladnější - celá čísla a desetinná čísla.</p>
 
   <h3>Celá čísla</h3>
 
@@ -40,10 +42,12 @@
     <li>dělení: <strong>/</strong></li>
   </ul>
 
-  <p>Díky těmto operátorům můžeme Python použít jako kalkulačku a psát <em>aritmetické výrazy</em> jako</p>
+  <p>Díky těmto operátorům můžeme Python použít jako kalkulačku a psát <em>aritmetické výrazy</em> jako ve škole.</p>
 
   <pre>&gt;&gt;&gt; 12 * 13 + 10</pre>
   <pre>&gt;&gt;&gt; (13.4 - 1.4) / 4</pre>
+
+  <p>Všimněte si, že můžeme používat kulaté závorky, pokud potřebujeme změnit prioritu operací. </p>
 
   <h2>Proměnné</h2>
   <p>Při komplikovanějších výpočtech se nám často stane, že si potřebujeme nějaký mezivýpočet uložit pro pozdější použití. K tomu nám slouží takzvané <em>proměnné</em>.</p>
@@ -60,8 +64,8 @@
 
   <ul>
     <li>Název proměnné by neměl začínat velkým písmenem, např. <var class="wrong">Pocet</var>. Takové názvy jsou rezervované pro speciální typy proměnných, ke kterým se v tomto kurzu nedostaneme. </li>
-    <li>Název proměnné by neměl obsahovat diakritiku, např. <var class="wrong">počet</var>. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika napoužívá, takže si s ní většina jazyků neporadí. </li>
-    <li>Víceslovné proměnné nesmí obsahovat mezeru, např. <var class="wrong">pocet hodin</var>. To by si Python myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použíjte takzvanou velbloudí notaci <var >pocetHodin</var> nebo hadí notaci <var>pocet_hodin</var>.</li>
+    <li>Název proměnné by neměl obsahovat diakritiku, např. <var class="wrong">počet</var>. Programovací jazyky vznikaly v anglickém prostředí, kde se diakritika nepoužívá, takže si s ní většina jazyků neporadí. </li>
+    <li>Víceslovné proměnné nesmí obsahovat mezeru, např. <var class="wrong">pocet hodin</var>. To by si Python myslel, že to jsou dvě proměnné za sebou a nevěděl by co s tím. Pokud chcete proměnnou s více slovy, použijte takzvanou velbloudí notaci <var >pocetHodin</var> nebo hadí notaci <var>pocet_hodin</var>.</li>
     <li>Vždy proměnnou pojmenujte tak, aby její název jasně napovídal, co se uvnitř ní nachází. Například proměnná <var>pocet_hodin</var> jasně říká, že v ní bude asi nějaký počet hodin. Můžeme podlehnout touze název proměnné zkrátit například na <var class="wrong">pcthd</var> aby se nám lépe psala. Až ovšem někdo další bude takový program číst, bude mlátit hlavout do stolu cože proboha znamená zkratka <code>pcthdn</code>.</li>
     <li>Naposledy je dobré si uvědomit, že programy i programátoři se téměř vždy pohybují v mezinárodním prostředí. Takže je vždycky lepší pojmenovávat proměnné anglicky. V tomto kurzu ještě tohle pravidlo trošku rozvolníme, ale i tak si můžete začít zvykat na proměnné s názvem <var>number_of_hours</var>.</li>
   </ul>
@@ -84,38 +88,36 @@
 
 <%self:exercises>
   <h2>Cvičení</h2>
+  
   <a name="vyplata" />
   <%self:exrc title="Výplata">
     <ol>
       <li>Spočítejte svůj měsíční příjem víte-li, že pracujete 7 hodin denně se mzdou 450 Kč na hodinu. Řekněme, že měsíc má 21 pracovních dní.</li>
-      <li>Uložte si počet pracovních hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte svou výplatu s použitím těchto promenných.</li>
-      <li>Pokud pracujete na živnostenský list, můžete si odečíst 60&nbsp;% příjmů jako paušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>pausal</var> a <var>dan</var> a spočítejte svůj příjem po zdanění.</li>
+      <li>Uložte si počet pracovních hodin za den do proměnné <var>hodin</var>, hodinovou mzdu do proměnné <var>mzda</var> a počet pracovních dní do proměnné <var>dni</var>. Spočítejte svou výplatu s použitím těchto proměnných.</li>
+      <li>Pokud pracujete na živnostenský list, můžete si odečíst 60&nbsp;% příjmů jako paušál a ze zbytku zaplatíte 15% daň. Uložte si tyto hodnoty do proměnných <var>paušál</var> a <var>dan</var> a spočítejte svůj příjem po zdanění.</li>
     </ol>
-    <%def name="solution()">
-      <ol>
-        <li>
-<pre>&gt;&gt;&gt; 450 * 7 * 21
-66150</pre>
-        </li>
-        <li>
-<pre>&gt;&gt;&gt; hodin = 7
-&gt;&gt;&gt; mzda = 450
-&gt;&gt;&gt; dni = 21
-&gt;&gt;&gt; mzda * hodin * dni
-66150</pre>
-        </li>
-        <li>
-<pre>&gt;&gt;&gt; hruba = mzda * hodin * dni
-&gt;&gt;&gt; pausal = 0.6
-&gt;&gt;&gt; dan = 0.15
-&gt;&gt;&gt; dan_kc = hruba * (1 - pausal) * dan
-&gt;&gt;&gt; cista = hruba - dan_kc
-        </li>
-    </ol>
-    </%def>
   </%self:exrc>
 
   ${self.alert_done()}
+
+  <h2>Bonusy</h2>
+  
+  <a name="kralici-farma" />
+  <%self:exrc title="Králičí farma">
+    <p>Králičí farma si objednala sestavení modelu množení králičí populace, aby dokázala odhadnout své zisky. Model funguje takto.</p>
+
+    <p>Počet králičích párů na farmě v aktuálním roce (např. 2005) získáme tak, že sečteme počet králíků na farmě v roce minulém (2004) a roce předminulém (2003). Pokud tedy například v roce 2003 žilo na farmě 13 párů a v roce 2004 zde žilo 21 párů, model předpovídá, že v roce 2005 zde bude žít 13 + 21 tedy 34 králičích párů.</p>
+
+    <p>Králičí farma započala svůj chov v předminulém roce (2017) s nulovým počtem králíků a v minulém roce 2018 pořídili svůj první králičí pár. Uložte si tyto počty do proměnných <var>predminuly</var> a <var>minuly</var>. V aktuálním roce 2019 tak máme stále jeden pár (<code>predminuly + minuly</code>). Uložte tuto hodnotu do proměnné <var>aktualni</var>.</p>
+
+    <p>Zodpovězte následující otázky:</p>
+
+    <ol>
+      <li>Kolik králičích párů bude mít farma za deset let, tedy v roce 2029?</li>
+      <li>Kdy bude mít farma alespoň 300 králičích párů?</li>
+    </ol>
+  </%self:exrc>
+
 </%self:exercises>
 
 <%self:lesson>

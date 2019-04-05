@@ -56,6 +56,16 @@ const area = (width, height) => width * height / 2;</pre>
 
 <%self:exercises>
   <h2>Cvičení</h2>
+  
+  <%self:exrc title="Hrátky s časem">
+    <ol>
+      <li>Napište funkci s názvem <code>hodiny</code>, která bude mít jeden argument jménem <var>dny</var>, který bude představovat počet dní. Funkce spočítá kolik celkem hodin je obsaženo v zadaném počtu dní.</li>
+      <li>Upravte předchozí funkci tak, aby vracela počet vteřin obsažných v zadaném počtu dní.</li>
+      <li>Upravte předchozí funkci tak, že dostane letopočet (2018, 1997 apod.) a vrátí kolik milisekund (tisícin sekundy) uplynulo od začátku roku 1900 do začátku zadaného roku.</li>
+      <li>Upravte předchozí funkci tak, že obdrží tři argumenty: <code>rok</code>, <code>mesic</code> a <code>den</code>. Funkce spočítá kolik milisekund uplynulo od 1. ledna 1900 do začátku zadaného dne. Pro jednoduchost předpokládejme, že jeden měsíc má 30 dní a jeden rok má přesně 12 měsíců, tedy 360 dní.</li>
+    </ol>
+  </%self:exrc>
+
   <%self:exrc title="Obsah elipsy">
     <p>Tentokrát chceme spočítat plochu pozemku ve tvaru elipsy jako na obrázku. </p>
 
@@ -66,39 +76,33 @@ const area = (width, height) => width * height / 2;</pre>
     <p>Z matematiky víme, že známe li šířku a výšku elipsy, její obsah je polovina šířky krát polovina výšky krát číslo pí. Napište funkci <code>elipseArea</code>, která spočítá plochu pozemku dle zadané šířky a výšky. Číslo pí najdete v JavaScriptu v proměnné <code>Math.PI</code>.</p>
   </%self:exrc>
 
-  <%self:exrc title="Větší ze dvou čísel">
-    <p>Napište funkci jménem <code>max2</code>, který vrátí větší ze dvou zadaných čísel.</p>
-  </%self:exrc>
-
-  <%self:exrc title="Python zaokrouhlování">
-    <p>Jak si možná pamatujete, v Pythonu funkce <code>round</code> zaokrouhluje k nejbližšímu sudému číslu, pokud je desetinná část čísla přesně 0.5. JavaScriptová funkce <code>Math.round</code> naopak provádí zaokrouhlování způsobem, na který jste zvyklí, tedy pro 0.5 vždy nahoru. Někomu by se po po Pythonovském zaokrouhlování mohlo stýskat. Napište funkci <code>round</code>, která zaokrouhluje čísla na celé jednotky podle následujících pravidel.</p>
-
+  <%self:exrc title="Vzdálenosti">
     <ol>
-      <li>Pokud je desetinná část menší než 0.5, zaokrouhlujeme dolů.</li>
-      <li>Pokud je desetinná část větší než 0.5, zaokrouhlujeme nahoru.</li>
-      <li>Pokud je desetinná část přesně rovna 0.5, zaokrouhlujeme k sudému číslu. Tedy například 3.5 se zaokrouhlí na 4, naopak 2.5 se zaokrouhlí na 2.</li>
-    </ol>
+      <li>Napište funkci jménem <code>abs</code>, která spočítá vzdálenost zadaného čísla od nuly, tedy takzvanou aboslutní hodnotu.</li>
+      <li>Napište funkci <code>dist1d</code>, která spočítá vzdálenost mezi dvěma zadanými čísly <code>a</code>, <code>b</code>.</li>
+      <li>
+        <p>Mějme dva body v rovině o souřadnících [x1, y1] a [x2, y2]. Napište funkci <code>dist2d</code>, která bude mít 4 argumenty: <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code> a  spočítá vzdálenost mezi těmito dvěma body v rovině podle vzorečku</p>
 
-    <p>V tomto cvičení se vám mohou hodit funkce <code>Math.floor</code> nebo <code>Math.trunc</code>.</p>
-  </%self:exrc>
-
-  <h2>Bonusy</h2>  
-
-  <%self:exrc title="Větší ze tří čísel">
-    <p>Napište funkci jménem <code>max3</code>, který vrátí největší ze tří zadaných čísel.</p>
-  </%self:exrc>
-
-  <%self:exrc title="Vlastní randint">
-    <p>V Pythonu jsme měli k dispozici krásnou funkci <code>randint</code>, která vygenerovala náhodné číslo v zadaném rozpětí. V JavaScriptu takovou funkci nemáme. Vytvořte tedy tuto funkci sami s použitím funkce <code>Math.random</code>. Pokud si věříte, napište funkci rovnou. Pokud tápete, následujte tyto kroky</p>
-
-    <ol>
-      <li>Nejdříve vyrobte funkci, která umí vygenerovat náhodné číslo mezi 0 a 5.</li>
-      <li>Upravte vaší funkci tak, aby generovala náhodné číslo mezi 0 a zadaným vstupem.</li>
-      <li>Upravte funkci dále tak, že obdrží dva vstupy <code>min</code> a <code>max</code> a číslo vygeneruje v těchto mezích.</li>
+        <div class="text-center">
+          <img src="/img/rebeljs/dist2d.png" alt="Vzdálenost 2D" class="figure__img-400" />
+        </div>
+      </li>
     </ol>
   </%self:exrc>
 
-  ## <%self:exrc title="Bod uvnitř obdélníka">
-  ##   <p>Mějme obdélník zadaný celočíselnými souřadnicemi <code>x</code>, <code>y</code>, <code>w</code>, <code>h</code>. </p>
-  ## </%self:exrc>
+  <%self:exrc title="Funkce měnící HTML">
+    <ol>
+      <li>Napište funkci, která obdrží jako argument HTML element. </li>
+      <li>Napište funkci <code>dist1d</code>, která spočítá vzdálenost mezi dvěma zadanými čísly <code>a</code>, <code>b</code>.</li>
+      <li>
+        <p>Mějme dva body v rovině o souřadnících [x1, y1] a [x2, y2]. Napište funkci <code>dist2d</code>, která bude mít 4 argumenty: <code>x1</code>, <code>y1</code>, <code>x2</code>, <code>y2</code> a  spočítá vzdálenost mezi těmito dvěma body v rovině podle vzorečku</p>
+
+        <div class="text-center">
+          <img src="/img/rebeljs/dist2d.png" alt="Vzdálenost 2D" class="figure__img-400" />
+        </div>
+      </li>
+    </ol>
+  </%self:exrc>
+
+  
 </%self:exercises>

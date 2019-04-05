@@ -79,7 +79,9 @@
   </header>
   <main>
     <%block name="main" />
-  </main>
+  </main>if (sel.type === 'Range') {
+            selection = sel;
+          }
   <footer>
     <div class="jumbotron jumbotron-fluid mb-0">
       <div class="container">
@@ -88,6 +90,26 @@
     </div>
   </footer>
   
+<div id="typoModal" class="modal" tabindex="-1" role="dialog">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title">Oznámit překlep</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p id="typoContent"></p>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Zrušit</button>
+        <button type="button" class="btn btn-primary">Odeslat</button>
+      </div>
+    </div>
+  </div>
+</div>
+
   <script
     src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
   ></script>
@@ -97,5 +119,6 @@
   <script 
     src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
   ></script>
+  <script src="/index.js"></script>
 </body>
 </html>

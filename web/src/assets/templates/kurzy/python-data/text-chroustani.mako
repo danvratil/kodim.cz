@@ -696,8 +696,20 @@ delky = [136, 105, 82]</pre>
       <li>Který kandidát vyhrál první kolo voleb?</li>
       <li>Ve kterých krajích byla nejvyšší a nejnižší volební účast</li>
       <li>Vytvořte tabulku, která ukazuje který kandidát vyhrál v kterém kraji.</li>
-      <li>Využijte tabulku počtů obyvatel v krajích a vytvořte tabulku podobnou té z tohoto cvičení, která místo čísel bude obsahovat kolik procent hlasů získal každý kandidát v daném kraji.</li>
+      <li>
+        <p>Vytvořte tabulku podobnou té z tohoto cvičení, která místo čísel bude obsahovat jaké procento celkového počtu hlasů získal každý kandidát v daném kraji.</p>
+
+        <p><strong>Nápověda:</strong> postupuje tak, že použijete na každý řádek tabulky zvlášť chroustání seznamů. Tabulku můžete sestavit tak, že tento postup ručně zopakujete 13 krát, jednou pro každý kraj. Pokud toužíte po elegantnějším řešení, vyčkejte na nepovinné úložky.</p>
+      </li>
       <li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50&nbsp;%.</li>	
     </ol>
   </%self:exrc>
+
+  <h2>Domácí úkoly ‒ nepovinné</h2>
+  
+  <%self:exrc title="Elegantní volby" type="home" diffi="3">
+    <p>Pokud vás trápí, že řešení varianty e) v úloze o volbách není příliš elegantní, zkuste sestavit Python výraz na jeden řádek, který celý bod e) vyřeší najednou. Bude potřeba do sebe zanořit dvě chroustání seznamů, jedno přes hodnoty v řádcích a druhé přes jednotlivé kraje.</p>
+  </%self:exrc>
+  
+
 </%self:exercises>

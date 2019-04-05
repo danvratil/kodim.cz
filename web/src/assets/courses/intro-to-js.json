@@ -11,9 +11,9 @@
   },
   "sections": [
     {
-      "name": "priprava",
+      "name": "seznameni",
       "title": {
-        "cz": "Příprava před kurzem"
+        "cz": "Seznámení s JavaScriptem"
       },
       "ready": {
         "cz": true
@@ -21,38 +21,111 @@
       "chapters": [
         {
           "link": {
-            "cz": "opacko"
+            "cz": "priprava"
           },
           "title": {
-            "cz": "Programátorské opáčko"
+            "cz": "Příprava před kurzem"
           },
           "desc": {
-            "cz": "Vyzkoušejte si, že rozumíte všem věcem, které jsou k tomuto kurzu potřeba."
+            "cz": "Nainstalujeme prohlížeč Chrome a nástroje, které budete pro programování na vlastním počítači potřebovat."
           },
           "ready": {
             "cz": true
           }
-        }
-      ]
-    },
-    {
-      "name": "vzhuru",
-      "title": {
-        "cz": "Vzhůru do JavaScriptu"
-      },
-      "ready": {
-        "cz": true
-      },
-      "chapters": [
+        },
         {
           "link": {
-            "cz": "html"
+            "cz": "jazyk-js"
           },
           "title": {
-            "cz": "Jazyk HTML"
+            "cz": "Jazyk JavaScript"
           },
           "desc": {
-            "cz": "Jazyk HTML použíjeme k vytvoření grafického rozhraní pro naše JavaScriptové programy."
+            "cz": "Seznámení s jazykem JavaScript z pohledu člověka, který už ví, co je to programování."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "vlastni-funkce"
+          },
+          "title": {
+            "cz": "Vlastní funkce"
+          },
+          "desc": {
+            "cz": "Při programování v JavaScriptu se neobejdeme bez toho, abychom dokázali psát vlastní funkce."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "html-dom"
+          },
+          "title": {
+            "cz": "HTML a DOM"
+          },
+          "desc": {
+            "cz": "Naučíme se pomocí jazyka HTML vytvářet grafické rozhraní a ovládat jej z JavaScriptu."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "reakce-na-udalosti"
+          },
+          "title": {
+            "cz": "Reakce na události"
+          },
+          "desc": {
+            "cz": "Ukážeme si, jak zavolat nějakou funkci v reakci na kliknutí myši nebo třeba stisk klávesy."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "pacman-prvni-krucky"
+          },
+          "title": {
+            "cz": "Pacman: první krůčky"
+          },
+          "desc": {
+            "cz": "Již máme dost znalostí na to, abychom začali tvořit jednoduchou hru ve stylu pacmana."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "pacman-hraci-plan"
+          },
+          "title": {
+            "cz": "Pacman: hrací plán"
+          },
+          "desc": {
+            "cz": "Přidáme pacmanovi hrací plán, který vytvoří hranice jeho světa."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "pacman-stav"
+          },
+          "title": {
+            "cz": "Pacman: Stav"
+          },
+          "desc": {
+            "cz": "Vysvětlíme si, co to znamená, že pacman je v nějakém stavu."
           },
           "ready": {
             "cz": true

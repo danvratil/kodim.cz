@@ -26,11 +26,9 @@
       ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-progr'))}
       ${self.courseTile('kurzy', courses.get('cz', 'python-data'))}
     </div>
-    %if config['DEVELOP']:
-      <div class="row my-5">
-        ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-js'))}
-      </div>
-    %endif
+    <div class="row my-5">
+      ${self.courseTile('kurzy', courses.get('cz', 'uvod-do-js'))}
+    </div>
   </%self:section>
 
   <%self:section title="Online kurzy">

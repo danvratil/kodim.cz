@@ -1,6 +1,7 @@
 from flask import Flask, redirect, request
 from flask_mako import MakoTemplates, render_template
 import json
+from datetime import datetime
 from collections import OrderedDict
 import appconfig
 
@@ -174,6 +175,25 @@ def index_en():
     'index_en.mako',
     courses=courses
   )
+
+@app.route('/typos', methods=['GET'])
+def typos_get():
+  with open('typos.txt', 'r', encoding='utf-8') as file:
+    content = file.read()
+  
+  return content, 200, {'Content-Type': 'text/plain; charset=utf-8'}
+
+@app.route('/typos', methods=['POST'])
+def typos_post():
+  typo = json.loads(request.data.decode('utf-8'))
+  time = str(datetime.now())
+  with open('typos.txt', 'a+', encoding='utf-8') as file:
+    file.write(
+      f'- {typo["url"]}\n- {typo["typo"]}\n- {typo["context"]}\n- {time}\n\n'
+    )
+  
+  print(typo)
+  return '{"status":"ok"}'
 
 @app.route('/<courses_url>/<course_link>/')
 def course_index(courses_url, course_link):

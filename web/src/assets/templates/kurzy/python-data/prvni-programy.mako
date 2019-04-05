@@ -192,7 +192,11 @@ Medián: 5.5</pre>
 </%self:exercises>
 
 <%self:lesson>
-  <h2>Podmínky</h2>
+  <h2>Čtení na doma</h2>
+
+  <p>Opět je zde pro vás malá samovzdělávací lekce. Nejdříve se podíváme na to, jak můžeme do chroustání seznamů zapjit podmínky, ukážeme si, jak se generují náhodná čísla a potom si představíme další zajímavou hodnotu.</p>
+
+  <h3>Podmínky</h3>
   <p>Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Nejjednodušší použítí podmínek najdeme při zpracování seznamů. Mějme například seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty.</p>
 
 <pre>&gt;&gt;&gt; ubehnuto = [12, 0, 4, 5, 0, 6]
@@ -204,26 +208,6 @@ Medián: 5.5</pre>
 <pre>&gt;&gt;&gt; mesta = [['Zlín', 76010], ['Jičín', 16792], ['Aš', 13093]]
 &gt;&gt;&gt; [mesto[0] for mesto in mesta if mesto[1] > 50000]
 ['Zlín']</pre>
-</%self:lesson>
-
-<%self:exercises>
-  <h2>Cvičení</h2>
-  <%self:exrc title="Minuty">
-    <p>Vytvořte program <code>casy.py</code>, který bude zpracovávat seznam naměřených časů v minutách. Nejprve přímo do programu zadrátujte konkrétní hodnoty například takto: </p>
-
-<pre>casy = [12, 25, 64, 27, 15, 66, 128, 44]</pre>
-
-    <ol>
-      <li>Vyfiltrujte z tohoto seznamu pouze ty časy, které se vejdou do jedné hodiny.</li>
-      <li>Vyfiltrujte z tohoto seznamu pouze ty časy, které překračují jednu hodinu a to tak, že výsledkem bude seznam minut, udávajících o kolik jsme jednu hodinu překročili.</li>
-      <li>Upravte program tak, aby seznam naměřených hodnot obdržel na příkazové řádce.</li>
-    </ol>
-  </%self:exrc>
-</%self:exercises>
-
-<%self:lesson>
-  <h2>Čtení na doma</h2>
-  <p>Opět je zde pro vás malá samozvdělávací lekce. Nejdříve se podíváme na to, jak se generují náhodná čísla a potom si představíme další zajímavou hodnotu.</p>
 
   <h3>Náhodná čísla</h3>
   <p>Jeden z velmi zajímavých a užitečných modulů v Pythonu, který jsme na hodině nezmínili, je modul zvaný <code>random</code>. Slouží ke generování náhodných čísel a jiných náhodných věcí. Podíváme se na funkce <code>randint()</code> a <code>uniform().</code></p>
@@ -297,6 +281,18 @@ range(1, 11)
 <%self:exercises>
   <h2>Domácí úložky ‒ povinné</h2>
   
+  <%self:exrc title="Minuty">
+    <p>Vytvořte program <code>casy.py</code>, který bude zpracovávat seznam naměřených časů v minutách. Nejprve přímo do programu zadrátujte konkrétní hodnoty například takto: </p>
+
+    <pre>casy = [12, 25, 64, 27, 15, 66, 128, 44]</pre>
+
+    <ol>
+      <li>Vyfiltrujte z tohoto seznamu pouze ty časy, které se vejdou do jedné hodiny.</li>
+      <li>Vyfiltrujte z tohoto seznamu pouze ty časy, které překračují jednu hodinu a to tak, že výsledkem bude seznam minut, udávajících o kolik jsme jednu hodinu překročili.</li>
+      <li>Upravte program tak, aby seznam naměřených hodnot obdržel na příkazové řádce.</li>
+    </ol>
+  </%self:exrc>
+
   <%self:exrc title="Fahrnheit vs. Celsius" type="home" diffi="1">
     <p>Pokud pečete podle anglických receptů, často se po váš požaduje rozehřát troubu na uvedenou teplotu. Pokud si ovšem neuvědomíte, že Američané používají pro měření teploty stupně Fahrenheita namísto Celsia, bude vás na konci pečení čekat nemilé překvapení. </p>
 

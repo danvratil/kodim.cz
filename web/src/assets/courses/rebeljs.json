@@ -32,6 +32,48 @@
           "ready": {
             "cz": true
           }
+        },
+        {
+          "link": {
+            "cz": "funkce-io"
+          },
+          "title": {
+            "cz": "Funkce, vstup/výstup"
+          },
+          "desc": {
+            "cz": "Aby naše programy mohly dělat něco skutečně užitečného, potřebujume se naučit, jak volat různé funkce."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "html-dom"
+          },
+          "title": {
+            "cz": "HTML a DOM"
+          },
+          "desc": {
+            "cz": "Naučíme se jak vyrobit jednoduchou webovou stránku a jak měnit její obsah pomocí JavaScriptu."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "vlastni-funkce"
+          },
+          "title": {
+            "cz": "Vlastní funkce"
+          },
+          "desc": {
+            "cz": "Při programování v JavaScriptu se neobejdeme bez toho, abychom dokázali psát vlastní funkce."
+          },
+          "ready": {
+            "cz": true
+          }
         }
       ]
     }
