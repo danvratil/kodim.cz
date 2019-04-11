@@ -79,9 +79,7 @@
   </header>
   <main>
     <%block name="main" />
-  </main>if (sel.type === 'Range') {
-            selection = sel;
-          }
+  </main>
   <footer>
     <div class="jumbotron jumbotron-fluid mb-0">
       <div class="container">
@@ -104,7 +102,7 @@
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-dismiss="modal">Zrušit</button>
-        <button type="button" class="btn btn-primary">Odeslat</button>
+        <button id="sendTypo" type="button" class="btn btn-primary">Odeslat</button>
       </div>
     </div>
   </div>

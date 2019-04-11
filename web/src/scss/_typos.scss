@@ -1,0 +1,14 @@
+.typo {
+  margin-bottom: 1rem;
+
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    background-color: lightgray;
+    padding: 0.25rem;
+  }
+
+  &__body {
+    padding: 1rem;
+  }
+}

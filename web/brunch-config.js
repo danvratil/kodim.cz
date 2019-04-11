@@ -1,6 +1,7 @@
 
 module.exports = {
   paths: {
+    public: 'public/web',
     watched: ['src']
   },
   files: {

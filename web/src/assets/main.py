@@ -1,9 +1,10 @@
-from flask import Flask, redirect, request
+from flask import Flask, g, redirect, request
 from flask_mako import MakoTemplates, render_template
 import json
 from datetime import datetime
 from collections import OrderedDict
 import appconfig
+from kodimdb import KodimDB
 
 app = Flask(__name__)
 app.config.from_object(__name__)
@@ -154,6 +155,16 @@ difficulties = {
 
 courses = Courses()
 
+def getDB():
+  if not hasattr(g, 'kodimdb'):
+    g.kodimdb = KodimDB()
+  return g.kodimdb
+
+@app.teardown_appcontext
+def closeDB(error):
+  if hasattr(g, 'kodimdb'):
+    g.kodimdb.close()
+
 @app.route('/')
 def index_cz():
   return render_template(
@@ -178,22 +189,19 @@ def index_en():
 
 @app.route('/typos', methods=['GET'])
 def typos_get():
-  with open('typos.txt', 'r', encoding='utf-8') as file:
-    content = file.read()
-  
-  return content, 200, {'Content-Type': 'text/plain; charset=utf-8'}
+  typos = getDB().allTypos()
+  return render_template(
+    'typos.mako',
+    typos=typos
+  )
 
 @app.route('/typos', methods=['POST'])
 def typos_post():
   typo = json.loads(request.data.decode('utf-8'))
-  time = str(datetime.now())
-  with open('typos.txt', 'a+', encoding='utf-8') as file:
-    file.write(
-      f'- {typo["url"]}\n- {typo["typo"]}\n- {typo["context"]}\n- {time}\n\n'
-    )
-  
-  print(typo)
-  return '{"status":"ok"}'
+  typo['time'] = str(datetime.now())
+  rowid = getDB().addTypo(typo)
+
+  return f'{{"status":"ok","typoid":{rowid}}}'
 
 @app.route('/<courses_url>/<course_link>/')
 def course_index(courses_url, course_link):

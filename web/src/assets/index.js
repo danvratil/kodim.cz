@@ -24,18 +24,20 @@ $(function() {
       if (sel.type === 'Range') {
         const range = sel.getRangeAt(0);
         const context = range.startContainer.textContent;
-        const beforeTypo = context.substring(0, range.startOffset);
-        const afterTypo = context.substring(range.endOffset);
+        const contextb = context.substring(0, range.startOffset);
+        const contexta = context.substring(range.endOffset);
         const typo = context.substring(range.startOffset, range.endOffset);
   
         savedTypo = {
           typo,
-          context,
+          contexta: contexta.trimStart(),
+          contextb: contextb.trimEnd(),
           url: window.location.pathname,
+          user: 'Pokusnik',
         };
 
         $('#typoContent').html(
-          `${beforeTypo}<strong>${typo}</strong>${afterTypo}`
+          `${contextb}<strong>${typo}</strong>${contexta}`
         );
         $('#typoModal').modal('show');
       }
