@@ -56,7 +56,7 @@ Type "help", "copyright", "credits" or "license" for more information.</pre>
 
 
   <h2>Ověření instalace</h2>
-  <p>Nejprve ověřme, že instalace nástrojů proběhla v pořádku. Ať už jste na jakémkoliv operačním systému, spusťte vaše nově nainstalované Visual Studio Code a z horní lišty vyberte <em>Terminal</em> → <em>New Terminal</em> (viz obrázek).</p>
+  <p>Nejprve ověřme, že instalace nástrojů proběhla v pořádku. Ať už jste na jakémkoliv operačním systému, spusťte svoje nově nainstalované Visual Studio Code a z horní lišty vyberte <em>Terminal</em> → <em>New Terminal</em> (viz obrázek).</p>
 
   <div class="text-center my-4">
     <img src="/img/intro-to-progr/vscode-term.png" alt="VS Code Terminal" />
