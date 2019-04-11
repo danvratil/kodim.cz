@@ -194,10 +194,10 @@ Medián: 5.5</pre>
 <%self:lesson>
   <h2>Čtení na doma</h2>
 
-  <p>Opět je zde pro vás malá samovzdělávací lekce. Nejdříve se podíváme na to, jak můžeme do chroustání seznamů zapjit podmínky, ukážeme si, jak se generují náhodná čísla a potom si představíme další zajímavou hodnotu.</p>
+  <p>Opět je zde pro vás malá samovzdělávací lekce. Nejdříve se podíváme na to, jak můžeme do chroustání seznamů zapojit podmínky, ukážeme si, jak se generují náhodná čísla a potom si představíme další zajímavou hodnotu.</p>
 
   <h3>Podmínky</h3>
-  <p>Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Nejjednodušší použítí podmínek najdeme při zpracování seznamů. Mějme například seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty.</p>
+  <p>Podmínky slouží k tomu, abychom nějaký kus kódu mohli vykonat jen v případě, že je splněna nějaká podmínka. Nejjednodušší použití podmínek najdeme při zpracování seznamů. Mějme například seznam uběhnutých kilometrů a chceme z něj jen nenulové hodnoty.</p>
 
 <pre>&gt;&gt;&gt; ubehnuto = [12, 0, 4, 5, 0, 6]
 &gt;&gt;&gt; [beh for beh in ubehnuto if beh != 0]
@@ -346,7 +346,7 @@ hadHoniVelblouda
 velbloud_honi_hada
 </pre>
 
-    <p>Ano, tohle už není procházka růžovým sadem a jde o úložku spíše pro fajnšmekry, Python gurmány a lidi s neutišitelnou tohou nenechat žádný příklad nevyřešený. Vězte, že skutečně existuje řešení, které používá výhradně probrané techniky. Vyplatí se mrknout na to, jaké všechny metody nabízí Python řetězce ale jinak není potřeba žádné googlení, jen se nesmíte bát věci, které už tak dobře znáte, opravdu použít a nemít je ve své programátorské dílně jen vystavené za sklem.</p>
+    <p>Ano, tohle už není procházka růžovým sadem a jde o úložku spíše pro fajnšmekry, Python gurmány a lidi s neutišitelnou touhou nenechat žádný příklad nevyřešený. Vězte, že skutečně existuje řešení, které používá výhradně probrané techniky. Vyplatí se mrknout na to, jaké všechny metody nabízí Python řetězce, jinak ale není potřeba žádné googlení, jen se nesmíte bát věci, které už tak dobře znáte, opravdu použít, a nemít je ve své programátorské dílně jen vystavené za sklem.</p>
 
     <p>Některé pasáže programu si lze mírně ulehčit použítím funkce <code>enumerate()</code>, která vám při chroustání seznamů vrací nejen prvek seznamu, ale i jeho index. Vyzkoušejte například následující příkaz</p>
 

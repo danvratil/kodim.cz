@@ -199,7 +199,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   <h2>Chroustání seznamů</h2>
   <p>Často se může stát, že potřebujeme nějakým způsobem zpracovat všechny hodnoty v nějakém seznamu a vyrobit tak seznam nový.</p>
   
-  <p>Představme se, že zpracováváme známky z písemek a protože písemky hodnotili programátoři, tak místo známek 1 až 5 používali známky 0 až 4.</p>
+  <p>Představme si, že zpracováváme známky z písemek, které hodnotili programátoři. Ti místo známek 1 až 5 používali známky 0 až 4.</p>
   
   <div class="verbatim">
     <pre>pisemky = [0, 2, 0, 1, 1, 3]</pre>
@@ -337,7 +337,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
         Vytvořte seznam dvouprvkových seznamů obsahujících pouze denní a noční teplotu.
       </li>
       <li>
-        Spočítejte celkovou průměrnou teplotu ze celý týden.
+        Spočítejte celkovou průměrnou teplotu za celý týden.
       </li>
     </ol>
 

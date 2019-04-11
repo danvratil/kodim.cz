@@ -1,14 +1,14 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>Než se pustíme do samotného programování, je potřeba na váš počítač nainstalovat dva nové programy, které budeme k programování potřebovat. Předtím si však ještě povíme něco o tom jak se svým počítačem komunikovat.</p>
+  <p>Než se pustíme do samotného programování, je potřeba na váš počítač nainstalovat dva nové programy, které budeme k programování potřebovat. Předtím si však ještě povíme něco o tom, jak se svým počítačem komunikovat.</p>
 
   <h2>Operační systém</h2>
   <p>Každý počítač potřebuje takzvaný operační systém, například Windows 10. Operační systém je v podstatě jeden velký program, který spravuje váš počítač, umožňuje vám jej ovládat, spouštět programy, pracovat se soubory na disku apod. Bez operačního systému by váš počítač byl jen černá obrazovka bez života, něco jako autobus bez řidiče. </p> 
   
   <p>Hned takto z kraje se nám ovšem věci začínají malinko komplikovat tím, že neexistuje pouze jeden operační systém, který by všichni svorně používali. Máme minimálně tři různé možnosti, Windows, Mac OS a Linux. Běžní lidé na ulici používají Windows, hipstři a hipsterky v kavárnách používají Mac OS a vousatí geekové v kostkovaných košilích používají různé varianty Linuxu.</p>
 
-  <p>Nejrozšířenější je v dnešní době systém Windows od Microsoftu. Ten používá většina lidí v práci i na osobních počítačích. Mac OS je operační systém dodávaný s počítači od firmy Apple. Nejpopulárnější je v USA ale u nás se také hojně používá. Linux naopak vzešel z akademického prostředí a vyvíjejí jej lidé, kteří věří ve svobodné nakládání se softwarem. Většinou jej používají nadšenci, kteří si rádi hrají s počítači a chtějí mít věci pod kontrolou. Linux se však snaží přiblížit také běžným uživatelům a vznikají proto distribuce jako Ubuntu, Linux Mint apod. které jsou na ovládání velmi podobné Windows a Mac OS.</p>
+  <p>Nejrozšířenější je v dnešní době systém Windows od Microsoftu. Ten používá většina lidí v práci i na osobních počítačích. Mac OS je operační systém dodávaný s počítači od firmy Apple. Nejpopulárnější je v USA, u nás se však také hojně používá. Linux naopak vzešel z akademického prostředí a vyvíjejí jej lidé, kteří věří ve svobodné nakládání se softwarem. Většinou jej používají nadšenci, kteří si rádi hrají s počítači a chtějí mít věci pod kontrolou. Linux se však snaží přiblížit také běžným uživatelům a vznikají proto distribuce jako Ubuntu, Linux Mint apod., které jsou na ovládání velmi podobné Windows a Mac OS.</p>
 
   <h2>Instalace nástrojů</h2>
   <p>Abychom mohli začít programovat, je potřeba na počítač nainstalovat dva programy - samotný jazyk Python a Visual Studio Code. Postup se liší podle toho, jaký máte operační systém. Instrukce pro každý systém zvlášť naleznete níže.</p>
@@ -62,7 +62,7 @@ Type "help", "copyright", "credits" or "license" for more information.</pre>
     <img src="/img/intro-to-progr/vscode-term.png" alt="VS Code Terminal" />
   </div>
 
-  <p>Pokud jste na Windows, napište do okna, které se objeví toto:</p>
+  <p>Pokud jste na Windows, napište do okna, které se objeví, toto:</p>
 
   <pre>python</pre>
 

@@ -17,7 +17,7 @@ vstup.close()
 print(radky)</pre>
   </div>
 
-  <p>Jakmile soubor otevřeme voláním funkce <code>open()</code>, proměnná <var>vstup</var> bude obsahovat jednotlivé řádky našeho souboru seřazené jeden za druhým. Není to přímo Python seznam řádků, ale i tak můžeme použít chroustání seznamů a projít soubor řádek po řádku a uložit si tyto řádky do skutečného seznamu. Vzpomeňte si na hodnotu <code>range</code>, která také není technicky seznam, ale můžeme jit chroustat jako by jím byla.</p>
+  <p>Jakmile soubor otevřeme voláním funkce <code>open()</code>, proměnná <var>vstup</var> bude obsahovat jednotlivé řádky našeho souboru seřazené jeden za druhým. Není to přímo Python seznam řádků, ale i tak můžeme použít chroustání seznamů a projít soubor řádek po řádku a uložit si tyto řádky do skutečného seznamu. Vzpomeňte si na hodnotu <code>range</code>, která také není technicky seznam, ale můžeme jít chroustat jako by jím byla.</p>
   
   <p>Jakmile jsme se souborem hotovi, musíme ho vždy zavřít voláním metody <code>close()</code>. Výstup z našeho programu pak bude vypadat takto:</p>
 
@@ -50,7 +50,7 @@ print(radky)</pre>
   </%self:exrc>
 
   <%self:exrc title="Počet slov">
-    <p>Stáhněte si odezdanou <a href="/download/python-data/praha.txt" download>slohovou práci</a>. Zadání bylo sepsat text o nejméně 150ti slovech pojednávající o našem hlavním městě. Napište program, který spočítá počet slov v tomto textu, abychom věděli, zda bylo zadání formálně splněno. Nechte se vést následujícím návodem.</p> 
+    <p>Stáhněte si odevzdanou <a href="/download/python-data/praha.txt" download>slohovou práci</a>. Zadání bylo sepsat text o nejméně 150ti slovech pojednávající o našem hlavním městě. Napište program, který spočítá počet slov v tomto textu, abychom věděli, zda bylo zadání formálně splněno. Nechte se vést následujícím návodem.</p> 
 
     <ol>
       <li>
@@ -143,16 +143,16 @@ soubor.close()
   <h2>Čtení na doma</h2>
   <p>Na lekci jsme si ukazovali, jak číst a zapisovat data z/do textových souborů. Co ale jiné formáty, jako například Excel?</p>
 
-  <p>Je důležité si uvědomit, že Excel není datový formát, ani to není synonymum pro tabulku dat. Excel je pouze název programu od firmy Microsoft. Podobně jako se všem náklaďákům začalo říkat tatrovky a vysavačům luxy, začalo se tabulkám s daty říkat excely. Existují ale i jiné programy na práci s tabulkami, například LibreOffice Calc nebo Google Sheets. Microsoft Excel je navíc komerční produkt, který funguje jen na některýcn operačních systémech, a rozhodně není zadarmo. Ne každý si jej tedy může nebo chce dovolit. Z těchto i jiných důvodů není excelová tabulka vhodný formát pro výměnu data. Téměř vždy je lepší data z Excelu nebo z jiného tabulkového nástroje před zpracováním exportovat do textového souboru nebo do SQL databáze.</p>
+  <p>Je důležité si uvědomit, že Excel není datový formát, ani to není synonymum pro tabulku dat. Excel je pouze název programu od firmy Microsoft. Podobně jako se všem náklaďákům začalo říkat tatrovky a vysavačům luxy, začalo se tabulkám s daty říkat excely. Existují ale i jiné programy na práci s tabulkami, například LibreOffice Calc nebo Google Sheets. Microsoft Excel je navíc komerční produkt, který funguje jen na některých operačních systémech, a rozhodně není zadarmo. Ne každý si jej tedy může nebo chce dovolit. Z těchto i jiných důvodů není excelová tabulka vhodný formát pro výměnu data. Téměř vždy je lepší data z Excelu nebo z jiného tabulkového nástroje před zpracováním exportovat do textového souboru nebo do SQL databáze.</p>
 
   <p>Existují dva základní způsoby, jak převést data z tabulky do textu. My v tomto textu budeme pracovat s Google Sheets, neboť je to nejdostupnější tabulkový editor. Tyto postupy však více či méně fungují i v jiných editorech.</p>
   
   <h3>Hodnoty oddělené tabulátory</h3>
   
-  <p>První postup je prostě danou tabulku vybrat myší a zkopírovat do textového souboru a ten uložit. V takovém případě nám vzniknou hodnoty, které jsou oddělené pomocí tabulátorů. Z lekce už víme, že není problém takovéto soubory do našeho programu načíst. Podobně, pokud vytvoříme textový soubor tak, že hodnoty na řádku jsou oddělené pomocí tabulátorů, lze je přímo zkopírovat do Google Sheets, které podle tabulárotů vytvoří oddělené sloupečky. Vytvořte si nějakou jednoduchou tabulku v Google Sheets a vyzkoušejte si, že to opravdu funguje oběma směry.</p>
+  <p>První postup je prostě danou tabulku vybrat myší a zkopírovat do textového souboru a ten uložit. V takovém případě nám vzniknou hodnoty, které jsou oddělené pomocí tabulátorů. Z lekce už víme, že není problém takovéto soubory do našeho programu načíst. Podobně, pokud vytvoříme textový soubor tak, že hodnoty na řádku jsou oddělené pomocí tabulátorů, lze je přímo zkopírovat do Google Sheets, které podle tabulátorů vytvoří oddělené sloupečky. Vytvořte si nějakou jednoduchou tabulku v Google Sheets a vyzkoušejte si, že to opravdu funguje oběma směry.</p>
 
   <h3>Formát CSV</h3>
-  <p>Výše uvedený postup funguje pouze pro malé tabulky, protože se vám asi nebude chtít ručně kopírovat tabulku od 100 000 řádcích. Pro výměnu tabulkových dat v textové podobě se ustálil všeobecně používaný format zvaný CSV z anglického <em>Comma Separated Values</em>. Jak název napovídá, v tomto formátu nejsou hodnoty odděleny tabulátory ale čárkami. Google Sheets umí tento formát exportovat, takže nemusíme nic kopírovat. Stačí v menu vybrat <em>Soubor</em> &rarr; <em>Stáhnout jako</em> &rarr; <em>Hodnoty oddělené čárkami</em>. Tím se vám aktuální list stáhne jako textový soubor, který pak můžete normálně otevří v Python programu. Všimněte si, že takto můžeme dokonce stáhnout i hodnoty uddělené tabulátory (formát TSV).</p>
+  <p>Výše uvedený postup funguje pouze pro malé tabulky, protože se vám asi nebude chtít ručně kopírovat tabulku o 100 000 řádcích. Pro výměnu tabulkových dat v textové podobě se ustálil všeobecně používaný formát zvaný CSV z anglického <em>Comma Separated Values</em>. Jak název napovídá, v tomto formátu nejsou hodnoty odděleny tabulátory ale čárkami. Google Sheets umí tento formát exportovat, takže nemusíme nic kopírovat. Stačí v menu vybrat <em>Soubor</em> &rarr; <em>Stáhnout jako</em> &rarr; <em>Hodnoty oddělené čárkami</em>. Tím se vám aktuální list stáhne jako textový soubor, který pak můžete normálně otevří v Python programu. Všimněte si, že takto můžeme dokonce stáhnout i hodnoty uddělené tabulátory (formát TSV).</p>
 
   <p>Pokud chceme provést obrácený postup, tedy nahrát CSV data do taublky Google, je třeba jít v menu na <em>Soubor</em> &rarr; <em>Importovat</em> &rarr; <em>Nahrát</em> a poté na vašem počítači vybrat kýžený soubor CSV.</p>
 
@@ -175,7 +175,7 @@ soubor.close()
   <p>A proto jsme, milé děti, museli použít při otvírání souborů v Pythonu argument <code>encoding='utf-8'</code>. Dnes už je kódování UTF-8 naprostý standard. Používají jej všechny moderní webové stránky, moderní programovací jazyky a textové editory. Bohužel na systému Windows se ještě často setkáte se starým způsobem kódování. Dejte si proto pozor, pod jakým kódováním váš textový soubor ukládáte a vždy vyberte UTF-8. Jinak bude váš textový soubor v Pythonu vypadat jako rozsypaná rýže.</p>
 
   <h3>Všude bordel</h3>
-  <p>Teď už bychom si naivně mohli myslet, že je ve všem pořádek, ale to by byl život příliš snadný. Obzlášť operační systém Windows umí někdy do věcí kvalitně hodit vidle. Například Poznámkový blok používá jako výchozí nastavení pro ukládání textových souborů kódování ANSI, které je už dávno zastaralé a vůbec nedává smysl ho nadále používat. Pokud si v Poznámkovém bloku při ukládání rozbalíte nabídku kódování, uvidíte tam ale také možnost "kódování Unicode", což je nesmysl, protože Unicode není kódování, nýbrž znaková sada. Standard Unicode nabízí více možných kódování: UTF-8, UTF-16 a UTF-32, které se liší tím, jak moc šetří pamětí. A z nepochopitelných důvodu se občas <strong>kódování</strong> UTF-16 pro <strong>znakovou sadu</strong> Unicode říká <strong>kódování Unicode</strong> i přesto, že témeř všichni používají kódování UTF-8. </p>
+  <p>Teď už bychom si naivně mohli myslet, že je ve všem pořádek, ale to by byl život příliš snadný. Obzvlášť operační systém Windows umí někdy do věcí kvalitně hodit vidle. Například Poznámkový blok používá jako výchozí nastavení pro ukládání textových souborů kódování ANSI, které je už dávno zastaralé a vůbec nedává smysl ho nadále používat. Pokud si v Poznámkovém bloku při ukládání rozbalíte nabídku kódování, uvidíte tam ale také možnost "kódování Unicode", což je nesmysl, protože Unicode není kódování, nýbrž znaková sada. Standard Unicode nabízí více možných kódování: UTF-8, UTF-16 a UTF-32, které se liší tím, jak moc šetří pamětí. A z nepochopitelných důvodu se občas <strong>kódování</strong> UTF-16 pro <strong>znakovou sadu</strong> Unicode říká <strong>kódování Unicode</strong> i přesto, že témeř všichni používají kódování UTF-8. </p>
 
   <p>Občas programátorům nezbyde než mlátit hlavou do stolu a křičet PROČ? Ale tak je to občas i v životě. Takže nezapomeňte naučit svoje děti, aby vždy ukládaly textové sobory jako UTF-8. Svět pak bude zase o kousek lepším místem.</p>
 </%self:lesson>
@@ -191,7 +191,7 @@ soubor.close()
         Napište program, který vypíše pro první den kolik pasažérů jelo celkem směrem tam a kolik směrem zpět. 
       </li>
       <li>
-        Nechť váš program vypisuje součty pasažárů ze celý týden, tedy kolik lidí za celý týden jelo směrem tam a kolik směrem zpět. 
+        Nechť váš program vypisuje součty pasažérů ze celý týden, tedy kolik lidí za celý týden jelo směrem tam a kolik směrem zpět. 
       </li>
     </ol>
   </%self:exrc>
