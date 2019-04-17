@@ -28,13 +28,13 @@ print(statistics.mean(hody))</pre>
   <h2>Bloky</h2>
   <p>Všimněte si, že všechny příkazy, které jsou součástí naší podmínky, jsou odsazené kousek doprava. Tímto poprvé narážíme na takzvané bloky kódu. Blok je způsob jak seskupit posloupnost příkazů do jednoho celku. Takový celek pak může být součástí podmínky nebo, jak později uvidíme, například cyklu. Blok vždy začíná dvojtečkou na konci předchozího řádku. Tím říkáme k jaké konstrukci (v našem případě <code>if</code>) náš blok příkazů patří.</p>
 
-  <p>Odsazování bloků se provádí buď pomocí několika mezer nebo pomocí jednoho tabulátoru. Podobně jako v případě jmen proměnných, opět zde přichází do hry různé programovací styly. Někteří programátoři mají rádi mezery, jiní jeden tabulátor. Někdo odsazuje pomocí čtyř mezer, někdo pomocí tří, někdo pomocí dvou. Opět je to na jakémsi vašem estetickém cítění. </p>
+  <p>Odsazování bloků se provádí buď pomocí několika mezer. Podobně jako v případě jmen proměnných, zde opět přichází do hry různé programovací styly. Někteří programátoři mají rádi pro odsazení dvě mezery, jiní čtyři, někteří dokonce používají jeden tabulátor. Opět je to na jakémsi vašem estetickém cítění. </p>
 
-  <p>Pokud si zvolíte konkrétní styl, je velice důležité jej dodržovat. Pokud v rámci jednoho bloku budete míchat mezery a tabulátory, Python vašemu kódu nebude rozumět a bude vyhazovat chyby. Pokud budete jeden blok odsazovat pomocí tabulátorů a jeden pomocí mezer, tak vám to Python odpustí, ale je to strašlivá prasárna, takže to opravdu nedělejte. </p>
+  <p>Pokud si zvolíte konkrétní styl, je velice důležité jej dodržovat. Pokud v rámci jednoho bloku budete míchat různé počty mezer pro odsazení, Python vašemu kódu nebude rozumět a bude si na vás stěžovat (rozuměj: vyhazovat chyby). </p>
 
   <h3>Podmínky se dvěma větvemi</h3>
 
-  <p>Podmínky mohou být mnohem zajímavější a komplexnější, než jak jsme viděli přech chvíli. Například mohou mít jak pozitivní tak negativní větev. Negativní větev se spouští, pokud výraz v podmínce vrátí <code>False</code>. Můžeme pak například psát:</p>
+  <p>Podmínky mohou být mnohem zajímavější a komplexnější, než jak jsme viděli před chvíli. Například mohou mít jak pozitivní tak negativní větev. Negativní větev se spouští, pokud výraz v podmínce vrátí <code>False</code>. Můžeme pak například psát:</p>
 
   <div class="verbatim">
 <pre>if len(hody) &lt; 1000:
@@ -52,8 +52,10 @@ else:
     <p>Napište program <code>deleni.py</code>, který na příkazové řádce obdrží dvě celá čísla a vypíše jejich podíl zaokrouhlený na tři desetinná čísla. Pokud je druhé číslo 0, program vypíše hlášku, že nulou dělit nelze.</p>
   </%self:exrc>
   
-  <%self:exrc title="Kontrola věku">
-    <p>Napište program <code>prihlaseni.py</code>, který na příkazové řádce obdrží jméno uživatele a jeho věk. Pokud má uživatel alespoň 18 let, program vypíše zprávu, že uživatel může vstoupit, v opačném případě, že vstup je zakázán.</p>
+  <%self:exrc title="Kontrola souboru">
+    <p>Napište program <code>zpracovani.py</code>, který na příkazové řádce obdrží název souboru. Pokud soubor končí příponou <code>.csv</code>, program vypíše název tohoto souboru na obrazovku. Pokud má soubor jinou příponu, programu zahlásí, že daný soubor neumí zpracovat.</p>
+
+    <p>V tomto příkladu se vám může hodit metoda řetězců s názvem <code>endswith</code> (<a href="https://docs.python.org/3/library/stdtypes.html#str.endswith">viz dokumentace</a>).</p>
   </%self:exrc>
 
   ${self.alert_done()}
