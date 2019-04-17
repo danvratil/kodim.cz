@@ -6,7 +6,7 @@
   <h2>Čtení ze souborů</h2>
   <p>V praxi často máme data uložena v nějakém souboru na disku v nějakém textovém formátu. Ukážeme si, jak takový soubor v Pythonu otevřít a data z něj přečíst.</p>
 
-  <p>Pro naše první experimenty si stáhněte soubor <a href="/download/python-data/mereni.txt" download>mereni.txt</a>. Ten obsahuje naměřené teploty během týdne, které jsme už několíkrát v našich programech používali.</p>
+  <p>Pro naše první experimenty si stáhněte soubor <a href="/download/python-data/mereni.txt" download>mereni.txt</a>. Ten obsahuje naměřené teploty během týdne, které jsme už několikrát v našich programech používali.</p>
 
   <p>Pokud chceme otevřít tento soubor v nějakém našem programu, nejjednodušší je zkopírovat jej do téže složky, ve které máme program uložený. Potom v programu použijeme funkci <code>open()</code>, která slouží k otevírání souborů. Náš kód pak může vypadat například takto:</p>
 
@@ -17,7 +17,7 @@ vstup.close()
 print(radky)</pre>
   </div>
 
-  <p>Jakmile soubor otevřeme voláním funkce <code>open()</code>, proměnná <var>vstup</var> bude obsahovat jednotlivé řádky našeho souboru seřazené jeden za druhým. Není to přímo Python seznam řádků, ale i tak můžeme použít chroustání seznamů a projít soubor řádek po řádku a uložit si tyto řádky do skutečného seznamu. Vzpomeňte si na hodnotu <code>range</code>, která také není technicky seznam, ale můžeme jít chroustat jako by jím byla.</p>
+  <p>Jakmile soubor otevřeme voláním funkce <code>open()</code>, proměnná <var>vstup</var> bude obsahovat jednotlivé řádky našeho souboru seřazené jeden za druhým. Není to přímo Python seznam řádků, ale i tak můžeme použít chroustání seznamů a projít soubor řádek po řádku a uložit si tyto řádky do skutečného seznamu. Vzpomeňte si na hodnotu <code>range</code>, která také není technicky seznamem, ale můžeme ji chroustat jako by jím byla.</p>
   
   <p>Jakmile jsme se souborem hotovi, musíme ho vždy zavřít voláním metody <code>close()</code>. Výstup z našeho programu pak bude vypadat takto:</p>
 
@@ -69,11 +69,11 @@ print(radky)</pre>
   </%self:exrc>
 
   <%self:exrc title="Půjčovna">	
-    <p>Půjčovna aut má v každém kraji ČR jedno auto s danou SPZ. Ke konci roku chce zjistit, kolik všechna auta najezdila dohromady kilometrů. V souboru <a href="/download/python-data/auta.txt" download>auta.txt</a> je pro každou SPZ zaznamenáno kolik dané auto ujelo kilometrů za daný rok. Hodnoty jsou v tísících kilometrů. Bohužel se v jednotlivých krajích blbě zkoordinovali a někdo používal desetinnou čárku, někdo zase tečku.</p>
+    <p>Půjčovna aut má v každém kraji ČR jedno auto s danou SPZ. Ke konci roku chce zjistit, kolik všechna auta najezdila dohromady kilometrů. V souboru <a href="/download/python-data/auta.txt" download>auta.txt</a> je pro každou SPZ zaznamenáno kolik dané auto ujelo kilometrů za daný rok. Hodnoty jsou v tisících kilometrů. Bohužel se v jednotlivých krajích blbě zkoordinovali a někdo používal desetinnou čárku, někdo zase tečku.</p>
 
     <ol>
       <li>Napište program, který na výstup vypíše součet všech ujetých kilometrů. Jistě se vám bude hosti metoda řetězců jménem <code>replace()</code>.</li>
-      <li>Upravte váš program tak, aby jméno souboru k otevření dostal na příkazové řádce, abychom mohli takto zpracovávat výkazy s různých souborů aniž bychom museli upravovat samotný kód programu.</li>
+      <li>Upravte váš program tak, aby jméno souboru k otevření dostal na příkazové řádce, abychom mohli takto zpracovávat výkazy s různých souborů, aniž bychom museli upravovat samotný kód programu.</li>
     </ol>
     
   </%self:exrc>	
@@ -83,7 +83,7 @@ print(radky)</pre>
   <h2>Zápis do souboru</h2>
   <p>Když už umíme data ze souboru číst, pojďme se také naučit jak data do souboru zapsat. Konec konců, naše programy budou potřebovat nejen data zpracovávat ale také data produkovat.</p>
 
-  <p>Zápis do souboru se provádí pomocí metody <code>write()</code>. Ta jako svůj parametr bere řetězec a zapíše jej do toho otevřeného souboru, na kterém ji zavoláme. Abychom ale mohli tuto metody zavolat, musíme náš soubor otevřít takzvaně pro zápis. K tomu nám poslouží druhý parametr funkce <code>open()</code>. Pojďme si to vyzkoušet na příkladu.</p>
+  <p>Zápis do souboru se provádí pomocí metody <code>write()</code>. Ta jako svůj parametr bere řetězec a zapíše jej do toho otevřeného souboru, na kterém ji zavoláme. Abychom ale mohli tuto metodu zavolat, musíme náš soubor otevřít takzvaně pro zápis. K tomu nám poslouží druhý parametr funkce <code>open()</code>. Pojďme si to vyzkoušet na příkladu.</p>
 
   <p>Dejme tomu, že máme seznam uživatelů, které chceme zapsat do souboru <code>uzivatele.txt</code>. </p>
 <pre>jmena = ['Roman', 'Jana', 'Radek', 'Petra', 'Vlasta']
@@ -108,7 +108,7 @@ soubor.close()
 <%self:exercises>
   <h2>Cvičení</h2>
   <%self:exrc title="Dny v měsíci">	
-    <p>Napište program, který bude mít přímo v kódu zapsaný počet dní v jednotlivých měsích takto:</p>
+    <p>Napište program, který bude mít přímo v kódu zapsaný počet dní v jednotlivých měsících takto:</p>
 
     <pre>pocty_dni = [31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31]</pre>
 

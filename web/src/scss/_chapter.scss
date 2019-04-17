@@ -194,17 +194,21 @@ table {
   margin-top: 3rem;
 }
 
-.figure {
+.figure-md {
   text-align: center;
-  margin-bottom: 1rem;
+  margin: 2rem 0rem;
   
-  &__img-600 {
-    width: 100%;
-    max-width: 600px;
+  @include media-breakpoint-up(md) {
+    margin: 0rem 0rem 1rem 0rem;
   }
+}
 
-  &__img-400 {
-    width: 100%;
-    max-width: 400px;
-  }
+.img-600 {
+  width: 100%;
+  max-width: 600px;
+}
+
+.img-400 {
+  width: 100%;
+  max-width: 400px;
 }

@@ -98,7 +98,7 @@ martin podloucký
     <p>Použijte Python konzoli jako kalkulačku:</p>
     <ol>
       <li>Jeden lístek do divadla <em>Pěst na oko</em> stojí 12 euro. Spočítejte měsíční příjem divadla ze vstupného přichází-li průměrně 174 návštěvníků na jedno představení a divadlo hraje 15 představení měsíčně.</li>
-      <li>Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní měsíční příjem divadla za jedno představení pokud víme, že třicet procent návštěvníků jsou studenti?</li>
+      <li>Divadlo se rozhodlo prodávat studentské vstupné ve výši 65% plného vstupného. Jak se změní měsíční příjem divadla pokud víme, že třicet procent návštěvníků jsou studenti?</li>
     </ol>
     <%def name="solution()"></%def>
   </%self:exrc>

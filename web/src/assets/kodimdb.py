@@ -26,6 +26,13 @@ class KodimDB:
     ))
     self.db.commit()
     return cur.lastrowid
+  
+  def removeTypo(self, rowid):
+    query = "DELETE FROM `typos` WHERE `id`=?;"
+    cur = self.db.cursor()
+    cur.execute(query, (rowid,))
+    self.db.commit()
+    return cur.lastrowid
 
   def close(self):
     self.db.close()

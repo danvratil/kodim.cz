@@ -75,6 +75,24 @@
       "chapters": [
         {
           "link": {
+            "cz": "prvni-zakazky",
+            "en": "first-contracts"
+          },
+          "title": {
+            "cz": "První zakázky",
+            "en": "First Contracts"
+          },
+          "desc": {
+            "cz": "Představíme se několik problémů, které programátoři řeší ve skutečné práci",
+            "en": "We introduce some real world problems solved by real world programmers."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
             "cz": "cisla-retezce",
             "en": "numbers-strings"
           },
@@ -201,12 +219,30 @@
         },
         {
           "link": {
-            "cz": "zaverem",
-            "en": "conclusion"
+            "cz": "problem-spolubydleni",
+            "en": "rommates-problem"
           },
           "title": {
-            "cz": "Závěrem",
-            "en": "Conclusion"
+            "cz": "Problém spolubydlení",
+            "en": "The Roommates Problem"
+          },
+          "desc": {
+            "cz": "Řešení naší úvodní úlohy rozpočítání útraty napsané v jazyce Python.",
+            "en": "The solution to the roommates problem written in Python."
+          },
+          "ready": {
+            "cz": true,
+            "en": true
+          }
+        },
+        {
+          "link": {
+            "cz": "kam-dal",
+            "en": "where-to-go-next"
+          },
+          "title": {
+            "cz": "Kam dál?",
+            "en": "Where to go Next?"
           },
           "desc": {
             "cz": "Co si počít s tím, co jste se zde naučili, a kam se vydat dál.",

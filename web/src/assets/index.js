@@ -1,5 +1,22 @@
 let savedTypo;
 
+function typoDone(id) {
+  fetch(`${window.location.origin}/typos/${id}`,
+    {
+      method: "DELETE",
+      headers: {
+        'Accept': 'application/json',
+      }
+    }
+  )
+  .then(res => res.json())
+  .then(json => {
+      console.log(json);
+      window.location.reload();
+    }
+  );
+}
+
 $(function() {
   $('#sendTypo').click(function() {
     console.log(savedTypo);

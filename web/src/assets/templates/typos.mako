@@ -58,6 +58,7 @@
           <span><strong>${typo['typo']}</strong></span>
           <span>${typo['contexta']}</span>
         </div>
+        <button class="btn" onclick="typoDone(${typo['id']})">Done</button>
       </div>
     %endfor
   </div>

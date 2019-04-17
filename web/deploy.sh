@@ -2,9 +2,9 @@
 
 DEPLOY_FILE=deploy.tar.gz
 
-rm -rf public/*
+rm -rf public/web/*
 brunch build --production
-cd public
+cd public/web
 rm appconfig.py
 mv prodconfig.py appconfig.py
 tar -zcvf ${DEPLOY_FILE} *

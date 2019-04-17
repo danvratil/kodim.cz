@@ -203,6 +203,11 @@ def typos_post():
 
   return f'{{"status":"ok","typoid":{rowid}}}'
 
+@app.route('/typos/<id>', methods=['DELETE'])
+def typos_delete(id):
+  rowid = getDB().removeTypo(id)
+  return f'{{"status":"ok","typoid":{rowid}}}'
+
 @app.route('/<courses_url>/<course_link>/')
 def course_index(courses_url, course_link):
   lang = courses.langs[courses_url]

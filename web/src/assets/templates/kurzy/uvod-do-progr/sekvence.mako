@@ -46,8 +46,8 @@
       <li>Vytvořte nějaký seznam celých čísel, například počty diváků na několika po sobě jdoucích představeních.</li>
       <li>Vytvořte nějaký seznam desetinných čísel, například zaplněnost divadla v několika po sobě jdoucích představeních.</li>
       <li>Vytvořte nějaký seznam řetězců, například seznam názvů několika divadelních představení, která divadlo hraje. Uložte tento seznam do proměnné <var>hry</var>. Uložte do nějaké proměnné druhou položku tohoto seznamu.</li>
-      <li>Vytvořte seznam seznamů, který bude obsahot naměřené teploty pro každý ze sedmi dní v jednom týdnu. Každý den měříme teplotu ráno, v poledne a večer. Uložte tento seznam do proměnné <var>teploty</var> a zeptejte se jaká teplota byla naměřena v úterý ráno a v pátek v poledne.</li>
-      <li>Do proměnné <var>hodnoceni</var> uložte seznam hodnocení, které obdržela divadelní hra Plyšáci na útěku v různách recenzncích časopisech. Hodnocení je vždy mezi 1 až 10. Přidejte na konec tohoto seznamu nové hodnocení z časopisu Divadelní oběžník. </li>
+      <li>Vytvořte seznam seznamů, který bude obsahovat naměřené teploty pro každý ze sedmi dní v jednom týdnu. Každý den měříme teplotu ráno, v poledne a večer. Uložte tento seznam do proměnné <var>teploty</var> a zeptejte se jaká teplota byla naměřena v úterý ráno a v pátek v poledne.</li>
+      <li>Do proměnné <var>hodnoceni</var> uložte seznam hodnocení, které obdržela divadelní hra Plyšáci na útěku v různých recenzních časopisech. Hodnocení je vždy mezi 1 až 10. Přidejte na konec tohoto seznamu nové hodnocení z časopisu Divadelní oběžník. </li>
     </ol>
   </%self:exrc>
 

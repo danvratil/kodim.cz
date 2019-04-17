@@ -8,8 +8,8 @@
     <div class="col-md-7">
       <p>Počítače jsou jeden z nejdůležitějších vynálezů lidstva 20tého století. Máme je na stole v podobě notebooků, v kapse v podobě mobilních telefonů, v hodinkách, v televizích, v autech, v letadlech, prostě všude. Prostupují našimi životy, řeší za nás ohromné množství problému a poskytují nám také spoustu zábavy. </p>
     </div>
-    <div class="col-md-5 px-md-4 pb-4">
-      <img class="img-fluid" src="/img/intro-to-progr/computer.jpg" alt="Notebook" />
+    <div class="col-md-5 figure-md">
+      <img class="img-600" src="/img/intro-to-progr/computer.jpg" alt="Notebook" />
     </div>
   </div>
 
@@ -29,8 +29,8 @@
     <div class="col-md-7">
       <p>Aby se člověk stal programátorem, nepotřebuje v podstatě nic jiného než chuť učit se nové věci a trochu lásky k technice a počítačům. Rozhodně není třeba být zdatný v matematice, mít vystudovanou technickou vysokou školu nebo dokonce být mužem. Počítače jsou ohromně mocné hračky, se kterými je možné prostě si hrát a zkoušet, co všechno pomocí nich dokážeme. </p>
     </div>
-    <div class="col-md-5 px-md-4 pb-4">
-      <img class="img-fluid" src="/img/intro-to-progr/baby.jpg" alt="Dítě programuje" />
+    <div class="col-md-5 figure-md">
+      <img class="img-600" src="/img/intro-to-progr/baby.jpg" alt="Dítě programuje" />
     </div>
   </div>
 

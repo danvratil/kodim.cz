@@ -133,17 +133,13 @@
 
   <p>Tomuto zápisu se říká <em>volání funkce</em>. Když funkci voláme, předáváme jí takzvaný <em>argument</em>, v našem případě číslo 3.4. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek.</p>
 
-  <div class="text-img-right">
-    <div class="row">
-      <div class="col-md-6">
-        <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležité pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
-      </div>
-      <div class="col-md-6">
-        <img class="img-fluid" src="/img/python-data/toaster.jpg" alt="Toaster" />
-      </div>
+  <div class="row">
+    <div class="col-md-6">
+      <p>Funkci si můžeme představit například jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost, kterou chceme často opakovat (opéká topinky). Má svoje jméno (topinkovač). Do topinkovače dáme cheba (argument) a spustíme je (zavoláme). Topinkovač chvíli pracuje a pak nám vrátí výsledek - topinky. Důležité je, že nemusíme řešit jak to topinkovač vlastné dělá, že dokáže opéct chleba. Důležité pro nás je, že to umí a že jej můžeme kdykoliv použít.</p>
     </div>
-    
-    
+    <div class="col-md-6 figure-md">
+      <img class="img-600" src="/img/python-data/toaster.jpg" alt="Toaster" />
+    </div>
   </div>
 
   <h2>Seznamy</h2>
@@ -294,7 +290,7 @@
   <pre>&gt;&gt;&gt; 16**0.5
 4</pre>
 
-  <p>Dalším užitečným operátorem je celočíselné dělení. Dejme tomu, že jsme si dopřáli dlouhou dovolenou, která trvala 33 dní a chceme spočítat, kolik to bylo celých týdnů. Normální dělení nám vrátí desetinné číslo, takže místo toho použijeme dělení celočíselné.</p>
+  <p>Dalším užitečným operátorem je celočíselné dělení. Dejme tomu, že jsme si dopřáli dlouhou dovolenou, která trvala 33 dní, a chceme spočítat, kolik to bylo celých týdnů. Normální dělení nám vrátí desetinné číslo, takže místo toho použijeme dělení celočíselné.</p>
 
   <pre>&gt;&gt;&gt; 33 // 7
 4</pre>

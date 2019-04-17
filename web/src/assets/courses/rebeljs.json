@@ -74,6 +74,20 @@
           "ready": {
             "cz": true
           }
+        },
+        {
+          "link": {
+            "cz": "reakce-na-udalosti"
+          },
+          "title": {
+            "cz": "Reakce na události"
+          },
+          "desc": {
+            "cz": "Naučíme se spustit vlastní kód při kliknutí myši nebo stisknutí klávasy."
+          },
+          "ready": {
+            "cz": true
+          }
         }
       ]
     }

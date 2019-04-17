@@ -105,7 +105,7 @@ index = rozdily.index(min_rozdil)</pre>
 3</pre>
   </div>
 
-  <p>Mnozí z vás už si stěžovali, že Python neobsahuje funkce, která počítá průměr. Nyní takovou funkci můžeme získat, pokud importujeme modul <code>statistics</code>. Tento modul obsahuje mimo jiné funkci <code>mean()</code>, která počítá vytoužený průměr.</p>
+  <p>Mnozí z vás už si stěžovali, že Python neobsahuje funkci, která počítá průměr. Nyní takovou funkci můžeme získat, pokud importujeme modul <code>statistics</code>. Tento modul obsahuje mimo jiné funkci <code>mean()</code>, která počítá vytoužený průměr.</p>
 
   <div class="verbatim">
 <pre>&gt;&gt;&gt; import statistics
@@ -116,7 +116,7 @@ index = rozdily.index(min_rozdil)</pre>
   <p>Poslední avšak velmi důležitý modul, jenž si v tuto chvíli představíme, je modul <code>sys</code>. Ten obsahuje funkce, které umožňují Pythonu komunikovat s operačním systémem, ve kterém je spuštěný. Nás z tohoto modulu bude zajímat především proměnná (ano, moduly mohou obsahovat kromě funkcí také proměnné) s názvem <code>argv</code> Ta nám umožní přistupovat k tazvaným <em>parametrům příkazové řádky</em>.</p>
 
   <h2>Parametry příkazové řádky</h1>
-  <p>Všechny programy, které jsme zatím společně vytvořili, obsahovaly všechna nezbytná data jaksi natvrdo přímo uvnitř kódu programu. Možná vás napadne, že například program, který má naměřené teploty z minulého týdne zadrátovené přímo uvnitř kódu nám, je jen pramálo k užitku, když mu nemůžeme předat nově naměřené teploty jinak, než upravit jeho zdrojový kód. Do skutečně užitečného programu musíme být schopni dostat data jaksi z venku. K tomu máme vícero možností ‒ například nahrát data ze souboru na disku, což se naučíme v příští lekci, můžeme je stáhnout z internetu (také se časem naučíme), ale také je můžeme programu předat přímo na příkazové řádce, když jej spouštíme.</p>
+  <p>Všechny programy, které jsme zatím společně vytvořili, obsahovaly všechna nezbytná data jaksi natvrdo přímo uvnitř kódu programu. Možná vás napadne, že například program, který má naměřené teploty z minulého týdne zadrátované přímo uvnitř kódu, nám je jen pramálo k užitku. Nemůžeme mu předat nově naměřené teploty jinak, než upravit jeho zdrojový kód. Do skutečně užitečného programu musíme být schopni dostat data jaksi z venku. K tomu máme vícero možností ‒ například nahrát data ze souboru na disku, což se naučíme v příští lekci, můžeme je stáhnout z internetu (také se časem naučíme), ale také je můžeme programu předat přímo na příkazové řádce, když jej spouštíme.</p>
   
   <p>Představme si například program, kterému bychom chtěli předat počet minut a on by nám vypsal v hezkém formátu kolik to dohromady dělá hodin a zbylých minut. Pojmenujme náš program například <code>cas.py</code>. Pokud chceme zjistit, jaký čas představuje 325 minut, zavoláme náš program takto: </p>
   

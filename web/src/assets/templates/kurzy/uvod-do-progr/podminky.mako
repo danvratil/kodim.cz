@@ -3,11 +3,14 @@
 <%self:lesson>
 
   <p>Do této chvíle všechny naše programy vypadaly jako sekvence příkazů vykonávané jeden za druhým a měly pouze jeden možný průběh. Pro komplikovanější programy ale budeme potřebovat umožnit, aby se některé části programu vykonaly jen za určitých <em>podmínek</em>, tedy aby se naše programy dokázaly rozhodovat a měnit svoje chování na základě zadaného vstupu od uživatele.</p>
-
-  <div class="text-img-right">
-    <p>Naše divadlo obsahuje některé lechtivé kusy s obsahem pouze pro dospělé. Na takové představení chceme pustit pouze uživatele starší 18ti let. Náš program tedy musí být schopný se podle zadaného věku rozhodnout, zda uživateli umožní koupit si lístek nebo nikoliv. Takový program by pak mohl vypadat například takto:</p>
-
-    <img src="/img/intro-to-progr/adult-only.png" alt="Adult only" />
+  
+  <div class="row">
+    <div class="col-md-6 figure-md">
+      <img class="img-400" src="/img/intro-to-progr/adult-only.png" alt="Adult only" />
+    </div>
+    <div class="col-md-6">
+      <p>Naše divadlo obsahuje některé lechtivé kusy s obsahem pouze pro dospělé. Na takové představení chceme pustit pouze uživatele starší 18ti let. Náš program tedy musí být schopný se podle zadaného věku rozhodnout, zda uživateli umožní koupit si lístek nebo nikoliv. Takový program by pak mohl vypadat například takto:</p>
+    </div>
   </div>
 
 <pre>if vek >= 18:

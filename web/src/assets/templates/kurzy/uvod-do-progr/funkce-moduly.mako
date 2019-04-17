@@ -2,16 +2,25 @@
 
 <%self:lesson>
 
-  <p>S čísly a řetězci jsme zatím byli schopní pracovat pouze pomocí aritmetických operátorů. To nám ale brzy nebude stačit a budeme potřebovat složitejší operace, kterým říkáme <em>funkce</em>.</p>
+  <p>S čísly a řetězci jsme zatím byli schopní pracovat pouze pomocí aritmetických operátorů. To nám ale brzy nebude stačit a budeme potřebovat složitější operace, kterým říkáme <em>funkce</em>.</p>
 
-  <p>Funkce je nějaký komplikovanější výpočet nebo malý program zabalený do jakési krabičky. Této krabičce dáme nějaké jméno, abychom jej mohli používat na různých místech v našem programu. Funkci si můžeme představit jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost (opéká topinky), která by byla otravná a zdlouhavá, kdybychom ji chtěli dělat sami, například smažit topinky na oleji na pánvičce. Každá funkce má svoje jméno a obvykle má nějaký vstup (čerstvý chleba) a výstup (opečená topinka). Funkci spustíme tak, že ji takzvaně <em>zavoláme.</em></p>
+  <h2>Funkce</h2>
+
+  <div class="row">
+    <div class="col-md-6">
+      <p>Funkce je nějaký komplikovanější výpočet nebo malý program zabalený do jakési krabičky. Této krabičce dáme nějaké jméno, abychom jej mohli používat na různých místech v našem programu. Funkci si můžeme představit jako topinkovač. Topinkovač pro nás dělá nějakou užitečnou činnost (opéká topinky), která by byla otravná a zdlouhavá, kdybychom ji chtěli dělat sami, například smažit topinky na oleji na pánvičce. Každá funkce má svoje jméno a obvykle má nějaký vstup (čerstvý chleba) a výstup (opečená topinka). Funkci spustíme tak, že ji takzvaně <em>zavoláme.</em></p>
+    </div>
+    <div class="col-md-6 figure-md">
+      <img class="img-600" src="/img/python-data/toaster.jpg" alt="Toaster" />
+    </div>
+  </div>
 
   <p>Dobrým příkladem v jazyce Python je funkce <code>round()</code>, která pro nás dělá zaokrouhlování. Můžeme tedy psát</p>
 
 <pre>&gt;&gt;&gt; round(3.141592)
 3</pre>
 
-  <p>Funkce se vždy volá tak, že napíšeme její jméno a do kulatých závorek za něj její vstupy (odborně se vstupům říká argumenty). V našem případě funkci předáváme jeden argument (vstup), číslo 3.141592. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek. </p>
+  <p>Tomuto zápisu se říká <em>volání funkce</em>. Funkce se vždy volá tak, že napíšeme její jméno a do kulatých závorek za něj její vstupy (odborně se vstupům říká <em>argumenty</em>). V našem případě funkci předáváme jeden argument (vstup), číslo 3.141592. Když funkci zavoláme s nějakým argumentem, funkce takzvaně <em>vrátí</em> výsledek. </p>
 
   <p>Pozor na to, že zaokrouhlování v jazyce Python se chová trošku jinak než jak jsem zvyklí ze školy. Zkuste například následující příkazy:</p>
 
