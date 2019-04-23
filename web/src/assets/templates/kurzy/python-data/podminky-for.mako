@@ -130,7 +130,7 @@ for cislo in cisla:
   </%self:exrc>
   
   <%self:exrc title="Poznávačky">
-    <p>Popište vlídným ale přesným slovem co dělají následující cykly:</p>
+    <p>Popište vlídným, ale přesným slovem, co dělají následující cykly:</p>
 
     <ol>
       <li>
@@ -175,7 +175,7 @@ hod_desetinnou_kostkou = uniform(1, 6)
 </pre>
   
   <h3>Podmínky s více větvemi</h3>
-  <p>Ve lekci jsme si zatím představili pouze podmínky s jednou nebo dvěma větvemi. Když chci něco provést jen v případě, že jsem z písemky dostal více než 90 bodů, napíšu podmínku s jednou větví.</p>
+  <p>V této lekci jsme si zatím představili pouze podmínky s jednou nebo dvěma větvemi. Když chci něco provést jen v případě, že jsem z písemky dostal více než 90 bodů, napíšu podmínku s jednou větví.</p>
 
 <pre>if bodu > 90:
   print('Dobrá práce')</pre>

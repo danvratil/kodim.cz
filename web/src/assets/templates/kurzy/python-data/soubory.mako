@@ -72,8 +72,8 @@ print(radky)</pre>
     <p>Půjčovna aut má v každém kraji ČR jedno auto s danou SPZ. Ke konci roku chce zjistit, kolik všechna auta najezdila dohromady kilometrů. V souboru <a href="/download/python-data/auta.txt" download>auta.txt</a> je pro každou SPZ zaznamenáno kolik dané auto ujelo kilometrů za daný rok. Hodnoty jsou v tisících kilometrů. Bohužel se v jednotlivých krajích blbě zkoordinovali a někdo používal desetinnou čárku, někdo zase tečku.</p>
 
     <ol>
-      <li>Napište program, který na výstup vypíše součet všech ujetých kilometrů. Jistě se vám bude hosti metoda řetězců jménem <code>replace()</code>.</li>
-      <li>Upravte váš program tak, aby jméno souboru k otevření dostal na příkazové řádce, abychom mohli takto zpracovávat výkazy s různých souborů, aniž bychom museli upravovat samotný kód programu.</li>
+      <li>Napište program, který na výstup vypíše součet všech ujetých kilometrů. Jistě se vám bude hodit metoda řetězců jménem <code>replace()</code>.</li>
+      <li>Upravte váš program tak, aby jméno souboru k otevření dostal na příkazové řádce, abychom mohli takto zpracovávat výkazy z různých souborů, aniž bychom museli upravovat samotný kód programu.</li>
     </ol>
     
   </%self:exrc>	
@@ -134,7 +134,7 @@ soubor.close()
     <ol>
       <li>Nejdříve tento seznam vytiskněte na konzoli pomocí funkce <code>print()</code>.</li>
       <li>Upravte váš program tak, aby náhodné hody kostkou vypsal do souboru s názvem <code>hody.txt</code> na jeden řádek oddělené čárkou a mezerou.</li>
-      <li>Upravte váš program tak, aby počet hodů dostal jako parametr na příkazové řádce. Zkuste použitím vašeho program vyrobit 100, 1000 a 10 000 hodů.</li>
+      <li>Upravte váš program tak, aby počet hodů dostal jako parametr na příkazové řádce. Zkuste použitím vašeho programu vyrobit 100, 1000 a 10 000 hodů.</li>
     </ol>
   </%self:exrc>
 </%self:exercises>
@@ -188,7 +188,7 @@ soubor.close()
 
     <ol>
       <li>
-        Napište program, který vypíše pro první den kolik pasažérů jelo celkem směrem tam a kolik směrem zpět. 
+        Napište program, který pro první den vypíše, kolik pasažérů jelo celkem směrem tam a kolik směrem zpět. 
       </li>
       <li>
         Nechť váš program vypisuje součty pasažérů ze celý týden, tedy kolik lidí za celý týden jelo směrem tam a kolik směrem zpět. 
@@ -202,7 +202,7 @@ soubor.close()
     <ol>
       <li>Otevřete si <a href="https://docs.google.com/spreadsheets/d/1mm2iZ2TWosQ4Yv4cahgMQrMsicneTrkrcdVP3Nz1PQY/edit?usp=sharing">dokument</a> s jedním výkazem známek.</li>
       <li>Zkopírujte si tuto tabulku do textového souboru. </li>
-      <li>Napište program, který tuto tabulku načte ze souboru a změnít všechny známky tak, že 1 bude A, 2 bude B, 3 bude C, 4 bude D a 5 bude F.</li>
+      <li>Napište program, který tuto tabulku načte ze souboru a změní všechny známky tak, že 1 bude A, 2 bude B, 3 bude C, 4 bude D a 5 bude F.</li>
       <li>Vypište váš výsledek do nějakého souboru tak, aby se z něj dal zase zkopírovat do tabulky Google.</li>
       <li>Vytvořte novou Google tabulku, která vypadá stejně jako ta výše avšak s převedenými známkami.</li>
     </ol>

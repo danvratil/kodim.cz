@@ -134,7 +134,7 @@ print(str(hodin) + ':' + str(minut))</pre>
 
   <pre>['cas.py', '325']</pre>
 
-  <p>Tedy na prvním místě je název programu a na druhém je náš parametr, který jsme prve zadali na příkazové řádce. Všimněte si ovšem, že nás parametr je řetězec. Python totiž všechny parametry na příkazové řádce bere jako řetězce, nehledě na to, jestli jsou to čísla nebo cokoliv jiného. My chceme ale v našem programu čas jako číslo, neboť s ním chceme provádět různá matematická cvičení. Proto musíme náš parametr převést na číslo pomocí již známé funkce <code>int()</code>, což právě provádíme na druhém řádku našeho programu.</p>
+  <p>Tedy na prvním místě je název programu a na druhém je náš parametr, který jsme prve zadali na příkazové řádce. Všimněte si ovšem, že náš parametr je řetězec. Python totiž všechny parametry na příkazové řádce bere jako řetězce, nehledě na to, jestli jsou to čísla nebo cokoliv jiného. My chceme ale v našem programu čas jako číslo, neboť s ním chceme provádět různá matematická cvičení. Proto musíme náš parametr převést na číslo pomocí již známé funkce <code>int()</code>, což právě provádíme na druhém řádku našeho programu.</p>
 
   <h3>Nač se držet při zemi</h3>
   <p>Zatím jsme na příkazové řádce předali pouze jeden parametr. Nebuďme ale troškaři. Na příkazové řádce si můžeme dovolit předávat zajímavější věci, například celý seznam hodnot. Můžeme kupříkladu napsat program, který spočítá součet všech zadaných hodnot. Pozor ovšem na to, že hodnoty na příkazové řádce jsou vždy řetězce, takže pokud je to potřeba, musíme si je sami převést na čísla.</p>
@@ -149,7 +149,7 @@ print('Součet zadaných čísel: ' + str(sum(cisla)))
 <pre>$ python3 soucet.py 57 41 37 22 12
 Součet zadaných čísel: 169</pre>
 
-  <p>Všimněte si, že na druhém řádku našeho programu používáme <code>sys.argv[1:]</code>. Je to proto, abychom se zbavili názvu programu, který vždy zabírá první prvek seznamu parametrů. Naše čísla se tedy nacházejí až do prvního indexu nahoru.</p>
+  <p>Všimněte si, že na druhém řádku našeho programu používáme <code>sys.argv[1:]</code>. Je to proto, abychom se zbavili názvu programu, který vždy zabírá první prvek seznamu parametrů. Naše čísla se tedy nacházejí až od prvního indexu nahoru.</p>
 </%self:lesson>
 
 <%self:exercises>

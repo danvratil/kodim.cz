@@ -238,9 +238,7 @@ TypeError: Can't convert 'int' object to str implicitly</pre>
   [1, 4, 1, 3]
 ]</pre>
   
-  <p>Pokud chceme<%def name="solution()">
-      Řešení zatím není k dispozici
-    </%def>získat dejme tomu všechny známky z první písemky, chceme vlastně všechny první hodnoty ze všech seznamů uvnitř seznamu <var>pisemky</var>. To můžete udělat takto:</p>
+  <p>Pokud chceme získat dejme tomu všechny známky z první písemky, chceme vlastně všechny první hodnoty ze všech seznamů uvnitř seznamu <var>pisemky</var>. To můžete udělat takto:</p>
   
   <div class="verbatim">
 <pre>&gt;&gt;&gt; prvni = [znamky[0] for znamky in pisemky]
@@ -701,7 +699,7 @@ delky = [136, 105, 82]</pre>
 
         <p><strong>Nápověda:</strong> postupuje tak, že použijete na každý řádek tabulky zvlášť chroustání seznamů. Tabulku můžete sestavit tak, že tento postup ručně zopakujete 13 krát, jednou pro každý kraj. Pokud toužíte po elegantnějším řešení, vyčkejte na nepovinné úložky.</p>
       </li>
-      <li>Vytvořte seznam pravdivostních hodnot, který bude říkat ve kterých krajích překročila volební účast 50&nbsp;%.</li>	
+      <li>Vytvořte seznam pravdivostních hodnot, který bude říkat, ve kterých krajích překročila volební účast 50&nbsp;%.</li>	
     </ol>
   </%self:exrc>
 
