@@ -288,7 +288,9 @@ for cislo in cisla:
 <pre>$ python3 kmax.py 5 6 1 3 8 4 7 2
 3</pre>
 
-    <p>Pokud je nějaké číslo v seznamu dvakrát, bere se jako dvě různá maxima. Pozor, tohle už je hodně těžké. Pokud si na to troufáte, můžete ve svém řešení použít cokoliv co už doteď znáte, klidně si zagooglete. Možností, jak to udělat, je více. Nebojte se být kreativní.</p>
+    <p>Pokud je nějaké číslo v seznamu dvakrát, bere se jako dvě různá maxima. Nepoužívejte žádné Python funkce typu <code>sorted</code> nebo <code>max</code>. Napište všechno pěkně od píky. </p>
+    
+    <p>Možností, jak tento úkol vyřešit, je více. Nebojte se zagooglit, nebojte se být kreativní.</p>
   </%self:exrc>
 
   <%self:exrc title="Ruleta" type="home" diffi="2">

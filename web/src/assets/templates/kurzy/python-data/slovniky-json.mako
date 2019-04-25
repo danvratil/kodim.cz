@@ -131,7 +131,7 @@
     ['šalvějové lístky', '20-25', '12 kč']
   ]
 }</pre>
-		<p>Uložte si tutu strukturu do proměnné <span class="scode">recept</span> na začátek nového programu. Vypište pomocí funkce <span class="scode">print()</span> kolik bude celé jídlo stát korun zaokrouhleně na celé koruny nahoru.</p>
+		<p>Uložte si tuto strukturu do proměnné <var>recept</var> na začátek nového programu. Vypište pomocí funkce <code>print</code> kolik bude celé jídlo stát korun zaokrouhlené na celé koruny nahoru.</p>
   </%self:exrc>
 </%self:exercises>
 
@@ -146,12 +146,12 @@
   <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code>. Vyzkoušíme si to na našem seznamu absolventů. Nejdřív si tato data stáhneme jako soubor <a href="/download/python-data/absolventi.json" download>absolventi.json</a>. Ten pak můžeme v Pythonu otevřít a převést na JSON následujicím programem.</p>
 
 <pre>import json
-file = open('absolventi.json')
+file = open('absolventi.json', encoding='utf-8')
 text = file.read()
 absolventi = json.loads(text)
 print(absolventi)</pre>
 
-  <p>V tomto programu používáme metodu <code>read()</code>, která umí celý soubor načíst se vším všudy do jednoho velkého řetězce. Tento řetězec pak můžeme předat funkci <code>loads()</code> z modulu <code>json</code>, která tento řetězec přečtě a pokud jsou v něm data ve formátu JSON, převede je na Python slovníky.</p>
+  <p>V tomto programu používáme metodu <code>read()</code>, která umí celý soubor načíst se vším všudy do jednoho velkého řetězce. Tento řetězec pak můžeme předat funkci <code>loads()</code> z modulu <code>json</code>, která tento řetězec přečte a pokud jsou v něm data ve formátu JSON, převede je na Python slovníky.</p>
 
   <h3>Stahování dat z internetu</h3>
   <p>V předchozím příkladu jsem naše data načetli ze soubrou na disku. Pokud však narazíte na vstřícného poskytovatele dat, je možné si data stáhnout z takzvaného API (Applicattion Programming Interface) přímo z internetu. Zkratka API se používá jako označení nějakého přípojného bodu na internetu, odkud si můžete stáhnout data v nějakém strojově čitelném formátu. Nejčastěji je tímto formátem právě JSON. </p>
@@ -210,3 +210,35 @@ print(data)
     </ol>
   </%self:exrc>
 </%self:exercises>
+
+<%self:lesson>
+  <h2>Čtení na doma</h2>
+  <p>Touto lekcí končí úvodní části kurzu o programování v Pythonu. Před tím, než se vrhneme do další části, si ukážeme poslední třešničku na dortu, která může občas hodně ulehčit práci.</p>
+
+  <h3>Formátování řetězců</h3>
+  <p>Často se nám v Pythonu může stát, že potřebujeme vytvořit řetězec, který obsahuje hodnoty z několika různých proměnných. Mějme například seznam útrat,který vypadá takto:</p>
+
+<pre>
+utraty = [
+  ['Pavel', 'mléko', 54],
+  ['Jana', 'prací prášek', 312],
+  ['Robert', 'mouka', 32],
+  ['Zuzana', 'vajíčka', 47],
+]
+</pre>
+
+  <p>Představme si, že bychom chtěli každý řádek takové tabulky vypsat takto:</p>
+
+<pre>
+  Pavel utratil/a 54 kč za mléko.
+</pre>
+
+  <p>S našimi současnými znalostmi bychom mohli napsat takovýto program</p>
+
+<pre>
+for utrata in utraty:
+  print(utrata[0] + ' utratila/a ' + str(utrata[2]) + ' kč za ' + utrata[1])  
+</pre>
+
+  <p>Takovýto zápis pomocí sčítání řetězců je dost nepohodlný. Pokud by navíc tabulka obsahovala o pár sloupečků více, snadno se nám výraz v metodě <code>print</code> vymkne z rukou.</p>
+</%self:lesson>

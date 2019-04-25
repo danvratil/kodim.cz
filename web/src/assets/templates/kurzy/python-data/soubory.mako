@@ -57,7 +57,7 @@ print(radky)</pre>
         Nechte váš program otevřít soubor a načíst jednotlivé řádky do seznamu.
       </li> 
       <li>
-        Každý řádek převeďte na seznam slov. Slovem se rozumí vše, co je odděleneo mezerou nebo novým řádkem.
+        Každý řádek převeďte na seznam slov. Slovem se rozumí vše, co je odděleno mezerou nebo novým řádkem.
       </li> 
       <li>
         Vypište na výstup seznam hodnot udávající počty slov na každém řádku.
@@ -114,7 +114,7 @@ soubor.close()
 
     <ol>
       <li>Nechte váš program vypsat tento seznam do souboru s názvem <code>kalendar.txt</code>, každé číslo na jeden řádek.</li>
-      <li>Upravte váš program tak, aby zároveň s počtem dnů vypisoval i název měsíce. Odělte v souboru název měsíce a počet dnů pomocí tabulátoru.</li>
+      <li>Upravte váš program tak, aby zároveň s počtem dnů vypisoval i název měsíce. Oddělte v souboru název měsíce a počet dnů pomocí tabulátoru.</li>
       <li>Upravte váš program tak, aby jako první řádek výsledného souboru obsahoval nadpisy pro jednotlivé sloupce, tedy <code>měsíc</code> a <code>počet dní</code>.</li>
     </ol>
   </%self:exrc>	
