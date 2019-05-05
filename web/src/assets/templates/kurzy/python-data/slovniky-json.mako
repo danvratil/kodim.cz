@@ -183,7 +183,7 @@ print(absolventi)</pre>
 <pre>import requests
 import json
 response = requests.get('http://api.kodim.cz/python-data/people')
-data = json.loads(reponse.text)
+data = json.loads(response.text)
 print(data)
 </pre>
 </%self:lesson>
@@ -216,7 +216,7 @@ print(data)
   <p>Touto lekcí končí úvodní části kurzu o programování v Pythonu. Před tím, než se vrhneme do další části, si ukážeme poslední třešničku na dortu, která může občas hodně ulehčit práci.</p>
 
   <h3>Formátování řetězců</h3>
-  <p>Často se nám v Pythonu může stát, že potřebujeme vytvořit řetězec, který obsahuje hodnoty z několika různých proměnných. Mějme například seznam útrat,který vypadá takto:</p>
+  <p>Často se nám v Pythonu může stát, že potřebujeme vytvořit řetězec, který obsahuje hodnoty z několika různých proměnných. Mějme například seznam útrat, který vypadá takto:</p>
 
 <pre>
 utraty = [
@@ -237,8 +237,30 @@ utraty = [
 
 <pre>
 for utrata in utraty:
-  print(utrata[0] + ' utratila/a ' + str(utrata[2]) + ' kč za ' + utrata[1])  
+  print(utrata[0] + ' utratila/a ' + str(utrata[2]) + ' kč za ' + utrata[1] + '.')  
 </pre>
 
   <p>Takovýto zápis pomocí sčítání řetězců je dost nepohodlný. Pokud by navíc tabulka obsahovala o pár sloupečků více, snadno se nám výraz v metodě <code>print</code> vymkne z rukou.</p>
-</%self:lesson>
+
+  <p>Od verze 3.6 jazyk Python obsahuje způsob, jak zápis výše zjednodušit. Pokud těsně před řetězec napíšete písmeno f (z anglického <em>format</em>), můžete do řetězce vložit jakoukoliv proměnnou, pokud ji uzavřete do složených závorek.</p>
+
+  <p>Místo zápisu</p>
+<pre>
+vyplata = 500000
+zprava = 'vaše výplata činí ' + str(vyplata) + ' kč'
+</pre>
+
+  <p>můžete psát</p>
+
+<pre>
+vyplata = 500000
+zprava = f'vaše výplata činí {vyplata} kč'
+</pre>
+
+  <p>Takovýto zápis je mnohem čitelnější a přehlednější. Všimněte si, že dokonce ani nemusíme hodnotu v proměnné <var>vyplata</var> převádět na řetězec. Python to za nás udělá automaticky. Náš program s útratami by pak s použitím formátování řetězců vypadal takto:</p>
+
+<pre>
+for utrata in utraty:
+  print(f'{utrata[0]} utratila/a {utrata[2]} kč za {utrata[1]}.')
+</pre>
+</%self:lesson>        

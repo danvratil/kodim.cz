@@ -281,7 +281,7 @@ range(1, 11)
 <%self:exercises>
   <h2>Domácí úložky ‒ povinné</h2>
   
-  <%self:exrc title="Minuty">
+  <%self:exrc title="Minuty" type="home" diffi="1">
     <p>Vytvořte program <code>casy.py</code>, který bude zpracovávat seznam naměřených časů v minutách. Nejprve přímo do programu zadrátujte konkrétní hodnoty například takto: </p>
 
     <pre>casy = [12, 25, 64, 27, 15, 66, 128, 44]</pre>

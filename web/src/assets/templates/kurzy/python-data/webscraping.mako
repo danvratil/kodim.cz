@@ -50,9 +50,9 @@
     </div>
   </div>
 
-  <p>Vytvořte si na svém počítači složku <code>ukazka-html</code> a otevřete ji ve Visual Studiu. Vytvořte v této složce soubor <code>ukazka.html</code> a zkopírujte do něj výše uvedený kód a uložte. Poté tento soubor najděte v průzkumníku a dvojiklikem by se vám měl otevřít ve vašem oblíbeném prohlížeči. Můžete tak zkontrolovat, že porhlížeč vaši stránku skutečně zobrazí tak, jak je uvedeno na obrázku výše.</p>
+  <p>Vytvořte si na svém počítači složku <code>ukazka-html</code> a otevřete ji ve Visual Studiu. Vytvořte v této složce soubor <code>ukazka.html</code> a zkopírujte do něj výše uvedený kód a uložte. Poté tento soubor najděte v průzkumníku a dvojklikem by se vám měl otevřít ve vašem oblíbeném prohlížeči. Můžete tak zkontrolovat, že prohlížeč vaši stránku skutečně zobrazí tak, jak je uvedeno na obrázku výše.</p>
 
-  <p>V naší první webové stránce jsme viděli takzvané <em>HTML značky</em>. Značky se píší do špičatých závorek a většina značek má otevírací a zavíračí část. Například značka <code>em</code> pro zvýraznění textu vypadá takto</p>
+  <p>V naší první webové stránce jsme viděli takzvané <em>HTML značky</em>. Značky se píší do špičatých závorek a většina značek má otevírací a zavírací část. Například značka <code>em</code> pro zvýraznění textu vypadá takto</p>
   
   <div class="text-center">
     <img src="/img/python-data/html-znacka.png" alt="HTML značka">
@@ -64,7 +64,7 @@
     <img src="/img/python-data/html-atribut.png" alt="HTML atribut">
   </div>  
 
-  <p>Zajímavá je značka <code>div</code>, který se nijak nezobrazuje a slouží pouze k členění textu. Všimněte si, že v naší ukázkové stránkce je naní atribut <code>class</code>. Ten se používá k stylování stránky a často podle něj můžeme při webscrapingu odlišit důležité části stránky.</p>
+  <p>Zajímavá a téměř nejpoužívanější je značka <code>div</code>, která sama o sopě nemá žádný vizuální význam. Slouží totiž k členění stránky na menší části. Všimněte si, že naší ukázkové stránka značku <code>div</code> také používá. Navíc u ní najdeme atribut <code>class</code>. Ten se běžně používá k stylování stránky a často podle něj můžeme při webscrapingu odlišit důležité části stránky.</p>
 
   <p>Všech HTML značek je kolem stovky a mnoho z nich má spoustu možných atributů. Rozumět všem těmto značkám je prací webových vývojářů. Nám bude stačit získat nějaké malé povědomí alespoň o pár základních. </p>
 
@@ -79,17 +79,17 @@
     <p>Cílem tohoto cvičení je pokusit se vyznat ve zdrojovém kódu jednoduché webové stránky a získat tak povědomí o tom jak funguje jazyk HTML. Postupujte dle následujících kroků.</p>
     
     <ol>
-      <li>Stáhněte si následující <a href="/download/python-data/dhmo.zip">ZIP soubor</a>, který rozbalte někam na váš počítač. V rozbalené složce <code>dhmo</code> rozkliněte soubor <code>index.html</code>. V prohlížeči by se vám měla otevřít jednoduchá webová stránka pojednávající o škodlivosti jedné velmi zajímavé chemikálie. Stránka nevypadá příliš vábně, protože není napojena na žádné CSS styly a vídíme tedy jen čistý obsah.</li>
+      <li>Stáhněte si následující <a href="/download/python-data/dhmo.zip">ZIP soubor</a>, který rozbalte někam na váš počítač. V rozbalené složce <code>dhmo</code> rozkliněte soubor <code>index.html</code>. V prohlížeči by se vám měla otevřít jednoduchá webová stránka pojednávající o škodlivosti jedné velmi zajímavé chemikálie. Stránka nevypadá příliš vábně, protože není napojena na žádné CSS styly, a vidíme tedy jen čistý obsah.</li>
       
-      <li>Složku <code>dhmo</code> si otevřete ve Visual Studiu a podívejte se na obsah souboru <code>index.html</code>. Uvidíte spoustu HTML značek. Některé z nich znáte, některé jste v životě neviděli. Nenechte se vylekat tím, že některým částem tohoto souboru vůbec nerozumíte. Zkuste v souboru najít nějaký kousek textu, který vidíte na vaší otevřené webové stránce. </li>
+      <li>Složku <code>dhmo</code> si otevřete ve Visual Studiu a podívejte se na obsah souboru <code>index.html</code>. Uvidíte spoustu HTML značek. Některé z nich znáte, některé jste v životě neviděli. Nenechte se vylekat tím, že některým částem tohoto souboru vůbec nerozumíte. Zkuste v souboru najít nějaký kousek textu, který vidíte na vaší otevřené webové stránce a tím se trochu zorientovat. </li>
       
-      <li>V úvodním odstavci stránky je několik překlepů. Opravte je přímo v souboru <code>index.html</code>, nezapomeňte jej uložit, a obnovte stránku ve vašem prohlížeči (zkratka Ctrl+R nebo CMD+R). Měli byste vidět vaše změny.</li>
+      <li>V úvodním odstavci stránky jsou tři překlepy. Opravte je přímo v souboru <code>index.html</code>. Nezapomeňte jej uložit. Obnovte stránku ve vašem prohlížeči (zkratka Ctrl+R nebo CMD+R) a měli byste vidět změny, které jste provedli.</li>
       
       <li>Najděte v souboru <code>index.html</code> část, která obsahuje výčet faktů o DHMO. Tyto seznamy jsou číslované, což naznačuje HTML značka <code>&lt;ol&gt;</code>. Změňte u obou seznamů tuto značku na <code>&lt;ul&gt;</code>, což znamená nečíslovaný seznam. Nezapomeňte změnit i uzavírací značku seznamu (ta s lomítkem). Otevírací a uzavírací značky musí vždy souhlasit!</li>
 
       <li>Najděte poblíž začátku souboru <code>index.html</code> značku <code>&lt;img&gt;</code>, která do stránky vkládá úvodní obrázek. Atribut <code>src</code> udává k cestu k souboru s obrázkem. Všimněte si, že blízko ke konci souboru těsně před seznamem odkazů je ještě jedna značka <code>&lt;img&gt;</code>, které ale atribut <code>src</code> chybí a proto na stránce žádný obrázek nevidíme. Nastavte atribut <code>src</code> na hodnotu <code>img/dhmo-ban.png</code> a podívejte se, jak se stránka změnila. </li>
 
-      <li>Podobně jako s naším obrázkem, poslední odkaz v seznamu odkazů nemá atribut <code>href</code>, což způsobuje, že se odkaz na stránce nezobrazuje jako odkaz. Atribut <code>href</code> ríká, na kterou adresu má odkaz vést. Nastavte proto v posledním odkazu hodnotu atributu <code>href</code> na <code>http://www.snopes.com/science/dhmo.asp</code>.</li>
+      <li>Podobně jako náš obrázek, poslední odkaz v seznamu odkazů nemá atribut <code>href</code>, což způsobuje, že se odkaz na stránce nezobrazuje jako odkaz. Atribut <code>href</code> říká, na kterou adresu má odkaz vést. Nastavte proto v posledním odkazu hodnotu atributu <code>href</code> na <code>http://www.snopes.com/science/dhmo.asp</code>.</li>
       
       <li>Téměř na začátku souboru <code>index.html</code> najdete značku <code>&lt;title&gt;</code>. Ta udává název stránky, který se zobrazuje v záložce prohlížeče. Změňte tento název prostě na "DHMO šíří hrůzu".
       </li>
@@ -172,7 +172,10 @@ stranka = session.get('http://scrape.kodim.cz/sample/index')
 for odstavec in stranka.html.find('p'):
   print(odstavec.text)</pre>
 
-  <p>Dále můžeme postupovat úplně stejně jako když jsme zpracovávali stránky z disku.</p>
+  <p>Dále můžeme postupovat úplně stejně jako když jsme zpracovávali stránky z disku. Pokud chcete vidět celý stažený zdrojový kód stránky jako text, napište</p>
+
+<pre>print(stranka.html.html)</pre>
+
 </%self:lesson>
 
 <%self:exercises>
@@ -191,10 +194,7 @@ for odstavec in stranka.html.find('p'):
   <%self:exrc title="Scraping Kodim.cz">  
     <p>Jistě vás nepřekvapí, že stránky, které právě čtete se dají také snadno scrapovat.</p>
 
-    <ol>
-      <li>Napište program, který vezme zpracuje lekce z <a href="http://kodim.cz/kurzy/python-data/">titulní stránky</a> Digitální akademie a uloží je do souboru ve formátu CSV. Ten bude v prvním sloupci obsahovat název lekce a v druhém webovou adresu lekce. </li>
-      <li>Napište program, který vypíše na výstup všechny domácí úložky z lekce 2 (povinné i nepovinné) spolu s jejich obtížností.</li>
-    </ol>
+    <p>Napište program, který vypíše na výstup všechny povinné a nepovinné domácí úložky z lekce <a href=/kurzy/python-data/prvni-programy">První programy</a> spolu s jejich obtížností.</p>
   </%self:exrc>  
 
 </%self:exercises>
@@ -203,6 +203,23 @@ for odstavec in stranka.html.find('p'):
   <h2>Web scraping vs JavaScript</h2>
   <p>Web scraping je velmi mocná technika. Její úspěšnost však závisí na tom, jakým způsobem jsou webové stránky napsány. Pokud jsou napsány prasácky a nekonzistentně, tak si web scrapingem můžeme snadno způsobit velký bolehlav.</p>
 
-  <p>Jeden z velých problému pro web scraping však představují stránky, které jsou generované v JavaScriptu</p>
+  <p>Jeden z velkých problémů pro web scraping však představují stránky, které jsou vytvořené celé v JavaScriptu. Velkým trendem v dnešní době je nepsat HTML kód stránky přímo, jako jsme to viděli výše. Místo toho se použije jazyk JavaScript, který kód stránky sám vygeneruje. Tím může být stránka mnohem flexibilnějšé a interaktivnější, což je hezké pro uživatele. Pro nás to však znamená, že když stránku stahujeme v Pythonu, neobdržíme značky HTML, ale JavaScriptový program, který nejdříve musíme v Pythonu spustit a nechat si výsledné HTML vygenerovat.</p>
+
+  <p>Podívejte se například na <a href="https://react-shopping-cart-67954.firebaseapp.com/">tuto stránku</a>, která je psána přesně tímto způsobem. Pokud chceme takovou stránku scrapovat, musíme použít takovýto kód.</p> 
+
+<pre>from requests_html import HTMLSession
+session = HTMLSession()
+stranka = session.get('https://react-shopping-cart-67954.firebaseapp.com/')
+stranka.html.render(sleep=5)
+</pre>
 
 </%self:lesson>
+
+<%self:exercises>
+  <h2>Domácí úložky ‒ povinné</h2>
+  <%self:exrc title="Káva na Mall.cz" type="home" diffi="1">  
+    <p>Jedna ze stránek, která má pěknou strukturu pro scrapování, je například <a href="https://www.mall.cz">Mall.cz</a>. Můžete si zde v bezpečí potrénovat své scrapovací schopnosti dříve, než budete zkoušet vytáhnout data z nějaké webovky, která je napsaná trošku víc prasácky.</p>
+
+    <p>Vaším úkolem v tomto cvičení je napsat program, který stáhne všechny nabízené instantní kávy ze stránky <a href="https://www.mall.cz/instantni-kava">www.mall.cz/instantni-kava</a>. Výstupem vašeho programu bude CSV soubor, který bude obsahovat tři sloupečky: název produktu, cena a zda je produkt skladem.</p> 
+  </%self:exrc>  
+</%self:exercises>

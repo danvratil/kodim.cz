@@ -79,7 +79,7 @@
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování">
-    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměnné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použíje funkci <code>round()</code> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</p>
+    <p>Divadlo chce mít ceny vstupenek jak v eurech tak v celých korunách. Uložte do proměnné <var>eura</var> cenu studentské vstupenky (65% z 12 euro). Použijte funkci <code>round()</code> a do proměnné <var>koruny</var> spočítejte kolik činí studentské vstupné v korunách jestliže kurz eura je 24 korun.</p>
   </%self:exrc>
 
   <%self:exrc title="Zaokrouhlování nahoru">

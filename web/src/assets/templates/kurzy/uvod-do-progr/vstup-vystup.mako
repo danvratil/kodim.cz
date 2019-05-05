@@ -23,7 +23,7 @@ print(cena)
 <pre>$ python program.py</pre>
 
   <%self:alert_warning>
-    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak napíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do terminálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.</p>
+    <p>Pozor na znak dolaru na začátku tohoto příkazu. Tento znak nepíšeme! Znak dolaru pouze naznačuje, že tento příkaz musíme zadat do terminálu operačního systému, nikoliv do Python konzole. Pokud tedy váš příkazový řádek stále začíná třemi zobáčky jste ještě pořád uvnitř Python konzole a musíte z ní vyskočit pomocí funkce <code>exit()</code>.</p>
   </%self:alert_warning>
 
 </%self:lesson>

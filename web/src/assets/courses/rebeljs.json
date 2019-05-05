@@ -88,6 +88,34 @@
           "ready": {
             "cz": true
           }
+        },
+        {
+          "link": {
+            "cz": "podminky"
+          },
+          "title": {
+            "cz": "Podmínky"
+          },
+          "desc": {
+            "cz": "Naučíme naše programy, jak se rozhodovat."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
+            "cz": "cviceni1"
+          },
+          "title": {
+            "cz": "Cvičení 1"
+          },
+          "desc": {
+            "cz": "Procvičování toho, co jsme se zatím naučili."
+          },
+          "ready": {
+            "cz": true
+          }
         }
       ]
     }

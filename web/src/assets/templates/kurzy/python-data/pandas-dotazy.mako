@@ -32,7 +32,7 @@
   <p>Python nám umožňuje pracovat s velkými datovými sadami, vizualizovat data pomocí různých modulů, podporuje mnoho modulů pro strojové učení a tak dále.</p>
 
   <h2>Pandas</h2>
-  <p>Pandas je Python modul pro práci s daty. Přidává tedy to Pythonu to, na co před tím analitici pužívali jazyk R. Umožňuje pracovat s daty v ucelené struktuře podobné relačním databázím. Díky mnoha zabudovaným funkcím umí rychle zpracovat velké množství dat, vyhodnocovat je a čistit, čímž šetří datovému analytikovi mnoho času.</p>
+  <p>Pandas je Python modul pro práci s daty. Přidává tedy do Pythonu to, na co před tím analytici používali jazyk R. Umožňuje pracovat s daty v ucelené struktuře podobné relačním databázím. Díky mnoha zabudovaným funkcím umí rychle zpracovat velké množství dat, vyhodnocovat je a čistit, čímž šetří datovému analytikovi mnoho času.</p>
 
   <p>Při práci s Pandasem se tedy nebudeme učit nové programovací techniky v Pythonu, ty už povětšinou známe. Budeme naopak objevovat co všechno Pandas umí a kolik práce nám dokáže ušetřit proti tomu, kdybychom používali na práci s daty čistý Python tak, jako jsme to dělali doposud.</p>
 
@@ -90,7 +90,7 @@
 
   <h3>Načítání dat</h3>
 
-  <p>Tabulku výše si můžete stáhnout ve <a href="/download/python-data/mesta.csv">formátu CSV</a>. Abychm si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
+  <p>Tabulku výše si můžete stáhnout ve <a href="/download/python-data/mesta.csv">formátu CSV</a>. Abychom si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
   
 <pre>&gt;&gt;&gt; import pandas
 &gt;&gt;&gt; mesta = pandas.read_csv('mesta.csv', index_col='mesto', encoding='utf-8')</pre>
