@@ -1,13 +1,13 @@
 <%inherit file="/course-chapter.mako"/>
 
 <%self:lesson>
-  <p>Mnoho webových stránek na internetu obsahuje velmi zajímavá a užitečná data. Takových dat můžu být velký objem a mohou být rozházená po různých stránkách pod mnoha odkazy a není v našich silách je ručně ze stránek vykopírovat. Příkladem budiž například historická data o naměřených teplotách ze stránek <a href="http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty">Českého hydrometeorologického ústavu</a>. Tato data jsou dostupá pouze skrze tabulky vložené přímo do webových stránek. Pokud chceme takovéto množství dat ze stránek dostat do našho programu, musíme použít takzvaný <em>web scraping</em>.</p>
+  <p>Mnoho webových stránek na internetu obsahuje velmi zajímavá a užitečná data. Takových dat můžu být velký objem a mohou být rozházená po různých stránkách pod mnoha odkazy a není v našich silách je ručně ze stránek vykopírovat. Příkladem budiž například historická data o naměřených teplotách ze stránek <a href="http://portal.chmi.cz/historicka-data/pocasi/uzemni-teploty">Českého hydrometeorologického ústavu</a>. Tato data jsou dostupná pouze skrze tabulky vložené přímo do webových stránek. Pokud chceme takovéto množství dat ze stránek dostat do našeho programu, musíme použít takzvaný <em>web scraping</em>.</p>
 
   <h2>HTML</h2>
   <p>Web scraping je technika pomocí které můžeme strojově číst obsah webových stránek na internetu. Webové stránky často vypadají velmi komplikovaně a sofistikovaně, ale nakonec jsou to pouhopouhé textové soubory psané ve speciálním jazyce zvaném HTML (HyperText Markup Language). Naštěstí pro nás není HTML jazyk programovací, nýbrž takzvaně <em>značkovací</em>. Není tedy zdaleka tak složitý jako například jazyk Python. Jazyk HTML má relativně jednoduchou strukturu a ani pro úplného začátečníka není těžké se v něm zorientovat. Pomocí HTML tvůrci webů definují samotný obsah stránek, tedy texty, obrázky, odkazy apod. Samotný vzhled stránky (barvičky, styl písma, rozmístění prvků na stránce apod.) se vytváří v jazyce zvaném CSS, který ale v tuto chvíli můžeme nechat být, neboť z hlediska zpracování dat nás vzhled stránek nezajímá.</p>
 
   <h3>HTML značky (tagy)</h3>
-  <p>V následující ukázce vidíte kód webové stránky zárveň s tím jak by takovou stránku zobrazil prohlížeč. </p>
+  <p>V následující ukázce vidíte kód webové stránky zároveň s tím jak by takovou stránku zobrazil prohlížeč. </p>
 
   <div class="row">
     <div class="col-md-6">
@@ -64,7 +64,7 @@
     <img src="/img/python-data/html-atribut.png" alt="HTML atribut">
   </div>  
 
-  <p>Zajímavá a téměř nejpoužívanější je značka <code>div</code>, která sama o sopě nemá žádný vizuální význam. Slouží totiž k členění stránky na menší části. Všimněte si, že naší ukázkové stránka značku <code>div</code> také používá. Navíc u ní najdeme atribut <code>class</code>. Ten se běžně používá k stylování stránky a často podle něj můžeme při webscrapingu odlišit důležité části stránky.</p>
+  <p>Zajímavá a téměř nejpoužívanější je značka <code>div</code>, která sama o sobě nemá žádný vizuální význam. Slouží totiž k členění stránky na menší části. Všimněte si, že naší ukázkové stránka značku <code>div</code> také používá. Navíc u ní najdeme atribut <code>class</code>. Ten se běžně používá k stylování stránky a často podle něj můžeme při webscrapingu odlišit důležité části stránky.</p>
 
   <p>Všech HTML značek je kolem stovky a mnoho z nich má spoustu možných atributů. Rozumět všem těmto značkám je prací webových vývojářů. Nám bude stačit získat nějaké malé povědomí alespoň o pár základních. </p>
 
@@ -115,7 +115,7 @@
 
   <pre>pip install requests-html</pre>
   
-  <p>Abychom mohli v našem programu scrapovat, musíme najdřív webovou stránku otevřít. Vzhledem k tomu, že obsah textového souboru už do proměnné načíst umíme, stačí tedy jen použít náš nový modul, aby si tento obsah přečetl a umožnil v něm vyhledávat.</p>
+  <p>Abychom mohli v našem programu scrapovat, musíme nejdřív webovou stránku otevřít. Vzhledem k tomu, že obsah textového souboru už do proměnné načíst umíme, stačí tedy jen použít náš nový modul, aby si tento obsah přečetl a umožnil v něm vyhledávat.</p>
 
   <p>Ve Visual Studiu ve složce s naší ukázkovou stránkou si vytvořte program <code>scrape.py</code> s tímto obsahem</p>
 
@@ -186,13 +186,13 @@ for odstavec in stranka.html.find('p'):
 
     <ol>
       <li>Nechť program vypíše na výstup nadpisy všech sekcí (značka <code>h2</code>).</li>
-      <li>Nechť program yypíše na výstup cesty všech odkazů na stránce (značka <code>a</code>, atribut <code>href</code>). </li>
+      <li>Nechť program vypíše na výstup cesty všech odkazů na stránce (značka <code>a</code>, atribut <code>href</code>). </li>
       <li>Nechť program vypíše na výstup cesty ke všem obrázkům na stránce (značka <code>img</code>, atribut <code>src</code>.</li>
     </ol>
   </%self:exrc>  
 
   <%self:exrc title="Scraping Kodim.cz">  
-    <p>Jistě vás nepřekvapí, že stránky, které právě čtete se dají také snadno scrapovat.</p>
+    <p>Jistě vás nepřekvapí, že stránky, které právě čtete, se dají také snadno scrapovat.</p>
 
     <p>Napište program, který vypíše na výstup všechny povinné a nepovinné domácí úložky z lekce <a href=/kurzy/python-data/prvni-programy">První programy</a> spolu s jejich obtížností.</p>
   </%self:exrc>  
@@ -203,7 +203,7 @@ for odstavec in stranka.html.find('p'):
   <h2>Web scraping vs JavaScript</h2>
   <p>Web scraping je velmi mocná technika. Její úspěšnost však závisí na tom, jakým způsobem jsou webové stránky napsány. Pokud jsou napsány prasácky a nekonzistentně, tak si web scrapingem můžeme snadno způsobit velký bolehlav.</p>
 
-  <p>Jeden z velkých problémů pro web scraping však představují stránky, které jsou vytvořené celé v JavaScriptu. Velkým trendem v dnešní době je nepsat HTML kód stránky přímo, jako jsme to viděli výše. Místo toho se použije jazyk JavaScript, který kód stránky sám vygeneruje. Tím může být stránka mnohem flexibilnějšé a interaktivnější, což je hezké pro uživatele. Pro nás to však znamená, že když stránku stahujeme v Pythonu, neobdržíme značky HTML, ale JavaScriptový program, který nejdříve musíme v Pythonu spustit a nechat si výsledné HTML vygenerovat.</p>
+  <p>Jeden z velkých problémů pro web scraping však představují stránky, které jsou vytvořené celé v JavaScriptu. Velkým trendem v dnešní době je nepsat HTML kód stránky přímo, jako jsme to viděli výše. Místo toho se použije jazyk JavaScript, který kód stránky sám vygeneruje. Tím může být stránka mnohem flexibilnější a interaktivnější, což je hezké pro uživatele. Pro nás to však znamená, že když stránku stahujeme v Pythonu, neobdržíme značky HTML, ale JavaScriptový program, který nejdříve musíme v Pythonu spustit a nechat si výsledné HTML vygenerovat.</p>
 
   <p>Podívejte se například na <a href="https://react-shopping-cart-67954.firebaseapp.com/">tuto stránku</a>, která je psána přesně tímto způsobem. Pokud chceme takovou stránku scrapovat, musíme použít takovýto kód.</p> 
 
