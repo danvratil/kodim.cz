@@ -41,7 +41,7 @@
     </%self:alert>
   %else:
     <%self:alert type="done" title="Hotovo!">
-      Hurá, pokud jste dorazili až sem, máte hotovo. Nalepte se lísteček a pokud chcete, můžete pokračovat bonusovými příklady.
+      Hurá, pokud jste dorazili až sem, máte hotovo. Nalepte si lísteček a pokud chcete, můžete pokračovat bonusovými příklady.
     </%self:alert>
   %endif
 </%def>

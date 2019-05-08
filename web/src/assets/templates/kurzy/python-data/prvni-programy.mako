@@ -226,9 +226,9 @@ Medián: 5.5</pre>
   
 <pre>&gt;&gt;&gt; random.uniform(1, 6)
 3.0445222265782617
-&gt;&gt;&gt; random.randint(1, 6)
+&gt;&gt;&gt; random.uniform(1, 6)
 3.655355475003799
-&gt;&gt;&gt; random.randint(1, 6)
+&gt;&gt;&gt; random.uniform(1, 6)
 4.435795489936791</pre>
 
   <p>Tyto funkce se nám mohou hodit pro generování náhodných dat nebo pro psaní různých her a hříček.</p>

@@ -66,7 +66,7 @@ else:
         <p>Program spusťte na konzoli a vyzkoušejte, že dělá co má.</p>
       </li>
       <li>
-        <p>Upravte tento program tak, by vypsal </p>
+        <p>Upravte tento program tak, aby vypsal </p>
 
         <pre>Vstup nepovolen</pre>
         

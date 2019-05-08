@@ -48,9 +48,9 @@
   <p>Pandas je raletivně veliký balíček, který obsahuje mnoho modulů, takže instalace bude nějakou chvíli trvat. </p>
 
   <h2>Základní práce s DataFrame</h2>
-  <p>V Pandasu se povětšinou pracuje s datovou strukturou zvanou DateFrame. Je to tabulková datová struktura založená na podobném principu jako například uspořádání dat v Excelu nebo v databázi. Můžeme jej považovat za další datový typ vedle slovníků a seznamů. DataFrame obsahuje data ve sloupcích, kde každý sloupec může mít různý datový typ, tedy například číslo, desetinné číslo, řetězec, pravdivostní hodnota a jiné.</p>  
+  <p>V Pandasu se povětšinou pracuje s datovou strukturou zvanou DataFrame. Je to tabulková datová struktura založená na podobném principu jako například uspořádání dat v Excelu nebo v databázi. Můžeme jej považovat za další datový typ vedle slovníků a seznamů. DataFrame obsahuje data ve sloupcích, kde každý sloupec může mít různý datový typ, tedy například číslo, desetinné číslo, řetězec, pravdivostní hodnota a jiné.</p>  
 
-  <p>Abychom si práci s DataFrame vyzkoušeli, budeme používat následující cvičnou tabulku Českých měst, která provozují tramvajovou dopravu.</p>
+  <p>Abychom si práci s DataFrame vyzkoušeli, budeme používat následující cvičnou tabulku českých měst, která provozují tramvajovou dopravu.</p>
 
   <table>
     <thead>
@@ -90,7 +90,7 @@
 
   <h3>Načítání dat</h3>
 
-  <p>Tabulku výše si můžete stáhnout ve <a href="/download/python-data/mesta.csv">formátu CSV</a>. Abychom si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
+  <p>Tabulku výše si můžete stáhnout ve <a href="/download/python-data/mesta.csv" download>formátu CSV</a>. Abychom si ji mohli prohlédnout jako DataFrame, otevřeme si nejprve Python konzoli, importujeme modul <code>pandas</code> a načteme CSV soubor pomocí funkce <code>read_csv().</code></p> 
   
 <pre>&gt;&gt;&gt; import pandas
 &gt;&gt;&gt; mesta = pandas.read_csv('mesta.csv', index_col='mesto', encoding='utf-8')</pre>
@@ -163,7 +163,7 @@ brno     JHM    379 527     22  230.22
 praha    PHA  1 294 513     24  496.00
 ostrava  MSK    290 450     15  214.23</pre>
 
-  <p>Všimněte si, že když jsme chtěli pouze jeden řádek, vypsal se nám výsledek jinak orientovaný, než když jsme chtěli řádků více. Je to proto, že pokud dáme metodě <code>loc[]</code> jméno řádku přimo, vrátí nám takzvenou ?<em>sérii</em>, což je jiný datový typ než DataFrame. Pokud chceme DataFrame i v případě jenoho řádku, musíme dotaz zadat jako jednoprvkový seznam.</p>
+  <p>Všimněte si, že když jsme chtěli pouze jeden řádek, vypsal se nám výsledek jinak orientovaný, než když jsme chtěli řádků více. Je to proto, že pokud dáme metodě <code>loc[]</code> jméno řádku přímo, vrátí nám takzvanou <em>sérii</em>, což je jiný datový typ než DataFrame. Pokud chceme DataFrame i v případě jednoho řádku, musíme dotaz zadat jako jednoprvkový seznam.</p>
 
 <pre>&gt;&gt;&gt; mesta.loc[['brno']]
       kraj obyvatel  linky  vymera
@@ -485,7 +485,7 @@ praha       24</pre>
 
   <pre>&gt;&gt;&gt; data = mesta.reset_index().values.tolist()</pre>
 
-  <p>Můžeme však postupovat i obráceně a vyrobit DataFrame ze seznamu seznamů. Pokud však necheme názvy sloupců jako čísla, je třeba názvy dodat.</p>
+  <p>Můžeme však postupovat i obráceně a vyrobit DataFrame ze seznamu seznamů. Pokud však nechceme názvy sloupců jako čísla, je třeba názvy dodat.</p>
 
   <pre>&gt;&gt;&gt; mesta2 = pandas.DataFrame(data, columns=['mesto', 'kraj', 'obyvatel', 'linky', 'vymera'])</pre>
 
