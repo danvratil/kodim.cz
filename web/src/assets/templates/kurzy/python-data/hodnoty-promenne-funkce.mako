@@ -172,7 +172,7 @@
 [1, 6, 12, 1]</pre>
 
   <h3>Vnořené seznamy</h3>
-  <p>Seznam může obsahovat jakékoliv hodnoty, tedy nejen celá čísla. Nezapomeňte, že seznamy jsou také hodnoty, takže jeden seznam může obshaovat jiný seznam jako svůj prvek. Například takto: </p>
+  <p>Seznam může obsahovat jakékoliv hodnoty, tedy nejen celá čísla. Nezapomeňte, že seznamy jsou také hodnoty, takže jeden seznam může obsahovat jiný seznam jako svůj prvek. Například takto: </p>
 
 <pre>&gt;&gt;&gt; seznam = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]</pre>
 

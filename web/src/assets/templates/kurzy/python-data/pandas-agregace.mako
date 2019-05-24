@@ -164,7 +164,7 @@ Name: známka, dtype: bool</pre>
 
 <pre>&gt;&gt;&gt; test = pandas.merge(u202, preds)</pre>
 
-  <p>Takto na poprvé se však s úspěchem nesetkáme, neboť výsledkem příkazu bude prázdný DataFrame. Důvod je ten, že metoda <code>merge</code> dělá ve výchozím nastavení INNER JOIN podle všech sloupečků, které mají stejná jména. Naše dvě tabulky se tedy spojí podle sloupečků <em>jméno</em> a <em>den</em>. Tyto dva sloupečky ale nemají pro žádné řádek v obou tabulkách stejnou hodnotu, takže nám ve výsledku žádný řádek nezbude. </p>
+  <p>Takto na poprvé se však s úspěchem nesetkáme, neboť výsledkem příkazu bude prázdný DataFrame. Důvod je ten, že metoda <code>merge</code> dělá ve výchozím nastavení INNER JOIN podle všech sloupečků, které mají stejná jména. Naše dvě tabulky se tedy spojí podle sloupečků <em>jméno</em> a <em>den</em>. Tyto dva sloupečky ale nemají pro žádný řádek v obou tabulkách stejnou hodnotu, takže nám ve výsledku žádný řádek nezbude. </p>
 
   <p>Můžeme být neoblomná a zaexperimentovat s OUTER JOIN</p>
 

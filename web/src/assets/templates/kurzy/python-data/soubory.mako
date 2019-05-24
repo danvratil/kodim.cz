@@ -120,7 +120,7 @@ soubor.close()
   </%self:exrc>	
 
   <%self:exrc title="Rozepsaná výplata">
-    <p>Modifikujte program pro počítání výplaty z předchozí sekce tak, aby nevypisoval průměrnou výplatu za rok, nýbrž aby vypsal konrétní vyplacenou částku pro každý měsíc zvlášť.</p>
+    <p>Modifikujte program pro počítání výplaty z předchozí sekce tak, aby nevypisoval průměrnou výplatu za rok, nýbrž aby vypsal konkrétní vyplacenou částku pro každý měsíc zvlášť.</p>
 
     <ol>
       <li>Nejprve tyto informace vypište na výstup pomocí funkce <code>print()</code>.</li>
@@ -154,7 +154,7 @@ soubor.close()
   <h3>Formát CSV</h3>
   <p>Výše uvedený postup funguje pouze pro malé tabulky, protože se vám asi nebude chtít ručně kopírovat tabulku o 100 000 řádcích. Pro výměnu tabulkových dat v textové podobě se ustálil všeobecně používaný formát zvaný CSV z anglického <em>Comma Separated Values</em>. Jak název napovídá, v tomto formátu nejsou hodnoty odděleny tabulátory, nýbrž čárkami. Google Sheets umí tento formát exportovat, nemusíme tedy nic kopírovat. Stačí v menu vybrat <em>Soubor</em> &rarr; <em>Stáhnout jako</em> &rarr; <em>Hodnoty oddělené čárkami</em>. Tím se vám aktuální list stáhne jako textový soubor, který pak můžete normálně otevřít v Python programu. Všimněte si, že takto můžeme dokonce stáhnout i hodnoty oddělené tabulátory (formát TSV).</p>
 
-  <p>Pokud chceme provést obrácený postup, tedy nahrát CSV data do taublky Google, je třeba jít v menu na <em>Soubor</em> &rarr; <em>Importovat</em> &rarr; <em>Nahrát</em>, a poté na vašem počítači vybrat kýžený soubor CSV.</p>
+  <p>Pokud chceme provést obrácený postup, tedy nahrát CSV data do tabulky Google, je třeba jít v menu na <em>Soubor</em> &rarr; <em>Importovat</em> &rarr; <em>Nahrát</em>, a poté na vašem počítači vybrat kýžený soubor CSV.</p>
 
   <h2>Nepovinné čtení - kódování textu</h2>
 

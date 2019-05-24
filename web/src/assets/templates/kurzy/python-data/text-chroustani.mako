@@ -15,7 +15,7 @@
 
   <pre>&gt;&gt;&gt; jmeno = 'martin' + ' ' + 'podloucký'</pre>
   
-  <p>Můžeme však také přistupvat k jednotlivým písmenům nebo pracovat s podřetězci.</p>
+  <p>Můžeme však také přistupovat k jednotlivým písmenům nebo pracovat s podřetězci.</p>
 
 <pre>&gt;&gt;&gt; jmeno[3]
 't'
