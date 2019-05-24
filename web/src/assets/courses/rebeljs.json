@@ -116,6 +116,20 @@
           "ready": {
             "cz": true
           }
+        },
+        {
+          "link": {
+            "cz": "pacman1"
+          },
+          "title": {
+            "cz": "Pacman první krůčky"
+          },
+          "desc": {
+            "cz": "Pomalu začínáme pracovat na našem Pacmanovi."
+          },
+          "ready": {
+            "cz": true
+          }
         }
       ]
     }

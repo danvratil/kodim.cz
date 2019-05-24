@@ -17,6 +17,12 @@
     <p>Pokud si pozici mamuta uložíte do proměnných, například <code>x</code> a <code>y</code>, můžete k těmto proměnným postupně </p>
   </%self:exrc>
 
+  <%self:exrc title="Smajlíci">
+    <p>Stáhněte si tento <a href="/img/rebeljs/faces.jpg" donwload>obrázek</a> čtyř smajlíků. Každá ze čtvrtin má rozměry 408 x 408 pixelů.  </p>
+
+    <p>Zaexperimentujte si s vlastnostmi <code>style.backgroundPositionX</code> a <code>style.backgroundPositionY</code>. Ty se nastavují v pixelech a umožní vám posunovat obrázek na pozadí elementu. Zkuste pomocí této vlastnosti zobrazit různé smajlíky.</p>
+  </%self:exrc>
+
   <%self:exrc title="Ruleta">
     <p>Stáhněte si <a href="/img/intro-to-progr/roulette.png" download>obrázek rulety</a>. Zkuste napsat program, který dokáže ruletou otáčet. 
 
@@ -29,8 +35,6 @@
 
   <%self:exrc title="Animace chůze">
     <p>Stáhněte si <a href="/img/rebeljs/sprite-walk.png" download>tento obrázek</a> s rozfázovanou chůzí. Vytvořte webovou stránku s jedním div elementem, kterému v JavaScriptu nastavte pozadí na tento obrázek a nastavte tomuto elementu velikost na 184 x 325 pixelů. </p>
-
-    <p>Zaexperimentujte si s vlastností <code>style.backgroundPositionX</code>. Ta se nastavuje v pixelech a umožní vám posunovat obrázek na pozadí elementu. Zkuste pomocí této vlastnosti zobrazit různé fáze chůze.</p>
 
     <ol>
       <li>Zařiďte, aby se fáze chůze měnily, když uživatel stiskne mezerník.</li>

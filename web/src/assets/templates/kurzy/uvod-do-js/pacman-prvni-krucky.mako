@@ -10,7 +10,7 @@
   <%self:exrc title="Start">
     <p>Stáhněte si <a href="/download/intro-to-js/pacman-starter.zip">počáteční projekt</a>. Rozbalte si ZIP archiv někam na váš počítač a otevřete si jej ve VS Code. Projekt obsahuje základní HTML stránku s jednoduchým JavaScriptem a spoustou obrázků, které můžete v různých fázích vývoje hry použít. JavaScriptový kód v projektu provádí postupné navyšování proměnné <var>pacX</var>, která bude časem představovat x-ovou pozici pacmana.</p>
 
-    <p>Otevřete si stránku v tomto projektu v prohlížečí a podívejte se co se vypisuje do konzole, když stisknete šipku doprava. Projděte si kód a ujistěte se, že mu rozumíte.</p>
+    <p>Otevřete si stránku v tomto projektu v prohlížeči a podívejte se co se vypisuje do konzole, když stisknete šipku doprava. Projděte si kód a ujistěte se, že mu rozumíte.</p>
   </%self:exrc>
 
   <%self:exrc title="První krok">
