@@ -80,12 +80,13 @@ for vydaj in vydaje:
 
 prumernaUtrata = statistics.mean(utraty)
 
-for index, utrata in enumerate(utraty):
-  vyrovnani = round(utrata - prumernaUtrata)
+for jmeno in seznamJmen:
+  index = seznamJmen.index(jmeno)
+  vyrovnani = round(utraty[index] - prumernaUtrata)
   if vyrovnani > 0:
-    print(seznamJmen[index] + ' dostane\t' + str(vyrovnani))
+    print(jmeno + ' dostane\t' + str(vyrovnani))
   else:
-    print(seznamJmen[index] + ' má dáti\t' + str(-vyrovnani))
+    print(jmeno + ' má dáti\t' + str(-vyrovnani))
 </pre>
 
   <p>Seznamy v proměnných <var>seznamJmen</var> a <var>utraty</var> představují tabulku celkových útrat pro každého jednoho člověka.</p> 
