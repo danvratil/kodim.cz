@@ -35,6 +35,20 @@
         },
         {
           "link": {
+            "cz": "reprezentace-cisel"
+          },
+          "title": {
+            "cz": "Reprezentace čísel"
+          },
+          "desc": {
+            "cz": "FOR cykly jsou brána do říše mírně pokročilého programování a proto je potřeba je pořádně procvičit."
+          },
+          "ready": {
+            "cz": true
+          }
+        },
+        {
+          "link": {
             "cz": "for-cykly"
           },
           "title": {

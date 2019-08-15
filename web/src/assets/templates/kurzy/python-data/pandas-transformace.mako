@@ -41,6 +41,8 @@
       result += n
   return result</pre>
 
+</%self:lesson>
+
 <%self:exercises>
   <h2>Cvičení</h2>
   <%self:exrc title="Obsah elipsy">
@@ -58,7 +60,7 @@
   </%self:exrc>
 
   <%self:exrc title="Geometrický průměr">
-    <p>Napište funkci jménem <code>max2</code>, který vrátí větší ze dvou zadaných čísel.</p>
+    <p>Napište funkci jménem <code>gmean</code>, která spočítá takzvaný geometrický průměr ze zadaného seznamu čísel. Geometrický průměr <em>n</em> čísel se spočítá tak, že se všechny hodnoty navzájem vynásobí z výsledného součinu se spočítá <em>n</em>-tá odmocnina.</p>
   </%self:exrc>
 
   <h2>Bonusy</h2>  
@@ -67,5 +69,192 @@
     <p>Napište funkci jménem <code>max3</code>, který vrátí největší ze tří zadaných čísel.</p>
   </%self:exrc>
 
+</%self:exercises>
 
+<%self:lesson>
+  <h2>Transformace dat v Pandasu</h2>
+  <p>Vytváření vlastních funkcí jsme si nevysvětlovali jen tak nazdařbůh. Naše nové schopnosti ihned využijeme při práci s daty. Často se nám totiž stane, že data nejsou v tak úplně dokonalém formátu, jak by se nám hodilo a musíme si je trošku pomasírovat, nebo-li odborně řečeno transformovat.</p>
+
+  <p>Uvažme jakéhosi Kristiána, jenž se snaží o zhubnutí do svého obleku, který má ještě z tanečních na střední škole. Náš Kristián se rozhodl po 14 dní zdravěji jíst a chodit pravidelně běhat. Své úsilí si poctivě zaznamenával do následující tabulky. </p>
+    
+  <table>
+    <thead>
+      <th>den</th>
+      <th>váha</th>
+      <th>běh</th>
+    </thead>
+    <tbody>
+      <tr>
+        <td>pá 13.</td>
+        <td>75,6 kg</td>
+        <td>3 km</td>
+      </tr>
+      <tr>
+        <td>so 15.</td>
+        <td>75,3 kh</td>
+        <td>pauza</td>
+      </tr>
+      <tr>
+        <td>ne 16.</td>
+        <td>75,9kg</td>
+        <td>pauza</td>
+      </tr>
+      <tr>
+        <td>po 17.</td>
+        <td>76,1 kg</td>
+        <td>2 km</td>
+      </tr>
+      <tr>
+        <td>út 18.</td>
+        <td>75,4 kg</td>
+        <td>paza</td>
+      </tr>
+      <tr>
+        <td>st 19.</td>
+        <td>75 kg</td>
+        <td>pauza</td>
+      </tr>
+      <tr>
+        <td>čt 20.</td>
+        <td>74,9 kg</td>
+        <td>3</td>
+      </tr>
+      <tr>
+        <td>pá 21.</td>
+        <td>74,8 k</td>
+        <td>pauza</td>
+      </tr>
+      <tr>
+        <td>so 22.</td>
+        <td>74,3kg</td>
+        <td>3 km</td>
+      </tr>
+      <tr>
+        <td>ne 23.</td>
+        <td>75,2 kg</td>
+        <td>4 km</td>
+      </tr>
+      <tr>
+        <td>po 24.</td>
+        <td>74,5 kg</td>
+        <td></td>
+      </tr>
+      <tr>
+        <td>út 25.</td>
+        <td>74,2 kg</td>
+        <td>pauza</td>
+      </tr>
+      <tr>
+        <td>st 26.</td>
+        <td>74,1 kg</td>
+        <td>3 km</td>
+      </tr>
+      <tr>
+        <td>čt 27.</td>
+        <td>73,8 kg</td>
+        <td>3km</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <p>Tabulku si můžete stáhnout jako soubor <a href="/download/python-data/vaha.txt" download>vaha.txt</a>. Bohužel  Kristián není ten úplně nejvíc nejdůslednější člověk na planetě, takže hodnoty v druhém a třetím sloupečku nejsou vždy úplně konzistentní, hemží se to zde překlepy i občasnou chybějící hodnotou. Váha je řetězec, který nejen obsahuje i jednotky, ale navíc jsou desetinná čísla zapsána pomocí čárky. Navíc jsou hodnoty v tomto souboru jsou odděleny tabulátory, což svědčí o tom, že je Kritián asi vykopíroval přímo z Excelu nebo Google docs.</p>
+  
+  <p>V dnešní lekci už nebudeme pracovat v příkazové řádce, ale napíšeme si regulérní program. Nejprve načteme naše data do DataFrame. Pozor na to, že oddělovače jsou tabulátory.</p>
+
+<pre>import pandas
+vaha = pandas.read_csv('vaha.txt', encoding='utf-8', sep='\t')</pre>
+
+  <p>Můžeme si všimnout, že ani v prvních sloupečku, kde naštěstí žádné překlepy nemáme, nejsou data úplně v šikovném formátu. Datumy máme jako jméno a číslo dne. To je první věc, kterou se pokusíme zpravit.  </p>
+  
+  <p>Ty nejužitečnější operace pro transformaci dat nejdeme na sériích. Vezměme si první sloupeček naší tabulky jako sérii. Pomocí vlastnosti <code>.str</code> můžeme pracovat se sérií řetězců úplně stejně, jako pracujeme s jedním řetězcem. Můžeme se tak například zbavit zbytečných názvů dní.</p>
+
+<pre>cisloDne = vaha['den'].str[3:]
+print(cisloDne)
+
+0     13.
+1     15.
+2     16.
+3     17.
+4     18.
+5     19.
+6     20.
+7     21.
+8     22.
+9     23.
+10    24.
+11    25.
+12    26.
+13    27.
+Name: den, dtype: object</pre> 
+
+  <p>Můžeme taky smazat otravnou tečku na konci tak, že ji prostě nahradíme prázdným řetězcem.</p>
+
+<pre>cisloDne = vaha['den'].str[3:].str.replace('.', '')
+print(cisloDne)
+
+0     13
+1     15
+2     16
+3     17
+4     18
+5     19
+6     20
+7     21
+8     22
+9     23
+10    24
+11    25
+12    26
+13    27
+Name: den, dtype: object</pre>
+
+  <p>Všimněte si ale, že hodnoty v sérii <code>cisloDne</code> jsou pořád řetězce. Chceme-li je převést na čísla, musíme použít Pandas funkci <code>to_numeric</code>.</p>
+
+<pre>cisloDne = vaha['den'].str[3:].str.replace('.', '')
+cisloDne = pandas.to_numeric(cislaDne)
+print(cisloDne)
+
+0     13
+1     15
+2     16
+3     17
+4     18
+5     19
+6     20
+7     21
+8     22
+9     23
+10    24
+11    25
+12    26
+13    27
+Name: den, dtype: int64</pre>
+
+  <p>Takto máme sloupeček hezky vyčištěný. Zapojme ho jako nový sloupeček do naší tabulky. Zároveň ještě nahradíme sloupeček se dny pouze jejich názvy. Tím bude tabulka mnohem přehlednější.</p>
+
+<pre>den = vaha['den'].str[:3]
+vaha['číslo dne'] = cisloDne
+vaha['den'] = den
+print(vaha)
+
+    den     váha    běh  číslo dne
+0   pá   75,6 kg   3 km         13
+1   so   75,3 kh  pauza         15
+2   ne    75,9kg  pauza         16
+3   po   76,1 kg   2 km         17
+4   út   75,4 kg   paza         18
+5   st     75 kg  pauza         19
+6   čt   74,9 kg      3         20
+7   pá    74,8 k  pauza         21
+8   so    74,3kg   3 km         22
+9   ne   75,2 kg   4 km         23
+10  po   74,5 kg    NaN         24
+11  út   74,2 kg  pauza         25
+12  st   74,1 kg   3 km         26
+13  čt   73,8 kg    3km         27</pre>
+
+  <h3>Složitější transformace</h3>
+  <p>První sloupeček byl ještě relativně snadný. S druhým to bude o dost těžší. Data nejsou moc konzistentní a dostat je do rozumné podoby znamená řešit různé speciální případy pomocí různých podmínek.</p>
+
+<pre>
 </%self:lesson>

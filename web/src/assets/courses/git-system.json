@@ -1,0 +1,39 @@
+{
+  "langs": ["cz"],
+  "title": {
+    "cz": "Verzovací systém Git"
+  },
+  "subtitle": {
+    "cz": "Praktický průvodce používáním Gitu pro úplné začátečníky."
+  },
+  "link": {
+    "cz": "git-system"
+  },
+  "sections": [
+    {
+      "name": "novices",
+      "title": {
+        "cz": "Nováčci"
+      },
+      "ready": {
+        "cz": true
+      },
+      "chapters": [
+        {
+          "link": {
+            "cz": "priprava"
+          },
+          "title": {
+            "cz": "Příprava"
+          },
+          "desc": {
+            "cz": "Ukážeme si, jak na váš počítač nainstalovat git a všechny potřebné nástroje."
+          },
+          "ready": {
+            "cz": true
+          }
+        }
+      ]
+    }
+  ]
+}
