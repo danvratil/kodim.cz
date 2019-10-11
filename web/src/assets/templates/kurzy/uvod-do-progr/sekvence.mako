@@ -21,7 +21,7 @@
 
   <p>Přístupy k indexům sekvencí se dají skládat za sebe. Můžeme tak získat například čtvrté písmenko druhého jména v seznamu <code>uzivatele</code></p>
 
-<pre>&gt;&gt;&gt; users[1][3]
+<pre>&gt;&gt;&gt; uzivatele[1][3]
 'l'</pre>
 
   <p>nebo první číslo třetího seznamu v proměnné <code>body</code></p>

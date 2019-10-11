@@ -141,7 +141,7 @@
 
 	<p>JSON formát původně pochází z jazyka, který se jmenuje JavaScript. Ten se hodně používá pro tvorbu webových stránek a jelikož výměna dat nejčastěji probíhá po internetu, ujal se formát JSON všeobecně jako standard pro výměnu dat mezi programy. Výhoda pro nás je, že JSON vypadá téměř stejně jako Python slovníky. Liší se pouze tím, že vždy používá dvojité uvozovky a hodnoty <code>True</code> a <code>False</code> se píší s malým písmenem, tedy <code>true</code> a <code>false</code>. Náš absolvent kurzu z úvody lekce by tedy ve formátu JSON vypadal takto:</p>
   
-  <pre>{"jmeno": "Petr", "prijmeni": "Roman", "rok": 2017, "dochazka" 0.95, "vyznamenani": true}</pre>
+  <pre>{"jmeno": "Petr", "prijmeni": "Roman", "rok": 2017, "dochazka": 0.95, "vyznamenani": true}</pre>
 
   <p>V Pythonu je velice jednoduché převést JSON na obyčejný Python slovník. Stačí nám k tomu modul jménem <code>json</code>. Vyzkoušíme si to na našem seznamu absolventů. Nejdřív si tato data stáhneme jako soubor <a href="/download/python-data/absolventi.json" download>absolventi.json</a>. Ten pak můžeme v Pythonu otevřít a převést na JSON následujicím programem.</p>
 

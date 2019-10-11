@@ -52,7 +52,7 @@
       <img src="/img/intro-to-js/elipse.png" alt="Elipsa" class="figure__img-600" />
     </div>
 
-    <p>Z matematiky víme, že známe li šířku a výšku elipsy, její obsah je polovina šířky krát polovina výšky krát číslo pí. Napište funkci <code>elipseArea</code>, která spočítá plochu pozemku dle zadané šířky a výšky. Číslo pí najdete v modulu <code>math</code> jako <code>math.pi</code>.</p>
+    <p>Z matematiky víme, že známe-li šířku a výšku elipsy, její obsah je polovina šířky krát polovina výšky krát číslo pí. Napište funkci <code>elipseArea</code>, která spočítá plochu pozemku dle zadané šířky a výšky. Číslo pí najdete v modulu <code>math</code> jako <code>math.pi</code>.</p>
   </%self:exrc>
 
   <%self:exrc title="Větší ze dvou čísel">
@@ -60,7 +60,7 @@
   </%self:exrc>
 
   <%self:exrc title="Geometrický průměr">
-    <p>Napište funkci jménem <code>gmean</code>, která spočítá takzvaný geometrický průměr ze zadaného seznamu čísel. Geometrický průměr <em>n</em> čísel se spočítá tak, že se všechny hodnoty navzájem vynásobí z výsledného součinu se spočítá <em>n</em>-tá odmocnina.</p>
+    <p>Napište funkci jménem <code>gmean</code>, která spočítá takzvaný geometrický průměr ze zadaného seznamu čísel. Geometrický průměr <em>n</em> čísel se spočítá tak, že se všechny hodnoty navzájem vynásobí a z výsledného součinu se spočítá <em>n</em>-tá odmocnina.</p>
   </%self:exrc>
 
   <h2>Bonusy</h2>  
@@ -90,83 +90,83 @@
         <td>3 km</td>
       </tr>
       <tr>
-        <td>so 15.</td>
+        <td>so 14.</td>
         <td>75,3 kh</td>
         <td>pauza</td>
       </tr>
       <tr>
-        <td>ne 16.</td>
+        <td>ne 15.</td>
         <td>75,9kg</td>
         <td>pauza</td>
       </tr>
       <tr>
-        <td>po 17.</td>
+        <td>po 16.</td>
         <td>76,1 kg</td>
         <td>2 km</td>
       </tr>
       <tr>
-        <td>út 18.</td>
+        <td>út 17.</td>
         <td>75,4 kg</td>
         <td>paza</td>
       </tr>
       <tr>
-        <td>st 19.</td>
+        <td>st 18.</td>
         <td>75 kg</td>
         <td>pauza</td>
       </tr>
       <tr>
-        <td>čt 20.</td>
+        <td>čt 19.</td>
         <td>74,9 kg</td>
         <td>3</td>
       </tr>
       <tr>
-        <td>pá 21.</td>
+        <td>pá 20.</td>
         <td>74,8 k</td>
         <td>pauza</td>
       </tr>
       <tr>
-        <td>so 22.</td>
+        <td>so 21.</td>
         <td>74,3kg</td>
         <td>3 km</td>
       </tr>
       <tr>
-        <td>ne 23.</td>
+        <td>ne 22.</td>
         <td>75,2 kg</td>
         <td>4 km</td>
       </tr>
       <tr>
-        <td>po 24.</td>
+        <td>po 23.</td>
         <td>74,5 kg</td>
         <td></td>
       </tr>
       <tr>
-        <td>út 25.</td>
+        <td>út 24.</td>
         <td>74,2 kg</td>
         <td>pauza</td>
       </tr>
       <tr>
-        <td>st 26.</td>
+        <td>st 25.</td>
         <td>74,1 kg</td>
         <td>3 km</td>
       </tr>
       <tr>
-        <td>čt 27.</td>
+        <td>čt 26.</td>
         <td>73,8 kg</td>
         <td>3km</td>
       </tr>
     </tbody>
   </table>
 
-  <p>Tabulku si můžete stáhnout jako soubor <a href="/download/python-data/vaha.txt" download>vaha.txt</a>. Bohužel  Kristián není ten úplně nejvíc nejdůslednější člověk na planetě, takže hodnoty v druhém a třetím sloupečku nejsou vždy úplně konzistentní, hemží se to zde překlepy i občasnou chybějící hodnotou. Váha je řetězec, který nejen obsahuje i jednotky, ale navíc jsou desetinná čísla zapsána pomocí čárky. Navíc jsou hodnoty v tomto souboru jsou odděleny tabulátory, což svědčí o tom, že je Kritián asi vykopíroval přímo z Excelu nebo Google docs.</p>
+  <p>Tabulku si můžete stáhnout jako soubor <a href="/download/python-data/vaha.txt" download>vaha.txt</a>. Bohužel  Kristián není ten úplně nejvíc nejdůslednější člověk na planetě, takže hodnoty v druhém a třetím sloupečku nejsou vždy úplně konzistentní, hemží se to zde překlepy i občasnou chybějící hodnotou. Váha je řetězec, který nejen obsahuje i jednotky, ale navíc jsou desetinná čísla zapsána pomocí čárky. Navíc jsou hodnoty v tomto souboru jsou odděleny tabulátory, což svědčí o tom, že je Kristián asi vykopíroval přímo z Excelu nebo Google docs.</p>
   
   <p>V dnešní lekci už nebudeme pracovat v příkazové řádce, ale napíšeme si regulérní program. Nejprve načteme naše data do DataFrame. Pozor na to, že oddělovače jsou tabulátory.</p>
 
 <pre>import pandas
 vaha = pandas.read_csv('vaha.txt', encoding='utf-8', sep='\t')</pre>
 
-  <p>Můžeme si všimnout, že ani v prvních sloupečku, kde naštěstí žádné překlepy nemáme, nejsou data úplně v šikovném formátu. Datumy máme jako jméno a číslo dne. To je první věc, kterou se pokusíme zpravit.  </p>
+  <p>Můžeme si všimnout, že ani v prvních sloupečku, kde naštěstí žádné překlepy nemáme, nejsou data úplně v šikovném formátu. Datumy máme jako jméno a číslo dne. To je první věc, kterou se pokusíme napravit.  </p>
   
-  <p>Ty nejužitečnější operace pro transformaci dat nejdeme na sériích. Vezměme si první sloupeček naší tabulky jako sérii. Pomocí vlastnosti <code>.str</code> můžeme pracovat se sérií řetězců úplně stejně, jako pracujeme s jedním řetězcem. Můžeme se tak například zbavit zbytečných názvů dní.</p>
+  <p>Ty nejužitečnější operace pro transformaci dat najdeme na sériích. Vezměme si první sloupeček naší tabulky jako sérii. Pomocí vlastnosti <code>.str</code> můžeme pracovat se sérií řetězců úplně stejně, jako pracujeme s jedním řetězcem. Můžeme se tak například zbavit zbytečných názvů dní.</p>
 
 <pre>cisloDne = vaha['den'].str[3:]
 print(cisloDne)
@@ -211,7 +211,7 @@ Name: den, dtype: object</pre>
   <p>Všimněte si ale, že hodnoty v sérii <code>cisloDne</code> jsou pořád řetězce. Chceme-li je převést na čísla, musíme použít Pandas funkci <code>to_numeric</code>.</p>
 
 <pre>cisloDne = vaha['den'].str[3:].str.replace('.', '')
-cisloDne = pandas.to_numeric(cislaDne)
+cisloDne = pandas.to_numeric(cisloDne)
 print(cisloDne)
 
 0     13

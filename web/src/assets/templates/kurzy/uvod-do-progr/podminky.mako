@@ -29,7 +29,7 @@ else:
   <p>Podobně jako u filmů tak i u divadelních představení bychom mohli chtít jemnější rozdělení přístupnosti nějakého představení. Můžeme například mít představení nevhodné vyloženě pro malé děti, zatímco teenageri jsou v pohodě. Budeme tady potřebovat podmínku s více větvemi:</p>
 
 <pre>if vek < 6:
-  print('Předkškolák')
+  print('Předškolák')
 elif vek < 15:
   print('Školák')
 elif vek < 18:

@@ -78,7 +78,7 @@
   </dl>
 
   <h2>Histogramy</h2>
-  <p>Histogram je důležitý typ grafu, který nám umožňuje zobrazit četnost hodnot z nějakého datasetu. Následující seznam obsahuje výšku 64 náhoných mužů v České republice, měřeno v centimetrech.</p>
+  <p>Histogram je důležitý typ grafu, který nám umožňuje zobrazit četnost hodnot z nějakého datasetu. Následující seznam obsahuje výšku 64 náhodných mužů v České republice, měřeno v centimetrech.</p>
 
 <pre>&gt;&gt;&gt; muzi = pandas.Series([
   179.3, 183.7, 181.4, 176.0, 183.6, 184.7, 163.4, 180.3, 
@@ -154,13 +154,13 @@
     <p>Načtěte tato data do Python seznamu, ze kterého vyrobte sérii. Zobrazte histogram hodů. Zvolte vhodné rozložení přihrádek a zodpovězte následující dotazy:</p>
 
     <ol>
-      <li>Jaká je nejčastější hodnota, který na dvou kostkách padne?</li>
+      <li>Jaká je nejčastější hodnota, která na dvou kostkách padne?</li>
       <li>Je větší šance, že padne hodnota 12 než že padne hodnota 2?</li>
     </ol>
   </%self:exrc>
 
   <%self:exrc title="Call centrum">
-    <p>V souboru <a href="/download/python-data/callcentrum.txt" download>callcentrum.txt</a> najdete něklik tisíc záznamů pro call centrum, které udávají časy mezi jednotlivými příchozími hovory v minutách a vteřinách. Načtěte tato data do série v Pythonu. Časy převeďte na vteřiny a zobrazte jejich histogram a boxplot. Co lze z těchto dvou grafů vyčíst?</p>
+    <p>V souboru <a href="/download/python-data/callcentrum.txt" download>callcentrum.txt</a> najdete několik tisíc záznamů pro call centrum, které udávají časy mezi jednotlivými příchozími hovory v minutách a vteřinách. Načtěte tato data do série v Pythonu. Časy převeďte na vteřiny a zobrazte jejich histogram a boxplot. Co lze z těchto dvou grafů vyčíst?</p>
   </%self:exrc>
 
   <%self:exrc title="Hurá na hory">
@@ -228,7 +228,7 @@
 <%self:lesson>
   <h2>Jupyter Notebook</h2>
 
-  <p>Na úplný závěr našeho kurzu se naučíme pracovat s Jupyter notebookem. Je to webové prostředí, ve kterém můžete vytvářet hezky učesané reporty z vašich datových analýz. Jupyter musíme nejprve naistalovat. </p>
+  <p>Na úplný závěr našeho kurzu se naučíme pracovat s Jupyter notebookem. Je to webové prostředí, ve kterém můžete vytvářet hezky učesané reporty z vašich datových analýz. Jupyter musíme nejprve nainstalovat. </p>
 
   <pre>$ pip3 install jupyter</pre>
 

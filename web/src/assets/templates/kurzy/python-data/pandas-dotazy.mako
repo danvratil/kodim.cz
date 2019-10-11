@@ -486,7 +486,7 @@ praha       24</pre>
 
   <h2>Převod mezi DataFrame a seznamy</h2>
 
-  <p>Python DataFrame je obsáhlý a komplikovaný objekt. Pokud s ním chceme pracovat, musíme znát spoustu triků a metod, které nám Pandas poskytuje. Občas se nám tak může hodit převést DataFrame na prachobyčejný Pythonovský seznam seznamů, což je teritorium, ve kterém jsme si po mnoha lekcích Pythonu zatím mnohem jistější než v Pandasu. K tomu nám poslouží jednoduchý příkaz</p>
+  <p>Python DataFrame je obsáhlý a komplikovaný objekt. Pokud s ním chceme pracovat, musíme znát spoustu triků a metod, které nám Pandas poskytuje. Občas se nám tak může hodit převést DataFrame na prachobyčejný Pythonovský seznam seznamů, což je teritorium, ve kterém jsme si po mnoha lekcích Pythonu zatím mnohem jistější než v Pandasu. K takovému převodu nám poslouží jednoduchý příkaz.</p>
 
 <pre>&gt;&gt;&gt; data = mesta.values.tolist()
 &gt;&gt;&gt; data

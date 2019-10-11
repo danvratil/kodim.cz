@@ -350,7 +350,7 @@ velbloud_honi_hada
 
     <p>Některé pasáže programu si lze mírně ulehčit použítím funkce <code>enumerate()</code>, která vám při chroustání seznamů vrací nejen prvek seznamu, ale i jeho index. Vyzkoušejte například následující příkaz</p>
 
-<pre>[[i, jmeno] for i, jmeno in ['petr', 'jana', 'vlasta', 'onyx']]</pre>
+<pre>[[i, jmeno] for i, jmeno in enumerate(['petr', 'jana', 'vlasta', 'onyx'])]</pre>
 
     <p>Úlohu lze však vyřešit i bez <code>enumerate()</code>!</p> 
   </%self:exrc>
